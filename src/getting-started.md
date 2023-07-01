@@ -109,66 +109,64 @@ Anki запускається з колодою, яка називається "
 Те, як колоди визначають порядок показу карток, описано у параграфі
 [порядок показу](studying.md#порядок-показу)
 
-### Notes & Fields
+### Нотатки та поля
 
-When making flashcards, it’s often desirable to make more than one card
-that relates to some information. For example, if you’re learning
-French, and you learn that the word “bonjour” means “hello”, you may
-wish to create one card that shows you “bonjour” and asks you to
-remember “hello”, and another card that shows you “hello” and asks you
-to remember “bonjour”. One card is testing your ability to recognize the
-foreign word, and the other card is testing your ability to produce it.
+При створенні навчальних карток, щоб зв'язати між собою інформацію, часто
+потрібно створити більше аніж одну картку. Наприклад, якщо Ви вивчаєте
+французьку, і ви вивчили, що слово "bonjour" означає "привіт", Ви можете
+хотіти створити одну картку, яка показує "bonjour" і просить Вас
+запам'ятати, що це - "привіт", й іншу картку, яка показує "привіт"
+і просить запам'ятати "bonjour". Перша картка перевіряє здатність розпізнати
+іншомовне слово, а інша - вміння його відтворити.
 
-When using paper flashcards, your only option in this case is to write
-out the information twice, once for each card. Some computer flashcard
-programs make life easier by providing a feature to flip the front and
-back sides. This is an improvement over the paper situation, but there
-are two major downsides:
+Використовуючи паперові навчальні картки, єдине, що можна зробити - записати
+інформацію двічі: по одному разу для кожної картки. Деякі програми навчальних
+карток спрощують життя, надаючи можливість поміняти передню і задню сторони.
+Це суттєве покращення порівняно з паперовими картками, однак, існують два
+головних недоліки:
 
-- Because such programs don’t track your performance of recognition
-  and production separately, cards will tend not to be shown to you at
-  the optimum time, meaning you forget more than you’d like, or you
-  study more than is necessary.
+- Оскільки такі програми не відстежують окремо Ваш поступ у розпізнаванні та
+відтворенні, картки можуть з'являтися у не оптимально. Як наслідок, Ви будете
+забувати більше ніж Вам хотілося б, або ж, вчити більше, аніж потрібно.
 
-- Reversing the question and answer only works when you want exactly
-  the same content on each side. This means it’s not possible to
-  display extra info on the back of each card for example.
+- Обертання питання і відповіді працює лише, коли Ви маєте абсолютно ідентичний
+вміст на кожній стороні. До прикладу, таким чином неможливо показати додаткову
+інформацію на зворотній стороні кожної картки.
 
-Anki solves these problems by allowing you to split the content of your
-cards up into separate pieces of information. You can then tell Anki
-which pieces of information you want on each card, and Anki will take
-care of creating the cards for you and updating them if you make any
-edits in the future.
+Anki розв'язує цю задачі, дозволяючи розділити вміст карток на окремі блоки
+інформації. Ви можете сказати Anki, які частини інформації показувати на
+кожній стороні картки, і Anki подбає про створення Ваших карток та їх 
+оновлення, якщо Ви внесете в майбутньому зміни.
 
-Imagine we want to study French vocabulary, and we want to include the
-page number on the back of each card. We want our cards to look like
-this:
+Уявіть, що ми вчимо французький словник, і хочемо показувати на зворотній
+стороні кожної картки номер сторінки. Наша картка мала б виглядати отак:
 
-    Q: Bonjour
-    A: Hello
-       Page #12
+    П: Bonjour
+    В: Привіт
+       ст. №12
 
-And:
+І:
 
-    Q: Hello
-    A: Bonjour
-       Page #12
+    П: Привіт
+    В: Bonjour
+       ст. №12
 
-In this example, we have three pieces of related information: a French
-word, an English meaning, and a page number. If we put them together,
-they’d look like this:
+У цьому прикладі, ми маємо три блоки зв'язаної інформації: слово французькою,
+український відповідник і номер сторінки. Якщо ми складемо їх разом, вони
+виглядатимуть наступним чином:
 
-    French: Bonjour
-    English: Hello
-    Page: 12
+    Французька: Bonjour
+    Українська: Привіт
+    Сторінка: 12
 
-In Anki, this related information is called a 'note', and each piece of
-information is called a 'field'. So we can say that this type of note
-has three fields: French, English, and Page.
+У Anki, така пов'язана інформація називається 'нотаткою', а кожна частина
+інформації - 'полем'. Отже, ми можемо сказати, що цей тип нотатки має три поля:
+Французька, Англійська і Сторінка.
 
-To add and edit fields, click the “Fields…​” button while adding or
-editing notes. For more information on fields, please see the
-[Customizing Fields](editing.md#customizing-fields) section.
+Щоб додати та редагувати поля, під час додавання або редагування нотатки, 
+натисніть на кнопку “Поля…​”. Більше інформації про роботу з полями
+можна знайти у параграфі
+[Пристосовування полів](editing.md#пристосовування-полів).
 
 ### Card Types
 
