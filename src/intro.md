@@ -1,17 +1,17 @@
-# Introduction
+# Вступ
 
-## Quickstart
+## Швидкий початок
 
-In a hurry? Jump straight to [Getting Started](getting-started.md).
+Поспішаєте? Розпочніть знайомтсво з розділу [Початок роботи](getting-started.md).
 
-## Getting Help
+## Отримання допомоги
 
-Looking for help? Please see [Getting Help](https://faqs.ankiweb.net/getting-help.html).
+Потрібна допомога? Перегляньте розділ [Отримання допомоги](https://faqs.ankiweb.net/getting-help.html).
 
-## Translations
+## Переклади
 
-Volunteers have contributed translations of this manual. The
-translations may not always be up to date.
+Переклад цього довідника здійснюють волонтери. Переклади можуть не завжди мати
+останні зміни.
 
 - [Bahasa Indonesia](https://apps.ankiweb.net/docs/manual.id.html)
 - [Deutsch](http://www.dennisproksch.de/anki)
@@ -26,5 +26,5 @@ translations may not always be up to date.
 - [日本語](http://wikiwiki.jp/rage2050/?FrontPage)
 - [简体中文](http://www.ankichina.net/manual/anki/)
 
-If you would like to help translate the manual into a different language,
-please see the [translation docs](https://translating.ankiweb.net/anki/manual.html).
+Якщо ви б хотіли допомогти з перекладом довідника іншою мовою, перегляньте
+[документи для перекладачів](https://translating.ankiweb.net/anki/manual.html).

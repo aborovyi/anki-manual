@@ -252,7 +252,7 @@ card or note:
 - **Replay Own Voice**: Replay the previous recording of your voice (presumably after showing
   the answer).
 
-## Display Order
+## Порядок показу
 
 Studying will show cards from the selected deck and any decks it
 contains. Thus, if you select your “French” deck, the subdecks

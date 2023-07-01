@@ -1,107 +1,113 @@
-# Getting Started
+# Початок роботи
 
 <!-- toc -->
 
-## Installing & Upgrading
+## Встановлення та оновлення
 
-Please see the instructions for your computer:
+Скористайтеся інструкціями для своєї системи:
 
 - [Windows](./platform/windows/installing.md)
 - [Mac](./platform/mac/installing.md)
 - [Linux](./platform/linux/installing.md)
 
-## Videos
+## Відео
 
-For a quick way to dive into Anki, please have a look at these intro
-videos. Some were made with a previous Anki version, but the concepts
-are the same.
+Щоб швидше ознайомитися з Anki, перегляньте наступні вступні відео (англійською
+мовою). Деякі з них записано для попередніх версій Anki, однак викладені
+поняття залишаються незмінними.
 
-- [Shared Decks and Review Basics](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on)
+- [Спільні колоди та основи пригадування](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on)
 
-- [Syncing](https://www.youtube.com/watch?v=YkiM4DPzSVc&list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&yt:cc=on)
+- [Синхронізація](https://www.youtube.com/watch?v=YkiM4DPzSVc&list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&yt:cc=on)
 
-- [Switching Card Order](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
+- [Зміна порядку карт](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on)
 
-- [Styling Cards](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)
+- [Зміна стилю карт](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on)
 
-- [Typing in the Answer](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
+- [Введення відповіді](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on)
 
-If YouTube is unavailable in your country, you can [download the videos](https://apps.ankiweb.net/downloads/archive/screencasts/2.0/)
-instead.
+Якщо у Вашій країні немає доступу до YouTube, ви можете
+[завантажити відео](https://apps.ankiweb.net/downloads/archive/screencasts/2.0/).
 
-## Key Concepts
+## Основні поняття
 
-### Cards
+### Картки
 
-A question and answer pair is called a 'card'. This is based on a paper
-flashcard with a question on one side and the answer on the back. In
-Anki a card doesn’t actually look like a physical card, and when you
-show the answer the question remains visible by default. For example, if
-you’re studying basic chemistry, you might see a question like:
+Запитання та відповідь формують пару, яка називається 'карткою'. Цей термін
+походить від паперової навчальної картки, на якій з однієї сторони знаходиться
+запитання, а з іншої - відповідь. Картка у Anki не виглядає так, як справжня
+картка, і, типово, коли Ви бачите відповідь, запитання теж видно.
+Наприклад, якщо Ви вивчаєте основи хімії, то можете зустріти таке запитання:
 
-    Q: Chemical symbol for oxygen?
+    П: Яким хімічним знаком позначається кисень?
 
-After thinking about it, and deciding the answer is O, you click the
-show answer button, and Anki shows you:
+Трішки подумавши, і вирішивши, що відповіддю буде О, Ви натискаєте на кнопку
+відображення відповіді, і Anki каже:
 
-    Q: Chemical symbol for oxygen?
-    A: O
+    П: Яким хімічним знаком позначається кисень?
+    В: О
 
-After confirming that you are correct, you can tell Anki how well you
-remembered, and Anki will choose a next time to show you again.
+Переконавшись у правильності відповіді, Ви можете сказати Anki наскільки добре
+запам'ятали картку, і Anki вирішить коли її показати наступного разу.
 
-#### Types of Cards
+#### Типи карток
 
-- **New:** A new card is one that you have downloaded or entered in, but have never studied before.
+- **Нова:** Новою є картка, яку Ви завантажити або створили, однак іще ні
+разу не вивчали.
 
-- **Learning:** Cards that were seen for the first time recently, and are still being learnt.
+- **Запам'ятовувальна:** Картки, які Ви бачили вперше нещодавно і їх все ще
+треба запам'ятати.
 
-- **Review:** Cards that were previously learnt, and now need to be reviewed so you don’t forget them.
-  There are two types of review cards:
-- **Young:** A young card is one that has an interval of less than 21 days, but is
-  not in learning.
-- **Mature:** A mature card is one that has an interval of 21 days or greater.
+- **Пригадувальна:** Картки, які було вивчено раніше, а тепер їх слід
+пригадати, щоб не забути.
+  Існує два типи пригадувальних карток:
+- **Молода:** Молодою є картка, яка має інтервал повторювання менше 21 дня,
+і не є запам'ятовувальною.
+- **Досвідчена:** Досвідченою є картка, яка має інтервал повторювання 21 день
+або більше.
 
-- **Relearn:** A relearning card is a card that you have failed in review mode, thus
-  returning it to learning mode to be relearned.
+- **Перезапам'ятовувальна:** Перезапам'ятовувальною є картка, на якій Ви
+помилилися у режимі пригадування, а тому вона повернулась у режим
+запам'ятовування для повторного вивчення.
 
-### Decks
+### Колоди
 
-A 'deck' is a group of cards. You can place cards in different decks to
-study parts of your card collection instead of studying everything at
-once. Each deck can have different settings, such as how many new cards
-to show each day, or how long to wait until cards are shown again.
+'Колода' є групою карток. Картки можна розкласти в різні колоди, щоб вивчати
+лише якусь частину, а не всі картки одночасно. Кожна колода має окремі
+налаштування, як от щоденна кількість нових карток для запам'ятовування чи
+скільки чекати перед наступним показом картки.
 
-Decks can contain other decks, which allows you to organize decks into a
-tree. Anki uses “::” to show different levels. A deck called
-“Chinese::Hanzi” refers to a “Hanzi” deck, which is part of a “Chinese”
-deck. If you select “Hanzi” then only the Hanzi cards will be shown; if
-you select “Chinese” then all Chinese cards, including Hanzi cards, will
-be shown.
+Колоди можуть містити інші колоди, утворюючи дерева колод. Anki використовує
+"::" щоб відокремлювати рівні. Наприклад, колода "Китайська::Ханьцзи" є
+колодою "Ханьцзи", яка знаходиться в колоді "Китайська". Якщо Ви оберете
+"Ханьцзи", тоді для вивчення будуть доступні лише ханьцзи картки; якщо ж
+оберете "Китайська", тоді будуть показувати всі китайські картки, включно з
+картками ханьцзи.
 
-To place decks into a tree, you can either name them with “::” between
-each level, or drag and drop them from the deck list. Decks that have
-been nested under another deck (that is, that have at least one “::” in
-their names) are often called 'subdecks', and top-level decks are
-sometimes called 'superdecks' or 'parent decks'.
+Розмістити колоду в дереві можна двома способами: або в її імені є "::", які
+будуть відділяти рівні, або ж її можна перетягнути у переліку колод. Колоди,
+які знаходяться всередині інших колод (ті, які мають у своїй назві принаймні
+одні "::") часто називаються 'підколодами', а колоди найвищого рівня -
+'суперколодами' або 'батьківськими колодами'.
 
-Anki starts with a deck called “default”; any cards which have somehow
-become separated from other decks will go here. Anki will hide the
-default deck if it contains no cards and you have added other decks.
-Alternatively, you may rename this deck and use it for other cards.
+Anki запускається з колодою, яка називається "default" (типова); до неї
+потраплятиме будь-яка картка, яка не входить до іншої колоди. Anki сховає
+типову колоду, щойно у ній не буде жодної картки і Ви маєте інші колоди.
+Також Ви можете перейменувати цю колоду та використовувати її для інших карток.
 
-Decks are displayed in the deck list alphabetically. This can result in
-a surprising order if your decks contain numbers - for example, "My Deck 10"
-will come before "My Deck 9", as 1 comes before 9. If you wish to number your
-decks, you can add a "0" in front of single-digit numbers, eg "Deck 01",
-"Deck 02" .. "Deck 10".
+Колоди розташовуються у переліку колод в алфавітному порядку. Цей порядок може
+виглядати дивним, якщо Ваші колоди містять числа. До прикладу, "Моя колода 10"
+з'явиться перед "Моя колода 9", оскільки 1 знаходиться перед 9. Якщо Ви бажаєте
+пронумерувати свої колоди, додавайте "0" перед одно цифровими числами, напр.
+"Колода 01", "Колода 02" ... "Колода 10".
 
-Decks are best used to hold broad categories of cards, rather than
-specific topics such as “food verbs” or “lesson 1”. For more info on
-this, please see the [using decks appropriately](editing.md#using-decks-appropriately) section.
+Колоди краще підходять для того, щоб охоплювати широкі категорії карток,
+а не окремі теми, як от "дієслова пов'язані з їжею" чи "урок 1". Більше
+інформації щодо цього наведено у параграфі
+[правильне використання колод](editing.md#правильне-використання-колод).
 
-For information on how decks affect the order cards are displayed in,
-please see the [display order](studying.md#display-order) section.
+Те, як колоди визначають порядок показу карток, описано у параграфі
+[порядок показу](studying.md#порядок-показу)
 
 ### Notes & Fields
 
