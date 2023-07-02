@@ -10,7 +10,8 @@ to start studying.
 Study in Anki is limited to the currently selected deck as well as any
 subdecks it contains.
 
-On the decks screen, your decks and subdecks will be displayed in a list. [New, Learn and Due (To Review)](getting-started.md#types-of-cards)
+On the decks screen, your decks and subdecks will be displayed in a list. 
+[New, Learn and Due (To Review)](getting-started.md#Типи-карток)
 cards for that day will be also displayed here.
 
 ![Decks screen](media/decks_screen.png)
@@ -32,7 +33,7 @@ how many cards are due today. This is called the 'deck overview' screen:
 
 ![Study overview](media/study_overview.png)
 
-The cards are split into [three types](getting-started.md#types-of-cards): New, Learning, and To Review.
+The cards are split into [three types](getting-started.md#Типи-карток): New, Learning, and To Review.
 If you have [Bury siblings](#siblings-and-burying) activated in your deck options, you
 may see how many cards will be buried in grey:
 
@@ -57,7 +58,7 @@ and show the answer than keep struggling to remember.
 When the answer is shown, you should compare the answer you thought of
 with the answer which is shown and tell Anki how well you remembered. If
 you don’t trust yourself to compare your answer accurately, you can ask
-Anki to [prompt you to type in the answer](templates/fields.md#checking-your-answer) rather than
+Anki to [prompt you to type in the answer](templates/fields.md#Перевірка-відповіді) rather than
 just showing it to you.
 
 ## Learning/Relearning Cards
@@ -261,7 +262,8 @@ well.
 
 The way Anki fetches cards from the decks depends on the algorithm used:
 
-- With the v1 scheduler, when a deck has subdecks, the cards will appear from [each deck in turn](studying.md#display-order).
+- With the v1 scheduler, when a deck has subdecks, the cards will appear from
+[each deck in turn](studying.md#Порядок-показу).
 
 - With the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
   when a deck has subdecks, reviews are taken from all children decks

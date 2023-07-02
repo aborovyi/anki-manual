@@ -227,7 +227,7 @@ of only certain fields by wrapping their references in some HTML:
     <div dir="rtl">{{Front}}</div>
 
 To change the direction of fields in the editor, please see
-the [editing](../editing.md#customizing-fields) section.
+the [editing](../editing.md#Пристосовування-полів) section.
 
 ## Other HTML
 

@@ -58,7 +58,7 @@ for that deck. There are some exceptions:
 
 - The new cards/day and reviews/day [limits](#daily-limits) behave differently
   depending on the scheduler version you have selected.
-- The [display order](#display-order) options in the v3 scheduler are taken from the
+- The [display order](studying.md#Порядок-показу) options in the v3 scheduler are taken from the
   deck you select to study, not the deck of the current card.
 
 For example, let's say you have this collection:
@@ -279,7 +279,7 @@ the deck of the currently displayed card.
 
 This section is only available when you have [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html) enabled.
 
-Some further information about display order is available in the [studying section](studying.md#display-order).
+Some further information about display order is available in the [studying section](studying.md#Порядок-показу).
 
 ### New Card Gather Order
 

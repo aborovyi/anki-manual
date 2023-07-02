@@ -81,7 +81,9 @@ Things to note from the above:
   parentheses, it matches either 'dog cat' or 'dog mouse', whereas
   without them it would match either 'dog and cat' or 'mouse'.
 
-- Anki is only able to search within formatting in the [sort field](editing.md#customizing-fields) you’ve configured. For example, if you add
+- Anki is only able to search within formatting in the 
+  [sort field](editing.md#Пристосовування-полів) you’ve configured. 
+  For example, if you add
   "**exa**mple" to one of your fields, this will not be matched when
   searching for "example" unless that field is the sort field. If a
   word is not formatted, or the formatting does not change in the
