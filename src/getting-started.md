@@ -279,55 +279,54 @@ Anki дозволяє створювати різні типи нотаток, �
 Вашою 'колекцією' є всі матеріали, які зберігаються у Anki: картки, нотатки,
 колоди, типи нотаток, параметри колод тощо.
 
-## Shared Decks
+## Спільні колоди
 
-You can watch [a video about Shared Decks and Review
-Basics](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on) on YouTube.
+На YouTube можна переглянути відео про [спільні колоди та основи
+пригадування](http://www.youtube.com/watch?v=QS2G-k2hQyg&yt:cc=on).
 
-The easiest way to get started with Anki is to download a deck of cards
-someone has shared:
+Найпростіше розпочати роботу з Anki, завантаживши, поширену кимсь, колоду карт:
 
-1. Click the “Get Shared” button at the bottom of the deck list.
+1. Клацніть на кнопку “Отримати спільні колоди”, яка знаходиться внизу під
+   списком колод.
 
-2. When you’ve found a deck you’re interested in, click the “Download”
-   button to download a deck package.
+2. Коли Ви знайшли потрібну колоду, натисніть на кнопку "Завантажити", щоб
+   завантажити пакунок з цією колодою.
 
-3. Double-click on the downloaded package to load it into Anki, or
-   File→Import it.
+3. Зробіть дворазове клацання на завантаженому пакунку щоб завантажити його до
+   Anki, або скористайтеся меню Файл→Імпортувати.
 
-Please note that it’s not currently possible to add shared decks
-directly to your AnkiWeb account. You need to import them with the
-desktop program, then synchronize to upload them to AnkiWeb.
+Зверніть увагу, що наразі неможливо додавати спільні колоди безпосередньо до
+рахунку у AnkiWeb. Спершу Вам потрібно імпортувати їх за допомогою настільної
+програми, а тоді синхронізуватися, щоб вивантажити до AnkiWeb.
 
-Creating your own deck is the most effective way to learn a complex
-subject. Subjects like languages and the sciences can’t be understood
-simply by memorizing facts — they require explanation and context to
-learn effectively. Furthermore, inputting the information yourself
-forces you to decide what the key points are, leading to a better
-understanding.
+Створення власної колоди є найефективнішим шляхом для вивчення складних
+предметів. Такі предмети як мови чи природничі науки не можна зрозуміти просто
+запам'ятовуючи факти - для ефективного навчання вони вимагають пояснень та
+розуміння контексту. Більш того, вводячи інформацію власноруч, Ви вирішуєте які
+поняття є ключовими, що призводить до кращого розуміння.
 
-If you are a language learner, you may be tempted to download a long
-list of words and their translations, but this won’t teach you a
-language any more than memorizing scientific equations will teach you
-astrophysics. To learn properly, you need textbooks, teachers, or
-exposure to real-world sentences.
+Якщо Ви вивчаєте мови, то можете спокуситися завантажити довгий перелік слів та
+їх переклад, однак це не наблизить Вас до вивчення мови так само як і
+запам'ятовування наукових рівнянь не наблизить до вивчення астрофізики. Щоб
+навчатися правильно, Вам необхідні підручники, вчителі або контакт з висловами
+реального світу.
 
-    Do not learn if you do not understand.
+    Не вчіть, якщо Ви не розумієте.
     --SuperMemo
 
-Most shared decks are created by people who are learning material
-outside of Anki – from textbooks, classes, TV, etc. They select the
-interesting points from what they learn and put them into Anki. They
-make no effort to add background information or explanations to the
-cards, because they already understand the material. So when someone
-else downloads their deck and tries to use it, they’ll find it very
-difficult as the background information and explanations are missing.
+Більшість спільних колод створено людьми, які вивчають матеріал за межами
+Anki - за допомогою підручників, уроків, ТБ тощо. Вони обирають цікаві точки
+з яких починають вчитися і додають їх до Anki. Ці люди не витрачають зусиль на
+запис додаткової інформації чи пояснень до карток, оскільки вони вже розуміють
+матеріал. Тому, коли хтось інший завантажує їх колоди та намагається ними
+скористатися, то опиняється у складній ситуації не маючи додаткової інформації
+та пояснень.
 
-That is not to say shared decks are useless – simply that for complex
-subjects, they should be used as a 'supplement' to external material,
-not as a 'replacement' for it. If you’re studying textbook ABC and
-someone has shared a deck of ideas from ABC, that’s a great way to save
-some time. And for simple subjects that are basically a list of facts,
-such as capital city names or pub quiz trivia, you probably don’t need
-external material. But if you attempt to study complex subjects without
-external material, you will probably meet with disappointing results.
+Це не означає, що спільні колоди є некорисними - просто для складних предметів
+вони повинні використовуватися як 'додатковий' зовнішній матеріал, а не як його
+'заміна'. Якщо Ви вчитеся за підручником АВС і хтось має спільну колоду ідей з
+АВС, тоді вона є прекрасним рішенням щоб зекономити трішки часу. А для простих
+предметів, які є звичайними переліками фактів, як от назви столиць чи
+завдання з паб-вікторин, Вам ймовірно, не треба зовнішнього матеріалу. Однак,
+якщо Ви спробуєте вивчати складні предмети без зовнішніх матеріалів, то цілком
+ймовірно, що результат Вас розчарує.
