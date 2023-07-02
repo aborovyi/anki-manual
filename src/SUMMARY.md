@@ -1,6 +1,6 @@
 # Summary
 
-[Introduction](intro.md)
+[Вступ](intro.md)
 
 - [Background](background.md)
 - [Platform Notes](platform/intro.md)
@@ -24,7 +24,7 @@
     - [Incorrect GTK Theme](platform/linux/gtk-theme.md)
     - [Wayland](platform/linux/wayland.md)
     - [Input Methods](platform/linux/input-methods.md)
-- [Getting Started](getting-started.md)
+- [Початок роботи](getting-started.md)
 - [Studying](studying.md)
 - [Adding/Editing](editing.md)
 - [Card Templates](templates/intro.md)
