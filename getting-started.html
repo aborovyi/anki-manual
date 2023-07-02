@@ -1,0 +1,530 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Getting Started - Anki Manual</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="css/kbd.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="intro.html">Introduction</a></li><li class="chapter-item "><a href="background.html"><strong aria-hidden="true">1.</strong> Background</a></li><li class="chapter-item "><a href="platform/intro.html"><strong aria-hidden="true">2.</strong> Platform Notes</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="platform/windows/installing.html"><strong aria-hidden="true">2.1.</strong> Windows</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="platform/windows/installing.html"><strong aria-hidden="true">2.1.1.</strong> Install & Upgrade</a></li><li class="chapter-item "><a href="platform/windows/installation-issues.html"><strong aria-hidden="true">2.1.2.</strong> Installation Issues</a></li><li class="chapter-item "><a href="platform/windows/startup-issues.html"><strong aria-hidden="true">2.1.3.</strong> Startup Issues</a></li><li class="chapter-item "><a href="platform/windows/display-issues.html"><strong aria-hidden="true">2.1.4.</strong> Display Issues</a></li><li class="chapter-item "><a href="platform/windows/copy-and-paste.html"><strong aria-hidden="true">2.1.5.</strong> Copy and Paste Issues</a></li><li class="chapter-item "><a href="platform/windows/text-size.html"><strong aria-hidden="true">2.1.6.</strong> Text Size</a></li><li class="chapter-item "><a href="platform/windows/permission-problems.html"><strong aria-hidden="true">2.1.7.</strong> Permission Problems</a></li></ol></li><li class="chapter-item "><a href="platform/mac/installing.html"><strong aria-hidden="true">2.2.</strong> macOS</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="platform/mac/installing.html"><strong aria-hidden="true">2.2.1.</strong> Install & Upgrade</a></li><li class="chapter-item "><a href="platform/mac/display-issues.html"><strong aria-hidden="true">2.2.2.</strong> Display Issues</a></li></ol></li><li class="chapter-item "><a href="platform/linux/installing.html"><strong aria-hidden="true">2.3.</strong> Linux</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="platform/linux/installing.html"><strong aria-hidden="true">2.3.1.</strong> Install & Upgrade</a></li><li class="chapter-item "><a href="platform/linux/missing-libraries.html"><strong aria-hidden="true">2.3.2.</strong> Missing Libraries</a></li><li class="chapter-item "><a href="platform/linux/display-issues.html"><strong aria-hidden="true">2.3.3.</strong> Display Issues</a></li><li class="chapter-item "><a href="platform/linux/blank-window.html"><strong aria-hidden="true">2.3.4.</strong> Blank Main Window</a></li><li class="chapter-item "><a href="platform/linux/distro-packages.html"><strong aria-hidden="true">2.3.5.</strong> Linux Distro Packages</a></li><li class="chapter-item "><a href="platform/linux/gtk-theme.html"><strong aria-hidden="true">2.3.6.</strong> Incorrect GTK Theme</a></li><li class="chapter-item "><a href="platform/linux/wayland.html"><strong aria-hidden="true">2.3.7.</strong> Wayland</a></li><li class="chapter-item "><a href="platform/linux/input-methods.html"><strong aria-hidden="true">2.3.8.</strong> Input Methods</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="getting-started.html" class="active"><strong aria-hidden="true">3.</strong> Getting Started</a></li><li class="chapter-item "><a href="studying.html"><strong aria-hidden="true">4.</strong> Studying</a></li><li class="chapter-item "><a href="editing.html"><strong aria-hidden="true">5.</strong> Adding/Editing</a></li><li class="chapter-item "><a href="templates/intro.html"><strong aria-hidden="true">6.</strong> Card Templates</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="templates/fields.html"><strong aria-hidden="true">6.1.</strong> Field Replacements</a></li><li class="chapter-item "><a href="templates/generation.html"><strong aria-hidden="true">6.2.</strong> Card Generation</a></li><li class="chapter-item "><a href="templates/styling.html"><strong aria-hidden="true">6.3.</strong> Styling & HTML</a></li><li class="chapter-item "><a href="templates/errors.html"><strong aria-hidden="true">6.4.</strong> Checks and Errors</a></li></ol></li><li class="chapter-item "><a href="preferences.html"><strong aria-hidden="true">7.</strong> Preferences</a></li><li class="chapter-item "><a href="deck-options.html"><strong aria-hidden="true">8.</strong> Deck Options</a></li><li class="chapter-item "><a href="syncing.html"><strong aria-hidden="true">9.</strong> Syncing with AnkiWeb</a></li><li class="chapter-item "><a href="profiles.html"><strong aria-hidden="true">10.</strong> Profiles</a></li><li class="chapter-item "><a href="browsing.html"><strong aria-hidden="true">11.</strong> Browsing</a></li><li class="chapter-item "><a href="filtered-decks.html"><strong aria-hidden="true">12.</strong> Filtered Decks</a></li><li class="chapter-item "><a href="searching.html"><strong aria-hidden="true">13.</strong> Searching</a></li><li class="chapter-item "><a href="importing.html"><strong aria-hidden="true">14.</strong> Importing</a></li><li class="chapter-item "><a href="exporting.html"><strong aria-hidden="true">15.</strong> Exporting</a></li><li class="chapter-item "><a href="backups.html"><strong aria-hidden="true">16.</strong> Backups</a></li><li class="chapter-item "><a href="files.html"><strong aria-hidden="true">17.</strong> Managing Files</a></li><li class="chapter-item "><a href="stats.html"><strong aria-hidden="true">18.</strong> Statistics</a></li><li class="chapter-item "><a href="media.html"><strong aria-hidden="true">19.</strong> Media</a></li><li class="chapter-item "><a href="math.html"><strong aria-hidden="true">20.</strong> Math & Symbols</a></li><li class="chapter-item "><a href="leeches.html"><strong aria-hidden="true">21.</strong> Leeches</a></li><li class="chapter-item "><a href="addons.html"><strong aria-hidden="true">22.</strong> Add-ons</a></li><li class="chapter-item "><a href="sync-server.html"><strong aria-hidden="true">23.</strong> Sync Server</a></li><li class="chapter-item "><a href="misc.html"><strong aria-hidden="true">24.</strong> Miscellaneous</a></li><li class="chapter-item affix "><a href="contrib.html">Contributing</a></li><li class="chapter-item affix "><a href="faqs.html">FAQs</a></li><li class="chapter-item affix "><a href="resources.html">Resources</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Anki Manual</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/ankitects/anki-manual/" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="Початок-роботи"><a class="header" href="#Початок-роботи">Початок роботи</a></h1>
+<ul>
+<li><a href="#%D0%92%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F-%D1%82%D0%B0-%D0%BE%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F">Встановлення та оновлення</a></li>
+<li><a href="#%D0%92%D1%96%D0%B4%D0%B5%D0%BE">Відео</a></li>
+<li><a href="#%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D1%96-%D0%BF%D0%BE%D0%BD%D1%8F%D1%82%D1%82%D1%8F">Основні поняття</a>
+<ul>
+<li><a href="#%D0%9A%D0%B0%D1%80%D1%82%D0%BA%D0%B8">Картки</a>
+<ul>
+<li><a href="#%D0%A2%D0%B8%D0%BF%D0%B8-%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D0%BA">Типи карток</a></li>
+</ul>
+</li>
+<li><a href="#%D0%9A%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8">Колоди</a></li>
+<li><a href="#%D0%9D%D0%BE%D1%82%D0%B0%D1%82%D0%BA%D0%B8-%D1%82%D0%B0-%D0%BF%D0%BE%D0%BB%D1%8F">Нотатки та поля</a></li>
+<li><a href="#%D0%A2%D0%B8%D0%BF%D0%B8-%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D0%BA-1">Типи карток</a></li>
+<li><a href="#%D0%A2%D0%B8%D0%BF%D0%B8-%D0%BD%D0%BE%D1%82%D0%B0%D1%82%D0%BE%D0%BA">Типи нотаток</a></li>
+<li><a href="#%D0%9A%D0%BE%D0%BB%D0%B5%D0%BA%D1%86%D1%96%D1%8F">Колекція</a></li>
+</ul>
+</li>
+<li><a href="#%D0%A1%D0%BF%D1%96%D0%BB%D1%8C%D0%BD%D1%96-%D0%BA%D0%BE%D0%BB%D0%BE%D0%B4%D0%B8">Спільні колоди</a></li>
+</ul>
+<h2 id="Встановлення-та-оновлення"><a class="header" href="#Встановлення-та-оновлення">Встановлення та оновлення</a></h2>
+<p>Скористайтеся інструкціями для своєї системи:</p>
+<ul>
+<li><a href="./platform/windows/installing.html">Windows</a></li>
+<li><a href="./platform/mac/installing.html">Mac</a></li>
+<li><a href="./platform/linux/installing.html">Linux</a></li>
+</ul>
+<h2 id="Відео"><a class="header" href="#Відео">Відео</a></h2>
+<p>Щоб швидше ознайомитися з Anki, перегляньте наступні вступні відео (англійською
+мовою). Деякі з них записано для попередніх версій Anki, однак викладені
+поняття залишаються незмінними.</p>
+<ul>
+<li>
+<p><a href="http://www.youtube.com/watch?v=QS2G-k2hQyg&amp;yt:cc=on">Спільні колоди та основи пригадування</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=YkiM4DPzSVc&amp;list=PLGgmaKOIHykFoomqkBJAyGiDQ2kyiuTao&amp;yt:cc=on">Синхронізація</a></p>
+</li>
+<li>
+<p><a href="http://www.youtube.com/watch?v=DnbKwHEQ1mA&amp;yt:cc=on">Зміна порядку карт</a></p>
+</li>
+<li>
+<p><a href="http://www.youtube.com/watch?v=F1j1Zx0mXME&amp;yt:cc=on">Зміна стилю карт</a></p>
+</li>
+<li>
+<p><a href="http://www.youtube.com/watch?v=5tYObQ3ocrw&amp;yt:cc=on">Введення відповіді</a></p>
+</li>
+</ul>
+<p>Якщо у Вашій країні немає доступу до YouTube, ви можете
+<a href="https://apps.ankiweb.net/downloads/archive/screencasts/2.0/">завантажити відео</a>.</p>
+<h2 id="Основні-поняття"><a class="header" href="#Основні-поняття">Основні поняття</a></h2>
+<h3 id="Картки"><a class="header" href="#Картки">Картки</a></h3>
+<p>Запитання та відповідь формують пару, яка називається 'карткою'. Цей термін
+походить від паперової навчальної картки, на якій з однієї сторони знаходиться
+запитання, а з іншої - відповідь. Картка у Anki не виглядає так, як справжня
+картка, і, типово, коли Ви бачите відповідь, запитання теж видно.
+Наприклад, якщо Ви вивчаєте основи хімії, то можете зустріти таке запитання:</p>
+<pre><code>П: Яким хімічним знаком позначається кисень?
+</code></pre>
+<p>Трішки подумавши, і вирішивши, що відповіддю буде О, Ви натискаєте на кнопку
+відображення відповіді, і Anki каже:</p>
+<pre><code>П: Яким хімічним знаком позначається кисень?
+В: О
+</code></pre>
+<p>Переконавшись у правильності відповіді, Ви можете сказати Anki наскільки добре
+запам'ятали картку, і Anki вирішить коли її показати наступного разу.</p>
+<h4 id="Типи-карток"><a class="header" href="#Типи-карток">Типи карток</a></h4>
+<ul>
+<li>
+<p><strong>Нова:</strong> Новою є картка, яку Ви завантажити або створили, однак іще ні
+разу не вивчали.</p>
+</li>
+<li>
+<p><strong>Запам'ятовувальна:</strong> Картки, які Ви бачили вперше нещодавно і їх все ще
+треба запам'ятати.</p>
+</li>
+<li>
+<p><strong>Пригадувальна:</strong> Картки, які було вивчено раніше, а тепер їх слід
+пригадати, щоб не забути.
+Існує два типи пригадувальних карток:</p>
+</li>
+<li>
+<p><strong>Молода:</strong> Молодою є картка, яка має інтервал повторювання менше 21 дня,
+і не є запам'ятовувальною.</p>
+</li>
+<li>
+<p><strong>Досвідчена:</strong> Досвідченою є картка, яка має інтервал повторювання 21 день
+або більше.</p>
+</li>
+<li>
+<p><strong>Перезапам'ятовувальна:</strong> Перезапам'ятовувальною є картка, на якій Ви
+помилилися у режимі пригадування, а тому вона повернулась у режим
+запам'ятовування для повторного вивчення.</p>
+</li>
+</ul>
+<h3 id="Колоди"><a class="header" href="#Колоди">Колоди</a></h3>
+<p>'Колода' є групою карток. Картки можна розкласти в різні колоди, щоб вивчати
+лише якусь частину, а не всі картки одночасно. Кожна колода має окремі
+налаштування, як от щоденна кількість нових карток для запам'ятовування чи
+скільки чекати перед наступним показом картки.</p>
+<p>Колоди можуть містити інші колоди, утворюючи дерева колод. Anki використовує
+&quot;::&quot; щоб відокремлювати рівні. Наприклад, колода &quot;Китайська::Ханьцзи&quot; є
+колодою &quot;Ханьцзи&quot;, яка знаходиться в колоді &quot;Китайська&quot;. Якщо Ви оберете
+&quot;Ханьцзи&quot;, тоді для вивчення будуть доступні лише ханьцзи картки; якщо ж
+оберете &quot;Китайська&quot;, тоді будуть показувати всі китайські картки, включно з
+картками ханьцзи.</p>
+<p>Розмістити колоду в дереві можна двома способами: або в її імені є &quot;::&quot;, які
+будуть відділяти рівні, або ж її можна перетягнути у переліку колод. Колоди,
+які знаходяться всередині інших колод (ті, які мають у своїй назві принаймні
+одні &quot;::&quot;) часто називаються 'підколодами', а колоди найвищого рівня -
+'суперколодами' або 'батьківськими колодами'.</p>
+<p>Anki запускається з колодою, яка називається &quot;default&quot; (типова); до неї
+потраплятиме будь-яка картка, яка не входить до іншої колоди. Anki сховає
+типову колоду, щойно у ній не буде жодної картки і Ви маєте інші колоди.
+Також Ви можете перейменувати цю колоду та використовувати її для інших карток.</p>
+<p>Колоди розташовуються у переліку колод в алфавітному порядку. Цей порядок може
+виглядати дивним, якщо Ваші колоди містять числа. До прикладу, &quot;Моя колода 10&quot;
+з'явиться перед &quot;Моя колода 9&quot;, оскільки 1 знаходиться перед 9. Якщо Ви бажаєте
+пронумерувати свої колоди, додавайте &quot;0&quot; перед одно цифровими числами, напр.
+&quot;Колода 01&quot;, &quot;Колода 02&quot; ... &quot;Колода 10&quot;.</p>
+<p>Колоди краще підходять для того, щоб охоплювати широкі категорії карток,
+а не окремі теми, як от &quot;дієслова пов'язані з їжею&quot; чи &quot;урок 1&quot;. Більше
+інформації щодо цього наведено у параграфі
+<a href="editing.html#%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D1%8C%D0%BD%D0%B5-%D0%B2%D0%B8%D0%BA%D0%BE%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BD%D0%BD%D1%8F-%D0%BA%D0%BE%D0%BB%D0%BE%D0%B4">правильне використання колод</a>.</p>
+<p>Те, як колоди визначають порядок показу карток, описано у параграфі
+<a href="studying.html#%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA-%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D1%83">порядок показу</a></p>
+<h3 id="Нотатки-та-поля"><a class="header" href="#Нотатки-та-поля">Нотатки та поля</a></h3>
+<p>При створенні навчальних карток, щоб зв'язати між собою інформацію, часто
+потрібно створити більше аніж одну картку. Наприклад, якщо Ви вивчаєте
+французьку, і ви вивчили, що слово &quot;bonjour&quot; означає &quot;привіт&quot;, Ви можете
+хотіти створити одну картку, яка показує &quot;bonjour&quot; і просить Вас
+запам'ятати, що це - &quot;привіт&quot;, й іншу картку, яка показує &quot;привіт&quot;
+і просить запам'ятати &quot;bonjour&quot;. Перша картка перевіряє здатність розпізнати
+іншомовне слово, а інша - вміння його відтворити.</p>
+<p>Використовуючи паперові навчальні картки, єдине, що можна зробити - записати
+інформацію двічі: по одному разу для кожної картки. Деякі програми навчальних
+карток спрощують життя, надаючи можливість поміняти передню і задню сторони.
+Це суттєве покращення порівняно з паперовими картками, однак, існують два
+головних недоліки:</p>
+<ul>
+<li>
+<p>Оскільки такі програми не відстежують окремо Ваш поступ у розпізнаванні та
+відтворенні, картки можуть з'являтися у не оптимально. Як наслідок, Ви будете
+забувати більше ніж Вам хотілося б, або ж, вчити більше, аніж потрібно.</p>
+</li>
+<li>
+<p>Обертання питання і відповіді працює лише, коли Ви маєте абсолютно ідентичний
+вміст на кожній стороні. До прикладу, таким чином неможливо показати додаткову
+інформацію на зворотній стороні кожної картки.</p>
+</li>
+</ul>
+<p>Anki розв'язує цю задачі, дозволяючи розділити вміст карток на окремі блоки
+інформації. Ви можете сказати Anki, які частини інформації показувати на
+кожній стороні картки, і Anki подбає про створення Ваших карток та їх 
+оновлення, якщо Ви внесете в майбутньому зміни.</p>
+<p>Уявіть, що ми вчимо французький словник, і хочемо показувати на зворотній
+стороні кожної картки номер сторінки. Наша картка мала б виглядати отак:</p>
+<pre><code>П: Bonjour
+В: Привіт
+   ст. №12
+</code></pre>
+<p>І:</p>
+<pre><code>П: Привіт
+В: Bonjour
+   ст. №12
+</code></pre>
+<p>У цьому прикладі, ми маємо три блоки зв'язаної інформації: слово французькою,
+український відповідник і номер сторінки. Якщо ми складемо їх разом, вони
+виглядатимуть наступним чином:</p>
+<pre><code>Французька: Bonjour
+Українська: Привіт
+Сторінка: 12
+</code></pre>
+<p>У Anki, така пов'язана інформація називається 'нотаткою', а кожна частина
+інформації - 'полем'. Отже, ми можемо сказати, що цей тип нотатки має три поля:
+Французька, Англійська і Сторінка.</p>
+<p>Щоб додати та редагувати поля, під час додавання або редагування нотатки, 
+натисніть на кнопку “Поля…​”. Більше інформації про роботу з полями
+можна знайти у параграфі
+<a href="editing.html#%D0%BF%D1%80%D0%B8%D1%81%D1%82%D0%BE%D1%81%D0%BE%D0%B2%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-%D0%BF%D0%BE%D0%BB%D1%96%D0%B2">Пристосовування полів</a>.</p>
+<h3 id="Типи-карток-1"><a class="header" href="#Типи-карток-1">Типи карток</a></h3>
+<p>Для того, щоб Anki створював картки на основі наших нотаток, необхідно дати
+йому план, у якому буде вказано які поля повинні показуватися спереду і ззаду
+кожної картки. Цей план називається 'тип картки'. Кожен тип нотатки може мати
+один або кілька типів карток; коли Ви додаєте нотатку, Anki створить по одній
+картці для кожного типу картки.</p>
+<p>Кожний тип картки має два 'шаблони', один для запитання і один для відповіді.
+У наведеному вище французькому прикладі, ми хотіли щоб картка для розпізнавання
+виглядало наступним чином:</p>
+<pre><code>П: Bonjour
+В: Привіт
+   ст. №12
+</code></pre>
+<p>Щоб отримати такий вигляд, ми можемо зробити наступні шаблони для запитання і
+відповіді:</p>
+<pre><code>П: {{Французька}}
+В: {{Українська}}&lt;br&gt;
+   ст. №{{Сторінка}}
+</code></pre>
+<p>Огорнувши ім'я поля подвійними хвилястими дужками, ми просимо Anki замінити
+цей блок інформацією, з відповідного поля. Будь-що, що не огорнуте хвилястими
+дужками, буде саме так і показано на кожній картці. (Наприклад, при додаванні
+нового матеріалу нам не потрібно друкувати &quot;ст. №&quot; у полі Сторінка - цей текст
+додасться автоматично до кожної картки.) &lt;br&gt; є спеціальним кодом, який
+каже Anki перенести інформацію на наступний рядок; більше про це розказано у
+параграфі <a href="templates/intro.html">Шаблони карток</a>.</p>
+<p>Створити шаблон для картки відтворення можна схожим чином:</p>
+<pre><code>П: {{Українська}}
+В: {{Французька}}&lt;br&gt;
+   {{Сторінка}}
+</code></pre>
+<p>Опісля того, як тип картки буде створено, щоразу, при додаванні нотатки, на
+основі вказаного типу буде створюватися картка. Типи карток спрощують
+зберігання однорідного вигляду карток і суттєво зменшують кількість зусиль,
+які слід затратити на додавання інформації. Іншим їх призначенням є те, що
+Anki може впевнитися, що пов'язані картки не з'являються досить близько одна
+від одної, і вони дозволяють Вам виправити хибодруки або справжні помилки один
+раз та оновити усі пов'язані картки одночасно.</p>
+<p>Щоб додати або відредагувати типи карток, натисніть на кнопку &quot;Картки…&quot; під
+час додавання чи редагування нотаток. Більше інформації про типи карток
+подано у параграфі <a href="templates/intro.html">Шаблони карток</a>.</p>
+<h3 id="Типи-нотаток"><a class="header" href="#Типи-нотаток">Типи нотаток</a></h3>
+<p>Anki дозволяє створювати різні типи нотаток, залежно від матеріалу. Кожен тип
+нотаток має власний набір полів та типів карток. Створення типів нотаток для
+кожної широкої області навчання є хорошою ідеєю. У, згаданому вище прикладі
+французької, ми могли створити для вивчення тип нотатки, який називався
+&quot;Французька&quot;. Якщо ми б хотіли вивчати столиці, то могли б створити для цього
+окремий тип нотаток, з такими полями як &quot;Країна&quot; та &quot;Столиця&quot;.</p>
+<p>Коли Anki перевіряє наявність дублікатів, він порівнює нотатки одного типу.
+Таким чином, якщо Ви додасте столицю &quot;Мале&quot; використовуючи тип нотатки
+Столиці, то, вивчаючи як вимовляється &quot;мале&quot; французькою, Ви не побачите
+повідомлення про наявність дублікату.</p>
+<p>Коли Ви створюєте нову колекцію, Anki автоматично додає до неї деякі стандартні
+типи нотаток. Ці типи нотаток полегшують новим користувачам роботу з Anki,
+однак, для тривалого використання ми все ж радимо створювати власні типи
+нотаток для матеріалу, який Ви вивчаєте. Існують наступні стандартні типи
+нотаток:</p>
+<ul>
+<li>
+<p><strong>Базовий</strong>
+Має поля &quot;Передня сторона&quot; і &quot;Зворотна сторона&quot;, і створює одну картку. Текст
+який Ви введете на Передній стороні з'явиться на передній стороні картки, а
+текст, введений на Зворотній стороні - на звороті.</p>
+</li>
+<li>
+<p><strong>Базовий (зі зворотною карткою)</strong>
+Схожа на Базовий, однак створює дві картки для введеного тексту: одну для
+полів перед→зворот, а іншу - зворот→перед.</p>
+</li>
+<li>
+<p><strong>Базовий (з необов'язковою зворотною карткою)</strong>
+Це картка формату перед→зворот з можливістю створення картки зворот→перед.
+Для цього у ній передбачено третє поле &quot;Додати зворотну сторону&quot;. Зворотну
+картку буде створено, якщо Ви введете текст у це поле. Детальніше про це
+сказано у параграфі <a href="templates/intro.html">Шаблони карток</a>.</p>
+</li>
+<li>
+<p><strong>Базовий (з вдрукуванням відповіді)</strong>
+Фактично, це є базова картка з додатковим текстовим полем спереду, у яке
+потрібно вдрукувати відповідь. Після перевертання на зворот, введений текст
+буде перевірено та порівняно з відповіддю. Детальніше про це сказано
+у параграфі <a href="templates/fields.html#%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D1%96%D1%80%D0%BA%D0%B0-%D0%B2%D1%96%D0%B4%D0%BF%D0%BE%D0%B2%D1%96%D0%B4%D1%96">Перевірка відповіді</a>.</p>
+</li>
+<li>
+<p><strong>Закритий текст</strong>
+Тип нотатки який полегшує вибір тексту та перетворення його у закритий текст
+(напр. &quot;Людина ступила на місяць у […​] році&quot; → &quot;Людина ступила на
+місяць у 1969 році&quot;). Детальніше про це сказано у параграфі
+<a href="editing.html#%D0%B7%D0%B0%D0%BA%D1%80%D0%B8%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F-%D1%82%D0%B5%D0%BA%D1%81%D1%82%D1%83">Закривання тексту</a></p>
+</li>
+</ul>
+<p>Додати власні типи нотаток або змінити наявні можна з головного вікна Anki,
+натиснувши на Інструменти→Керувати типами нотаток.</p>
+<p>Нотатки та типи нотаток не обмежуються однією колодою, а є спільними для
+цілої колекції. Таким чином, можна мати як різні типи нотаток у одній колоді,
+так і згенеровані з однієї нотатки різні картки у різних колодах. Додаючи
+нотатки за допомогою кнопки Додати головного вікна, можна обрати майбутній тип
+нотатки і колоду, і ці два варіанти вибору є повністю незалежними один від 
+одного. Для деяких нотаток можна змінити тип <a href="browsing.html">після створення</a>.</p>
+<h3 id="Колекція"><a class="header" href="#Колекція">Колекція</a></h3>
+<p>Вашою 'колекцією' є всі матеріали, які зберігаються у Anki: картки, нотатки,
+колоди, типи нотаток, параметри колод тощо.</p>
+<h2 id="Спільні-колоди"><a class="header" href="#Спільні-колоди">Спільні колоди</a></h2>
+<p>На YouTube можна переглянути відео про <a href="http://www.youtube.com/watch?v=QS2G-k2hQyg&amp;yt:cc=on">спільні колоди та основи
+пригадування</a>.</p>
+<p>Найпростіше розпочати роботу з Anki, завантаживши, поширену кимсь, колоду карт:</p>
+<ol>
+<li>
+<p>Клацніть на кнопку “Отримати спільні колоди”, яка знаходиться внизу під
+списком колод.</p>
+</li>
+<li>
+<p>Коли Ви знайшли потрібну колоду, натисніть на кнопку &quot;Завантажити&quot;, щоб
+завантажити пакунок з цією колодою.</p>
+</li>
+<li>
+<p>Зробіть дворазове клацання на завантаженому пакунку щоб завантажити його до
+Anki, або скористайтеся меню Файл→Імпортувати.</p>
+</li>
+</ol>
+<p>Зверніть увагу, що наразі неможливо додавати спільні колоди безпосередньо до
+рахунку у AnkiWeb. Спершу Вам потрібно імпортувати їх за допомогою настільної
+програми, а тоді синхронізуватися, щоб вивантажити до AnkiWeb.</p>
+<p>Створення власної колоди є найефективнішим шляхом для вивчення складних
+предметів. Такі предмети як мови чи природничі науки не можна зрозуміти просто
+запам'ятовуючи факти - для ефективного навчання вони вимагають пояснень та
+розуміння контексту. Більш того, вводячи інформацію власноруч, Ви вирішуєте які
+поняття є ключовими, що призводить до кращого розуміння.</p>
+<p>Якщо Ви вивчаєте мови, то можете спокуситися завантажити довгий перелік слів та
+їх переклад, однак це не наблизить Вас до вивчення мови так само як і
+запам'ятовування наукових рівнянь не наблизить до вивчення астрофізики. Щоб
+навчатися правильно, Вам необхідні підручники, вчителі або контакт з висловами
+реального світу.</p>
+<pre><code>Не вчіть, якщо Ви не розумієте.
+--SuperMemo
+</code></pre>
+<p>Більшість спільних колод створено людьми, які вивчають матеріал за межами
+Anki - за допомогою підручників, уроків, ТБ тощо. Вони обирають цікаві точки
+з яких починають вчитися і додають їх до Anki. Ці люди не витрачають зусиль на
+запис додаткової інформації чи пояснень до карток, оскільки вони вже розуміють
+матеріал. Тому, коли хтось інший завантажує їх колоди та намагається ними
+скористатися, то опиняється у складній ситуації не маючи додаткової інформації
+та пояснень.</p>
+<p>Це не означає, що спільні колоди є некорисними - просто для складних предметів
+вони повинні використовуватися як 'додатковий' зовнішній матеріал, а не як його
+'заміна'. Якщо Ви вчитеся за підручником АВС і хтось має спільну колоду ідей з
+АВС, тоді вона є прекрасним рішенням щоб зекономити трішки часу. А для простих
+предметів, які є звичайними переліками фактів, як от назви столиць чи
+завдання з паб-вікторин, Вам ймовірно, не треба зовнішнього матеріалу. Однак,
+якщо Ви спробуєте вивчати складні предмети без зовнішніх матеріалів, то цілком
+ймовірно, що результат Вас розчарує.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="platform/linux/input-methods.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="studying.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="platform/linux/input-methods.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="studying.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
