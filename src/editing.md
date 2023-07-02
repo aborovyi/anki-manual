@@ -320,7 +320,7 @@ hold down the <kbd>Shift</kbd> key while pasting, Anki will strip most of the
 formatting. Under Preferences, you can toggle "Paste without shift
 key strips formatting" to modify the default behaviour.
 
-## Cloze Deletion
+## Закривання тексту
 
 'Cloze deletion' is the process of hiding one or more words in a
 sentence. For example, if you have the sentence:

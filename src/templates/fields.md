@@ -360,7 +360,7 @@ importing/exporting, and so on. Examples that won’t work:
 Instead, you should include the media references in the field. Please
 see the [importing section](../importing.md#importing-media) for more information.
 
-## Checking Your Answer
+## Перевірка відповіді
 
 You can watch [a video about this feature](http://www.youtube.com/watch?v=5tYObQ3ocrw&yt:cc=on) on
 YouTube.

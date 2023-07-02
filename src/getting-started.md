@@ -217,63 +217,62 @@ Anki може впевнитися, що пов'язані картки не з'
 час додавання чи редагування нотаток. Більше інформації про типи карток
 подано у параграфі [Шаблони карток](templates/intro.md).
 
-### Note Types
+### Типи нотаток
 
-Anki allows you to create different types of notes for different
-material. Each type of note has its own set of fields and card types.
-It’s a good idea to create a separate note type for each broad topic
-you’re studying. In the above French example, we might create a note
-type called “French” for that. If we wanted to learn capital cities, we
-could create a separate note type for that as well, with fields such as
-“Country” and “Capital City”.
+Anki дозволяє створювати різні типи нотаток, залежно від матеріалу. Кожен тип
+нотаток має власний набір полів та типів карток. Створення типів нотаток для
+кожної широкої області навчання є хорошою ідеєю. У, згаданому вище прикладі
+французької, ми могли створити для вивчення тип нотатки, який називався
+"Французька". Якщо ми б хотіли вивчати столиці, то могли б створити для цього
+окремий тип нотаток, з такими полями як "Країна" та "Столиця".
 
-When Anki checks for duplicates, it only compares other notes of the
-same type. Thus if you add a capital city called “Orange” using the
-capital city note type, you won’t see a duplicate message when it comes
-time to learn how to say “orange” in French.
+Коли Anki перевіряє наявність дублікатів, він порівнює нотатки одного типу.
+Таким чином, якщо Ви додасте столицю "Мале" використовуючи тип нотатки
+Столиці, то, вивчаючи як вимовляється "мале" французькою, Ви не побачите
+повідомлення про наявність дублікату.
 
-When you create a new collection, Anki automatically adds some standard
-note types to it. These note types are provided to make Anki easier for
-new users, but in the long run it’s recommended you define your own note
-types for the content you are learning. The standard note types are as
-follows:
+Коли Ви створюєте нову колекцію, Anki автоматично додає до неї деякі стандартні
+типи нотаток. Ці типи нотаток полегшують новим користувачам роботу з Anki,
+однак, для тривалого використання ми все ж радимо створювати власні типи
+нотаток для матеріалу, який Ви вивчаєте. Існують наступні стандартні типи
+нотаток:
 
-- **Basic**
-  Has Front and Back fields, and will create one card. Text you enter in
-  Front will appear on the front of the card, and text you enter in Back
-  will appear on the back of the card.
+- **Базовий**
+  Має поля "Передня сторона" і "Зворотна сторона", і створює одну картку. Текст
+  який Ви введете на Передній стороні з'явиться на передній стороні картки, а
+  текст, введений на Зворотній стороні - на звороті.
 
-- **Basic (and reversed card)**\
-  Like Basic, but creates two cards for the text you enter: one from
-  front→back and one from back→front.
+- **Базовий (зі зворотною карткою)**
+  Схожа на Базовий, однак створює дві картки для введеного тексту: одну для
+  полів перед→зворот, а іншу - зворот→перед.
 
-- **Basic (optional reversed card)**
-  This is a front→back card, and optionally a back→front card. To do this,
-  it has a third field called “Add Reverse.” If you enter any text into
-  that field, a reverse card will be created. More information about this
-  is available in the [Cards and Templates](templates/intro.md) section.
+- **Базовий (з необов'язковою зворотною карткою)**
+  Це картка формату перед→зворот з можливістю створення картки зворот→перед.
+  Для цього у ній передбачено третє поле "Додати зворотну сторону". Зворотну
+  картку буде створено, якщо Ви введете текст у це поле. Детальніше про це
+  сказано у параграфі [Шаблони карток](templates/intro.md).
 
-- **Basic (type in the answer)**
-  This is essentially Basic, with an extra text box on the front where you
-  can type your answer in, after flipping to the back your input would be
-  checked and compared with the answer. More information is available in the
-  [Checking Your Answer](templates/fields.md#checking-your-answer) section.
+- **Базовий (з вдрукуванням відповіді)**
+  Фактично, це є базова картка з додатковим текстовим полем спереду, у яке
+  потрібно вдрукувати відповідь. Після перевертання на зворот, введений текст
+  буде перевірено та порівняно з відповіддю. Детальніше про це сказано
+  у параграфі [Перевірка відповіді](templates/fields.md#перевірка-відповіді).
 
-- **Cloze**\
-  A note type which makes it easy to select text and turn it into a cloze
-  deletion (e.g., “Man landed on the moon in \[…​\]” → “Man landed on the
-  moon in 1969”). More information is available in the [cloze deletion](editing.md#cloze-deletion) section.
+- **Закритий текст**
+  Тип нотатки який полегшує вибір тексту та перетворення його у закритий текст
+  (напр. "Людина ступила на місяць у \[…​\] році" → "Людина ступила на
+  місяць у 1969 році"). Детальніше про це сказано у параграфі
+  [Закривання тексту](editing.md#закривання-тексту)
 
-To add your own note types and modify existing ones, you can use Tools →
-Manage Note Types from the main Anki window.
+Додати власні типи нотаток або змінити наявні можна з головного вікна Anki,
+натиснувши на Інструменти→Керувати типами нотаток.
 
-Notes and note types are common to your whole collection rather than
-limited to an individual deck. This means you can use many different
-types of notes in a particular deck, or have different cards generated
-from a particular note in different decks. When you add notes using the
-Add window, you can select what note type to use and what deck to use,
-and these choices are completely independent of each other. You can also
-change the note type of some notes [after you’ve already created them](browsing.md).
+Нотатки та типи нотаток не обмежуються однією колодою, а є спільними для
+цілої колекції. Таким чином, можна мати як різні типи нотаток у одній колоді,
+так і згенеровані з однієї нотатки різні картки у різних колодах. Додаючи
+нотатки за допомогою кнопки Додати головного вікна, можна обрати майбутній тип
+нотатки і колоду, і ці два варіанти вибору є повністю незалежними один від 
+одного. Для деяких нотаток можна змінити тип [після створення](browsing.md).
 
 ### Collection
 
