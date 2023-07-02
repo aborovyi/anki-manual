@@ -5,22 +5,23 @@
 ## Adding Cards and Notes
 
 Recall from the [basics](getting-started.md) that in Anki we add notes rather than
-cards, and Anki creates cards for us. Click 'Add' in the [main window](studying.md#decks),
-and the Add Notes window will appear.
+cards, and Anki creates cards for us. Click 'Add' in the 
+[main window](studying.md#decks), and the Add Notes window will appear.
 
 ![Add Screen](media/add_screen.png)
 
-The top left of the window shows us the current [note type](getting-started.md#note-types). If it does
+The top left of the window shows us the current
+[note type](getting-started.md#Типи-нотаток). If it does
 not say "Basic," then you may have added some note types when you
 downloaded a shared deck. The text below assumes that "Basic" is
 selected.
 
-The top right of the window shows us the [deck](getting-started.md#decks) cards will be added to. If
+The top right of the window shows us the [deck](getting-started.md#Колоди) cards will be added to. If
 you would like to add cards to a new deck, you can click on the deck name
 button and then click "Add".
 
 Below the note type, you'll see some buttons, and an area labelled
-"Front" and "Back". Front and Back are called [fields](getting-started.md#notes--fields), and you can add,
+"Front" and "Back". Front and Back are called [fields](getting-started.md#Нотатки-та-поля), and you can add,
 remove, and rename them by clicking the "Fields…​" button above.
 
 Below the fields is another area labelled "**tags**". Tags are labels that
@@ -137,7 +138,7 @@ reviewing; for that, please see [templates](templates/intro.md).
   [templates](templates/intro.md) section. If you have enabled the "type in the
   answer" function, however, the text you type will use the font size
   defined here. (For information about how to change the actual font face
-  when typing the answer, please see the [checking your answer](templates/fields.md#checking-your-answer) section.)
+  when typing the answer, please see the [checking your answer](templates/fields.md#Перевірка-відповіді) section.)
 
 - **Sort by this field…​** tells Anki to show this field in the Sort Field
   column of the browser. You can use this to sort cards by that field.
@@ -174,7 +175,7 @@ decks or manage your note types.
 
 ### Правильне використання колод
 
-[Decks](getting-started.md#decks) are designed to divide your content up into
+[Decks](getting-started.md#Колоди) are designed to divide your content up into
 broad categories that you wish to study separately, such as English, Geography,
 and so on. You may be tempted to create lots of little decks to keep your
 content organized, such as "my geography book chapter 1", or "food verbs", but
@@ -208,7 +209,8 @@ Some people prefer using decks and subdecks to keep their cards organized,
 but using tags have a big advantage over decks for that: you can add several
 tags to a single note, but a single card can only belong to one deck, which
 makes tags a more powerful and flexible categorization system than
-decks in most cases. You can also organize tags in trees [in the same way as you can do for decks](getting-started.md#decks).
+decks in most cases. You can also organize tags in trees 
+[in the same way as you can do for decks](getting-started.md#Колоди).
 
 For example, instead of creating a "food verbs" deck, you could add those
 cards to your main language study deck, and tag the cards with "food" and
@@ -218,7 +220,8 @@ food-related vocabulary, or all verbs that are related to food.
 
 You can add tags from the Edit window and from the [Browser](browsing.md), and you can also add,
 delete, rename, or organize tags there. Please note that
-tags work at [note](getting-started.md#notes--fields) level, which means that when you tag a card that has siblings,
+tags work at [note](getting-started.md#Нотатки-та-поля) level, which means
+that when you tag a card that has siblings,
 all the siblings will be tagged as well. If you need to tag a single card,
 but not its siblings, you should consider using flags instead.
 
@@ -229,7 +232,7 @@ window, showing a colored flag icon on the upper right area of the screen.
 You can also search for flagged cards in the Browse screen, rename flags
 from the browser and create filtered decks from flagged cards, but unlike tags,
 a single card can have only one flag at a time. Another important difference
-is that flags work at [card](getting-started.md#cards) level, so flagging a card that has siblings
+is that flags work at [card](getting-started.md#Картки) level, so flagging a card that has siblings
 won't have any effect on the card's siblings.
 
 You can flag / unflag cards directly while in review mode (by pressing
@@ -273,7 +276,8 @@ The editor is shown when [adding notes](editing.md), [editing a note](studying.m
 
 ![Editor icons](media/editor_icons.png)
 
-On the top left are two buttons, which open the [fields](editing.md#customizing-fields) and
+On the top left are two buttons, which open the 
+[fields](editing.md#Пристосовування-полів) and
 [cards](templates/intro.md) windows.
 
 On the right are buttons that control formatting. Bold, italic and
@@ -388,7 +392,7 @@ When the card comes up for review, it will appear as:
     [city] was founded in 1913.
 
 For information on testing your ability to type in a cloze deletion
-correctly, please see the section on [typing answers](templates/fields.md#checking-your-answer).
+correctly, please see the section on [typing answers](templates/fields.md#Перевірка-відповіді).
 
 From version 2.1.56, nested cloze deletions are supported. For example, the following is valid:
 
