@@ -2,7 +2,7 @@
 
 [Вступ](intro.md)
 
-- [Background](background.md)
+- [Передумови](background.md)
 - [Platform Notes](platform/intro.md)
   - [Windows](platform/windows/installing.md)
     - [Install & Upgrade](platform/windows/installing.md)
