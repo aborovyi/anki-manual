@@ -79,62 +79,61 @@ _Активна перевірка пригадування_ полягає в �
 Ви використовуєте паперові навчальні картки, то маючи лише 30, дуже легко їх
 пролистати. Однак задача виглядає складною, щойно карток стає 300 або 3000.
 
-## Spaced Repetition
+## Інтервальне повторювання
 
-The _spacing effect_ was reported by a German psychologist Hermann Ebbinghaus in 1885. He
-observed that we tend to remember things more effectively, if we spread
-reviews out over time, instead of studying multiple times in one
-session. Since the 1930s, there have been a number of proposals for
-utilizing the spacing effect to improve learning, in what has come to be
-called _spaced repetition_.
+_Ефект інтервалу_ було відкрито німецьким психологом Германом Еббінґаузом у
+1885 році. Він дослідив, що ми можемо запам'ятовувати інформацію ефективніше,
+якщо розіб'ємо пригадування на різні часові проміжки, замість того, щоб вчити
+матеріал за допомогою багаторазового повторювання в рамках однієї навчальної
+сесії. Починаючи з 1930-их запропоновано багато варіантів застосування
+ефекту інтервалу для покращення навчання. Зрештою, це вилилося у те, що ми
+сьогодні називаємо інтервальним повторюванням.
 
-One example was in 1972, when a German scientist called Sebastian Leitner
-popularized a method of spaced repetition with paper flashcards. By
-separating the paper cards into a series of boxes, and moving the
-cards to a different box on each successful or unsuccessful review, it
-was possible to see at a glance a rough estimate of how well a card was
-known and when it should be reviewed again. This was a great improvement
-over a single box of cards, and it has been widely adopted by
-computerized flashcard software. It is a rather rough approach however,
-as it cannot give you an exact date on which you should review something
-again, and it does not cope very well with material of varying
-difficulty.
+Ось іще один приклад з 1972 року, коли німецький науковець на ім'я Себастьян
+Лейтнер популяризував метод інтервального повторення з паперовими навчальними
+картками. Розкладаючи паперові картки у різні коробочки, і, перекладаючи до
+інших коробочок у випадку успішного або неуспішного пригадування картки, можна
+було швидко зробити оцінку того наскільки добре картку було вивчено та
+коли її слід переглянути знову. Такий підхід був суттєвим вдосконаленням,
+порівняно зі складанням всіх карток до однієї коробки, і він надалі широко
+використовувався у комп'ютерному ПЗ навчальних карток. Такий підхід є досить 
+грубим і не дозволяє запланувати точну дату, коли щось треба переглянути
+знову, а також він не дуже добре підходить для матеріалу мінливої складності.
 
-The biggest developments in the last 30 years have come from the authors
-of SuperMemo, a commercial flashcard program that implements spaced
-repetition. SuperMemo pioneered the concept of a system that keeps track
-of the ideal time to review material and optimizes itself based on the
-performance of the user.
+Найбільша розробка за останні 30 років припадає на авторів SuperMemo,
+комерційної програми навчальних карток, у якій реалізовано метод інтервального
+повторювання. SuperMemo першою розробили ідею системи, яка зберігає записи
+про ідеальний час повторювання матеріалу та самостійно оптимізується, залежно
+від продуктивності користувача.
 
-In SuperMemo's spaced repetition system, every time you answer a
-question, you tell the program how well you were able to remember it —
-whether you forgot completely, made a small mistake, remembered with
-trouble, remembered easily, etc. The program uses this feedback to
-decide the optimal time to show you the question again. Since a memory
-gets stronger each time you successfully recall it, the time between
-reviews gets bigger and bigger — so you may see a question for the first
-time, then 3 days later, 15 days later, 45 days later, and so on.
+У системі інтервального повторювання SuperMemo, щоразу, коли Ви відповідаєте на
+запитання, Ви кажете програмі наскільки добре Ви змогли запам'ятати його:
+повністю забули, зробили невеличку помилку, складно було запам'ятати, легко
+запам'ятали тощо. Програма використовує цей відгук щоб визначити оптимальний
+час наступного показу картки. Оскільки пам'ять міцнішає щоразу як Ви успішно
+пригадали матеріал, проміжок між повторюваннями стає більшим і більшим - таким
+чином Ви можете побачити запитання вперше, потім - через 3 дні, потім -
+через 15 днів, потім - через 45 тощо.
 
-This was a revolution in learning, as it meant material could be learnt
-and retained with the absolute minimum amount of effort necessary.
-SuperMemo's slogan sums it up: with spaced repetition, you can: "forget
-about forgetting".
+Такий підхід став революційним у навчанні, оскільки він дозволяв вивчати та
+підтримувати інформацію з мінімальними зусиллями. Це відобразилося у
+гаслі SuperMemo: «З інтервальним повторюванням ти можеш "забути забувати"».
 
-## Why Anki?
+## Чому Anki?
 
-While there is no denying the huge impact SuperMemo has had on the
-field, it is not without its problems. The program is often criticized
-for being buggy and difficult to navigate. It only runs on Windows
-computers. It is proprietary software, meaning that end-users cannot extend it
-or access the raw data. And while very old versions have been made available
-for free, they are quite limited for modern use.
+Не применшуючи великого вкладу SuperMemo у цій області, у неї теж є проблеми.
+Зараз програму критикують за те, що у ній багато дефектів та складна навігація.
+Вона працює лише на Windows комп'ютерах. Вона є запатентованим ПЗ, тобто
+кінцеві користувачі не можуть розширити її функціонал чи отримати доступ до
+«сирих» даних. І хоча дуже старі версії були доступними безкоштовно, вони є
+досить обмеженими для використання у сучасних реаліях.
 
-Anki addresses these issues. There are free clients for Anki available
-on many platforms, so struggling students and teachers with budgetary
-constraints are not left out. Anki is open source, with an already
-flourishing library of add-ons contributed by end-users. It is
-multi-platform, running on Windows, macOS, Linux/FreeBSD, and some
-mobile devices. And it is considerably easier to use than SuperMemo.
+Anki вирішує ці недоліки. Безкоштовні клієнти Anki доступні для багатьох
+платформ, а тому незабезпечені учні та вчителі з обмеженим бюджетом не залишені
+напризволяще. Anki є відкритим ПЗ з багатою бібліотекою додатків, що їх 
+створили користувачі. Вона є мультиплатформною та працює на Windows, macOS, 
+Linux/FreeBSD та деяких мобільних пристроях. І вона є суттєво легшою у
+використанні, порівняно з SuperMemo.
 
-Anki's spaced repetition system is based on an older version of the
-SuperMemo algorithm called [SM-2](faqs.md).
+Система інтервальних повторювань Anki базується на старішій версії алгоритму
+SuperMemo, який називається [SM-2](faqs.md).
