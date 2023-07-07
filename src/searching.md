@@ -236,7 +236,8 @@ reviews (both due and not due) and lapsed cards
 cards that have been manually suspended
 
 `is:buried`\
-cards that have been buried, either [automatically](studying.md#siblings-and-burying) or
+cards that have been buried, either 
+[automatically](studying.md#Сестринські-картки-та-відкладання) or
 manually
 
 Note that with the [new scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),

@@ -402,7 +402,7 @@ When Anki gathers cards, it first gathers intraday learning cards, then interday
 
 - Siblings later in the list can not bury earlier card types. For example, if you disable burying of new cards, and study a new card, it will not bury any interday learning or review cards, and you may see both a review sibling and new sibling in the same session.
 
-For more info about burying cards, please see [this section](./studying.md#siblings-and-burying) of the manual.
+For more info about burying cards, please see [this section](./studying.md#Сестринські-картки-та-відкладання) of the manual.
 
 ## Audio
 

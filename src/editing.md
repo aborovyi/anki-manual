@@ -6,7 +6,7 @@
 
 Recall from the [basics](getting-started.md) that in Anki we add notes rather than
 cards, and Anki creates cards for us. Click 'Add' in the 
-[main window](studying.md#decks), and the Add Notes window will appear.
+[main window](studying.md#Колоди), and the Add Notes window will appear.
 
 ![Add Screen](media/add_screen.png)
 

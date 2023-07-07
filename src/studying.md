@@ -1,50 +1,51 @@
-# Studying
+# Навчання
 
 <!-- toc -->
 
-When you have found a deck you like or entered some notes in, it’s time
-to start studying.
+Щойно Ви знайшли колоду, яка Вам сподобалась, або ж зробили декілька нотаток,
+настає час розпочати навчання.
 
-## Decks
+## Колоди
 
-Study in Anki is limited to the currently selected deck as well as any
-subdecks it contains.
+Навчання у Anki відбувається в межах обраної колоди та її підколод.
 
-On the decks screen, your decks and subdecks will be displayed in a list. 
-[New, Learn and Due (To Review)](getting-started.md#Типи-карток)
-cards for that day will be also displayed here.
+У вікні колод, Ваші колоди та підколоди будуть показуватися списком. Також, для
+поточного дня тут буде показано кількість карток
+[Нові, Запам'ятати та Пригадати](getting-started.md#Типи-карток).
 
 ![Decks screen](media/decks_screen.png)
 
-When you click on a deck, it will become the 'current deck', and Anki
-will change to the study screen. You can return to the deck list to
-change the currently selected deck at any time by clicking on “Decks” at
-the top of the main window. (You can also use the Study
-Deck action in the menu to select a new deck from the keyboard, or you
-can press the <kbd>s</kbd> key to study the currently selected deck.)
+Коли Ви клацнете на колоді, вона стане 'поточною колодою' а Anki перемкнеться
+до вікна навчання. Повернутися до списку колод, щоб змінити поточну колоду на
+іншу, можна у будь-який час, клацнувши на "Колоди" у верхній частині головного
+вікна. (Щоб обрати нову колоду за допомогою клавіатури, можна скористатися меню
+"Вчити колоду". Розпочати вивчення поточної колоди можна, натиснувши
+<kbd>s</kbd>.)
 
-You can click the gears button to the right of a deck to rename or
-delete a deck, change its [options](deck-options.md), or [export](exporting.md) it.
+Значок коліщатка, який знаходиться праворуч від колоди, дозволяє перейменувати,
+видалити змінити [налаштування](deck-options.md) або
+[експортувати](exporting.md) її.
 
-## Study Overview
+## Огляд навчання
 
-After clicking on a deck to study, you’ll see a screen that shows you
-how many cards are due today. This is called the 'deck overview' screen:
+Клацнувши на колоді для навчання, Ви побачите екран з кількістю карток на
+сьогодні. Він називається 'Огляд навчання':
 
 ![Study overview](media/study_overview.png)
 
-The cards are split into [three types](getting-started.md#Типи-карток): New, Learning, and To Review.
-If you have [Bury siblings](#siblings-and-burying) activated in your deck options, you
-may see how many cards will be buried in grey:
+Картки діляться на [три типи](getting-started.md#Типи-карток): Нові,
+Запам'ятати, Пригадати. Якщо у налаштуваннях колоди увімкнено опцію
+[Відкласти сестринські картки](#Сестринські-картки-та-відкладання), Ви можете
+побачити кількість відкладених карток, які позначені сірим кольором:
 
 ![Study overview (Buried Cards)](media/study_overview_buried_cards.png)
 
-To start a study session, click the **Study Now** button. Anki will
-proceed to show you cards until the cards to be shown for the day have
-run out.
+Щоб розпочати навчальну сесію, натисніть на кнопку **Вчити зараз**. Anki
+почне показувати Вам картки до тих пір, допоки картки, показ яких було
+заплановано на сьогодні, не закінчаться.
 
-While studying, you can return to the overview by pressing the <kbd>s</kbd> key
-on your keyboard.
+Підчас навчання, Ви можете повернутися до вікна огляду, натиснувши на
+клавіатурі клавішу <kbd>s</kbd>.
 
 ## Questions
 
@@ -187,9 +188,10 @@ card or note:
 
 - **Bury Card / Note**: Hides a card or all of the note’s cards from review until the next day.
   (If you want to unbury cards before then, you can click the “unbury”
-  button on the [deck overview](studying.md#study-overview) screen.) This is useful if
+  button on the [deck overview](studying.md#Огляд-навчання) screen.) This is useful if
   you cannot answer the card at the moment or you want to come back to it
-  another time. Burying can also [happen automatically](studying.md#siblings-and-burying) for
+  another time. Burying can also 
+  [happen automatically](studying.md#Сестринські-картки-та-відкладання) for
   cards of the same note.
 
   With the old scheduler, if cards were in learning when they are buried,
@@ -298,7 +300,7 @@ To control the order reviews from a given deck appear in, or change new
 cards from ordered to random order, please see the [deck options](deck-options.md). For more fine-grained ordering of new cards, you
 can change the order in the [browser](browsing.md).
 
-## Siblings and Burying
+## Сестринські картки та відкладання
 
 Recall from [the basics](getting-started.md) that Anki can create more than one
 card for each thing you input, such as a front→back card and a
@@ -309,7 +311,7 @@ When you answer a card that has siblings, Anki can prevent the card’s
 siblings from being shown in the same session by automatically 'burying'
 them. Buried cards are hidden from review until the clock rolls over to
 a new day or you manually unbury them using the “Unbury” button that’s
-visible at the bottom of the [deck overview](studying.md#study-overview) screen. Anki
+visible at the bottom of the [deck overview](studying.md#Огляд-навчання) screen. Anki
 will bury siblings even if the siblings are not in the same deck (for
 instance, if you use the [deck override](templates/intro.md) feature).
 
