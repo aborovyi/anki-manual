@@ -47,20 +47,20 @@
 Підчас навчання, Ви можете повернутися до вікна огляду, натиснувши на
 клавіатурі клавішу <kbd>s</kbd>.
 
-## Questions
+## Запитання
 
-When a card is shown, only the question is shown at first. After
-thinking about the answer, either click the **Show Answer** button, or
-press the spacebar. The answer will then be shown. It’s okay if it takes
-you a little while to recall the answer, but as a general rule if you
-can’t answer within about 10 seconds, it’s probably better to give up
-and show the answer than keep struggling to remember.
+Коли картка з'являється, Ви бачите лише запитання. Після того, як Ви подумали
+про ймовірну відповідь, клацніть на **Показати відповідь** або ж натисніть
+клавішу пробілу. Тоді з'явиться відповідь. Абсолютно нормально, якщо Вам слід
+трішки подумати над відповіддю, однак, зазвичай, якщо відповідь не спала Вам на
+гадку протягом 10 секунд, краще відкрити її, аніж мучитися з тим, щоб її
+пригадати.
 
-When the answer is shown, you should compare the answer you thought of
-with the answer which is shown and tell Anki how well you remembered. If
-you don’t trust yourself to compare your answer accurately, you can ask
-Anki to [prompt you to type in the answer](templates/fields.md#Перевірка-відповіді) rather than
-just showing it to you.
+Коли відповідь з'явиться, Вам слід порівняти власну відповідь з показаною, і
+сказати Anki наскільки добре Ви її запам'ятали. Якщо Ви не довіряєте собі
+у визначенні правильності відповіді, то можете вказати Anki, щоб вона
+[попросила Вас вдрукувати відповідь](templates/fields.md#Перевірка-відповіді)
+замість того щоб просто її показати.
 
 ## Learning/Relearning Cards
 
