@@ -163,10 +163,10 @@ The options are:
 - This deck: The limit is specific to this deck.
 - Today only: Make a temporary change to this deck's limit.
 
-## New Cards
+## Нові картки
 
 The settings in this section only affect new cards and cards in initial
-[learning](studying.md#learningrelearning-cards) mode. Once a card
+[learning](studying.md#Вивченняповторне-вивчення-карток) mode. Once a card
 has graduated (i.e. there are no more learning steps for this card), it becomes a
 [review card](studying.md#review-cards), and the
 settings in this section are no longer applicable.
@@ -193,7 +193,7 @@ If there’s nothing else to study, Anki will show cards up to 20 minutes
 early by default. The amount of time to look ahead is configurable in
 the [preferences](preferences.md).
 
-Please see the [learning](studying.md#learningrelearning-cards) section for more info on how
+Please see the [learning](studying.md#Вивченняповторне-вивчення-карток) section for more info on how
 steps work.
 
 #### Day Boundaries
@@ -211,7 +211,7 @@ The delay in days between answering "Good" on a learning card with no steps left
 and seeing the card again as a review card. Please see the example in the
 previous section.
 
-### Easy Interval
+### Легкий інтервал
 
 The delay between answering `Easy` on a learning
 card, and seeing it in review mode for the first time.

@@ -62,48 +62,56 @@
 [попросила Вас вдрукувати відповідь](templates/fields.md#Перевірка-відповіді)
 замість того щоб просто її показати.
 
-## Learning/Relearning Cards
+## Вивчення/повторне вивчення карток
 
-When learning new cards, or when relearning cards that you have
-forgotten, Anki will show you the cards one or more times to help you
-memorize them. Each time is called a 'learning step'. By default there
-are two steps: 1 minute and 10 minutes. You can change the number of
-steps and the delays between them in the [deck options](deck-options.md#new-cards).
+Коли Ви вивчаєте нові картки, або повторно вивчаєте забуті, Anki показує картку
+один або декілька разів, щоб допомогти Вам її запам'ятати. Кожен показ
+називається 'кроком навчання'. Типово існує два кроки: 1 хвилина та 10 хвилин.
+Ви можете змінити кількість кроків та затримки між ними у
+[налаштуваннях колоди](deck-options.md#Нові-картки).
 
-There are four rating buttons when learning:
+Протягом навчання показується чотири кнопки для оцінювання:
 
-- **Again** moves the card back to the first step.
+- **Знову** переміщує картку на перший крок.
 
-- **Hard** repeats the current step.
-  - If the card is on the first step, the delay will be the average of Again and Good.
-  - After the first step, Hard repeats the previous delay.
+- **Тяжко** повторює поточний крок.
+  - Якщо картка знаходиться на першому кроці, затримка визначатиметься як
+    середнє значення між Знову та Добре.
+  - Після першого кроку, Тяжко повторює попередню затримку.
 
-- **Good** moves the card to the [next step](deck-options.md#learning-steps). If the card was on the final
-  step, the card is converted into a review card (it 'graduates'). By
-  default, once the card has reached the end of the learning steps, the
-  card will be shown again the next day, then at increasingly long delays
-  (see the next section).
+- **Добре** переносить картку на 
+  [наступний крок](deck-options.md#learning-steps). Якщо картка була на
+  останньому кроці, тоді картка перетворюється у картку для пригадування (вона
+  'випускається'). Типово, щойно картка досягає кінця кроків навчання, її буде
+  показано наступного дня знову, а потім проміжки між показами будуть зростати
+  (дивіться наступний параграф).
 
-- **Easy** immediately converts the card into a review card, even if there
-  were steps remaining. [By default](deck-options.md#easy-interval), the card will be shown again 4 days
-  later, and then at increasingly long delays. In the v1 scheduler, the "Easy" button will not be
-  shown if you are in relearning mode as it would give the same interval
-  as “Good.” With the [v2 scheduler+](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-  when cards are in relearning, the "Easy" button boosts the interval by 1 day.
+- **Легко** одразу ж перетворює картку у картку для повторювання, навіть якщо
+  попереду були ще кроки для навчання. 
+  [Типово](deck-options.md#Легкий-інтервал), якщо Ви перебуваєте у режимі
+  повторювання, картка з'явиться знову через 4 дні, а далі проміжки між
+  показами будуть зростати. У планувальнику першої версії, кнопка "Легко" не
+  буде показуватися у режимі повторювання оскільки вона буде використовувати
+  той же інтервал, що й кнопка "Добре". У
+  [планувальнику версії 2 і вище](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
+  коли картка перебуває у режимі повторювання, кнопка "Легко" буде збільшувати
+  проміжок на один день.
 
-When cards are seen for the first time, they start at step one. This
-means answering **Good** on a card for the first time will show it one
-more time in 10 minutes, and the initial 1 minute step will be skipped.
-If you push Again, though, the card will come back in 1 minute.
+Коли картки показуються вперше, вони знаходяться на першому кроці. Таким чином,
+якщо першою відповіддю на картку буде "Добре", наступного разу її буде показано
+через 10 хвилин, а початковий однохвилинний крок буде пропущено. Якщо ж Ви
+натиснете на кнопку "Знову", тоді картка з'явиться знову через одну хвилину.
 
-You can use the <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> keys on your keyboard to select a particular
-button, where <kbd>1</kbd> is **Again**. Pressing <kbd>Space</kbd> or <kbd>Enter</kbd> will select
-**Good**.
+Щоб вибрати потрібну кнопку, Ви можете натискати на клавіатурі клавіші
+<kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> та <kbd>4</kbd>, де <kbd>1</kbd>
+відподвідає кнопці **Знову**. Натискання клавіш <kbd>Пробіл</kbd> або
+<kbd>Enter</kbd> рівносильне натисканню кнопки **Добре**.
 
-If there are no other cards to show you, Anki will show learning cards
-again even if their delay has not elapsed completely. If you’d prefer to
-wait the full learning delay, you can change this behaviour in
-[Preferences>Scheduling>Learn Ahead Limit](preferences.md).
+Якщо для показу не залишилося більше карток, тоді Anki знову покаже картки для
+вивчення, навіть, якщо таймер затримки показу ще не скінчився. Якщо Ви бажаєте
+чекати на повну затримку для навчання, змініть цю поведінку у меню
+[Інструменти > Налаштування > Повторювання > Планувальник > 
+Обмежити навчання наперед](preferences.md).
 
 ## Review Cards
 
