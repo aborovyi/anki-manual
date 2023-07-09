@@ -9,13 +9,13 @@
 
 Навчання у Anki відбувається в межах обраної колоди та її підколод.
 
-У вікні колод, Ваші колоди та підколоди будуть показуватися списком. Також, для
+Ваші колоди та підколоди будуть показуватися у вікні колод списком. Також, для
 поточного дня тут буде показано кількість карток
 [Нові, Запам'ятати та Пригадати](getting-started.md#Типи-карток).
 
 ![Decks screen](media/decks_screen.png)
 
-Коли Ви клацнете на колоді, вона стане 'поточною колодою' а Anki перемкнеться
+Колода стане 'поточною колодою', щойно Ви клацнете на ній, а Anki перемкнеться
 до вікна навчання. Повернутися до списку колод, щоб змінити поточну колоду на
 іншу, можна у будь-який час, клацнувши на "Колоди" у верхній частині головного
 вікна. (Щоб обрати нову колоду за допомогою клавіатури, можна скористатися меню
@@ -44,7 +44,7 @@
 почне показувати Вам картки до тих пір, допоки картки, показ яких було
 заплановано на сьогодні, не закінчаться.
 
-Підчас навчання, Ви можете повернутися до вікна огляду, натиснувши на
+Під час навчання, Ви можете повернутися до вікна огляду, натиснувши на
 клавіатурі клавішу <kbd>s</kbd>.
 
 ## Запитання
@@ -104,7 +104,7 @@
 
 Щоб вибрати потрібну кнопку, Ви можете натискати на клавіатурі клавіші
 <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> та <kbd>4</kbd>, де <kbd>1</kbd>
-відподвідає кнопці **Знову**. Натискання клавіш <kbd>Пробіл</kbd> або
+відповідає кнопці **Знову**. Натискання клавіш <kbd>Пробіл</kbd> або
 <kbd>Enter</kbd> рівносильне натисканню кнопки **Добре**.
 
 Якщо для показу не залишилося більше карток, тоді Anki знову покаже картки для
@@ -113,35 +113,42 @@
 [Інструменти > Налаштування > Повторювання > Планувальник > 
 Обмежити навчання наперед](preferences.md).
 
-## Review Cards
+## Пригадування карток
 
-When a card has been previously learnt and is ready to be reviewed
-again, there are four buttons to rate your answer:
+Коли, вивчену раніше, картку слід пригадати, оцінити свою відповідь можна за
+допомогою чотирьох кнопок:
 
-- **Again** marks your answer as incorrect and asks Anki to show the card
-  more frequently in the future. The card is said to have 'lapsed'. Please
-  see the [lapses](deck-options.md#lapses) section for more information about how lapsed
-  reviews are handled.
+- **Знову** позначає відповідь неправильною та просить Anki показувати
+  картку у майбутньому частіше. Така картка позначається 'невдалою'. Ви
+  знайдете більше інформації про те, як опрацьовуються невдалі пригадування у
+  параграфі [Невдачі](deck-options.md#Невдачі).
 
-- **Hard** by default, shows the card at a [slightly longer delay](deck-options.md#hard-interval)
-  than last time, and tells Anki to show the card more frequently in the future.
+- **Тяжко**, типово, показує картку з
+  [трішки більшою затримкою](deck-options.md#Інтервал-тяжкості) ніж
+  попереднього разу, і каже Anki показувати картку у майбутньому частше.
 
-- **Good** tells Anki that the last delay was about right, and the card
-  easiness doesn’t need to be adjusted down or up. At the [default starting easiness](deck-options.md#starting-ease), the card will be shown again approximately 2 1/2 times longer
-  than the previous time, so if you had waited 10 days to see the card
-  previously, the next delay would be about 25 days.
+- **Добре** вказує Anki, що останній інтервал вибрано вдало, і складність
+  вивчення картки не слід змінювати ані в сторону легкості, ані складності.
+  При [типовій початковій складності](deck-options.md#Початкова-складність),
+  картка буде показуватися знову приблизно через вдвічі з половиною довший
+  інтервал аніж попереднього разу. Отже, якщо попереднього разу картка
+  з'явилась через 10 днів, то наступний показ відбудеться через 25 днів.
 
-- **Easy** tells Anki you found the delay too short. The card will be
-  scheduled [further into the future than 'Good'](deck-options.md#easy-bonus), and Anki will schedule
-  the card less frequently in the future. Because 'Easy' rapidly increases
-  the delay, it’s best used for only the easiest of cards. Usually you
-  should find yourself answering 'Good' instead.
+- **Легко** каже Anki, що обраний інтервал був надто коротким. Наступний показ
+  картки буде заплановано
+  [значно пізніше, порівняно з 'Добре'](deck-options.md#Бонус-складності), і
+  Anki запланує значно рідші майбутні покази. Оскілки 'Легко' дуже сильно
+  збільшує інтервали, найкраще її використовувати для найлегших карток.
+  Зазвичай, Ви будете відповідати 'Добре'.
 
-As with learning cards, you can use <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> on the keyboard to select an
-answer. Pressing the <kbd>spacebar</kbd> or <kbd>Enter</kbd> will select **Good**.
+Так само, як і у випадку з навчальними картками, Ви можете використовувати
+клавіші <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> та <kbd>4</kbd> щоб обрати
+відповідь. Натискання клавіш <kbd>Пробіл</kbd> або <kbd>Enter</kbd> рівносильне
+натисканню кнопки **Добре**.
 
-See [Deck Options](deck-options.md) and the [FAQ](https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html)
-to learn more about how the algorithm works.
+Щоб дізнатися більше про роботу алгоритму перегляньте
+[Налаштування колоди](deck-options.md) та
+[ЧаПи](https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html).
 
 ## Due Counts
 

@@ -1,4 +1,4 @@
-# Deck Options
+# Налаштування колоди
 
 <!-- toc -->
 
@@ -168,7 +168,7 @@ The options are:
 The settings in this section only affect new cards and cards in initial
 [learning](studying.md#Вивченняповторне-вивчення-карток) mode. Once a card
 has graduated (i.e. there are no more learning steps for this card), it becomes a
-[review card](studying.md#review-cards), and the
+[review card](studying.md#Пригадування-карток), and the
 settings in this section are no longer applicable.
 
 ### Learning Steps
@@ -244,7 +244,7 @@ some notes had all their cards introduced and other notes had only one
 or two. Please see the "bury related" and "display order" sections below
 for more info.
 
-## Lapses
+## Невдачі
 
 When you forget a review card, it is said to have 'lapsed', and the card must be
 relearnt. The default behaviour for lapsed reviews is to reset the interval to
@@ -424,7 +424,7 @@ will wait to reshow a card. The default is 100 years; you can decrease
 this to a smaller number if you’re willing to trade extra study time for
 higher retention.
 
-### Starting Ease
+### Початкова складність
 
 Controls the easiness that cards start out with. It is
 set when a card graduates from learning for the first time. It defaults
@@ -434,7 +434,7 @@ to 2.50, meaning that once you have finished learning a card, answering
 days). Based upon how you rate the card in subsequent reviews, the
 easiness may increase or decrease from its starting value.
 
-### Easy Bonus
+### Бонус складності
 
 An extra multiplier applied to the interval when a review card is answered
 `Easy`. With the default value of 1.30, `Easy` will give an interval that is
@@ -490,7 +490,7 @@ reviewing with the same interval forever. If your goal is to repeat a
 card once a day for multiple days, you can do that by setting more
 learning mode steps, instead of by adjusting this modifier.
 
-### Hard Interval
+### Інтервал тяжкості
 
 The multiplier used when you use the `Hard` button. The percentage is relative
 to the previous interval: e.g. with a default of 1.20, a card with a 10-day interval
