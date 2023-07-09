@@ -150,26 +150,28 @@
 [Налаштування колоди](deck-options.md) та
 [ЧаПи](https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html).
 
-## Due Counts
+## Лічильники очікуваних карток
 
-When only the question is shown, Anki shows three numbers like 6 + 9 + 59
-at the bottom of the screen. These represent the new cards (blue), cards in
-learning (orange), and cards to review (green). If you’d prefer not to see the numbers,
-you can turn them off in Anki’s [preferences.](preferences.md)
+Коли показано лише запитання, Αnki виводить внизу екрану три числа, напр. 6 + 9
++59. Вони відповідають новим (синій колір), запам'ятовувальним (помаранчевий
+колір) та пригадувальним (зелений колір) карткам. Якщо Ви не хочете бачити ці
+числа, їх можна вимкнути у [налаштуваннях Anki](preferences.md).
 
-![Due Counts](media/due_counts.png)
+![Лічильники очікуваних карток](media/due_counts.png)
 
-In the v1 scheduler, the numbers count _reviews_ needed to finish all the
-cards in that queue, not the number of _cards_. If you have multiple
-steps configured for lapsed cards, the number will increase by more than
-one when you fail a card, since that card needs to be shown several times.
+У планувальнику першої версії, числа показують _кількість пригадувань_ до
+завершення вивчення всіх карток у даній черзі, а не загальну кількість
+_карток_. Якщо ж у Вас, для невдалих карток було налаштовано декілька кроків
+навчання, тоді ці числа збільшуються більш аніж на одиницю коли Ви зазнаєте
+невдачі з карткою, адже картку треба буде показати знову декілька разів.
 
-From the v2 scheduler, the numbers count _cards_, so the number will always
-increase by one regardless of the steps remaining.
+Починаючи з другої версії планувальника, числа показують _картки_, а тому
+лічильник завжди збільшується на одиницю, незалежно від того, скільки кроків
+навчання ще залишилося.
 
-When the answer is shown, Anki shows an estimate of the next time a card
-will be shown above each button. If you’d prefer not to see the
-estimates, you can disable them in Anki’s [preferences](preferences.md).
+Разом з показаною відповіддю, Anki зазначає під кожною кнопкою приблизний
+час, коли картка з'явиться наступного разу. Якщо Ви не хочете бачити ці
+показники, їх можна відключити у [налаштуваннях Anki](preferences.md).
 
 ## Fuzz Factor
 
