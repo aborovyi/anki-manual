@@ -79,7 +79,7 @@
     середнє значення між Знову та Добре.
   - Після першого кроку, Тяжко повторює попередню затримку.
 
-- **Добре** переносить картку на 
+- **Добре** переносить картку на
   [наступний крок](deck-options.md#learning-steps). Якщо картка була на
   останньому кроці, тоді картка перетворюється у картку для пригадування (вона
   'випускається'). Типово, щойно картка досягає кінця кроків навчання, її буде
@@ -87,13 +87,14 @@
   (дивіться наступний параграф).
 
 - **Легко** одразу ж перетворює картку у картку для повторювання, навіть якщо
-  попереду були ще кроки для навчання. 
+  попереду були ще кроки для навчання.
   [Типово](deck-options.md#Легкий-інтервал), якщо Ви перебуваєте у режимі
   повторювання, картка з'явиться знову через 4 дні, а далі проміжки між
   показами будуть зростати. У планувальнику першої версії, кнопка "Легко" не
   буде показуватися у режимі повторювання оскільки вона буде використовувати
   той же інтервал, що й кнопка "Добре". У
-  [планувальнику версії 2 і вище](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
+  [планувальнику версії 2 і
+  вище](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html)
   коли картка перебуває у режимі повторювання, кнопка "Легко" буде збільшувати
   проміжок на один день.
 
@@ -173,19 +174,21 @@ _карток_. Якщо ж у Вас, для невдалих карток бу
 час, коли картка з'явиться наступного разу. Якщо Ви не хочете бачити ці
 показники, їх можна відключити у [налаштуваннях Anki](preferences.md).
 
-## Fuzz Factor
+## Фактор розмиття
 
-When you select an ease button on a review card, Anki also applies a small amount of random “fuzz”
-to prevent cards that were introduced at the same time and given the same ratings
-from sticking together and always coming up for review on the same day. This fuzz
-will appear on the answer buttons when the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html) is enabled, so if
-you are using a previous version and you’re noticing a slight discrepancy between
-what you select and the intervals your cards actually get, this is probably the
-cause.
+Якщо, пригадуючи картку, Ви натискаєте на кнопку Легко, Anki додаватиме
+трішки випадкового «розмиття» щоб запобігти ситуації, коли декілька
+одночасно доданих карток з однаковим рейтингом чіпляються одна за одну
+та завжди з'являються для пригадування у той самий день. Таке розмиття буде
+з'являтися на кнопках відповідей коли увімкнено
+[планувальник версії 3](https://faqs.ankiweb.net/the-2021-scheduler.html). Тому
+якщо Ви використовуєте попередню версію і помічаєте невелику різницю між
+тим що Ви обираєте та фактичними інтервалами появи карток, то причиною може
+бути саме це.
 
-Learning cards are also given up to 5 minutes of extra delay so that they
-don’t always appear in the same order, but answer buttons won't reflect that. It
-is not possible to turn this feature off.
+Додаткова затримка додається і для запам'ятовувальних карток, щоб вони не 
+завжди з'являлися в однаковому порядку, однак на кнопках відповіді про це не
+згадується. Цю функціональність неможливо вимкнути.
 
 ## Editing and More
 
