@@ -7,11 +7,11 @@
 
 ## Колоди
 
-Навчання у Anki відбувається в межах обраної колоди та її підколод.
+Навчання у Anki відбувається в межах обраної колоди та вкладених у неї колод.
 
-Ваші колоди та підколоди будуть показуватися у вікні колод списком. Також, для
-поточного дня тут буде показано кількість карток
-[Нові, Запам'ятати та Пригадати](getting-started.md#Типи-карток).
+Ваші колоди та колоди всередині них будуть показуватися у вікні колод списком.
+Також, для поточного дня тут буде показано кількість карток
+[Нові, Навчальні та Пригадувальні](getting-started.md#Типи-карток).
 
 ![Decks screen](media/decks_screen.png)
 
@@ -126,7 +126,7 @@
 
 - **Тяжко**, типово, показує картку з
   [трішки більшою затримкою](deck-options.md#Інтервал-тяжкості) ніж
-  попереднього разу, і каже Anki показувати картку у майбутньому частше.
+  попереднього разу, і каже Anki показувати картку у майбутньому частіше.
 
 - **Добре** вказує Anki, що останній інтервал вибрано вдало, і складність
   вивчення картки не слід змінювати ані в сторону легкості, ані складності.
@@ -138,7 +138,7 @@
 - **Легко** каже Anki, що обраний інтервал був надто коротким. Наступний показ
   картки буде заплановано
   [значно пізніше, порівняно з 'Добре'](deck-options.md#Бонус-складності), і
-  Anki запланує значно рідші майбутні покази. Оскілки 'Легко' дуже сильно
+  Anki запланує значно рідші майбутні покази. Оскільки 'Легко' дуже сильно
   збільшує інтервали, найкраще її використовувати для найлегших карток.
   Зазвичай, Ви будете відповідати 'Добре'.
 
@@ -190,97 +190,112 @@ _карток_. Якщо ж у Вас, для невдалих карток бу
 завжди з'являлися в однаковому порядку, однак на кнопках відповіді про це не
 згадується. Цю функціональність неможливо вимкнути.
 
-## Editing and More
+## Редагувати та Більше
 
-You can click the **Edit** button in the bottom left to edit the current
-note. When you finish editing, you’ll be returned to study. The editing
-screen works very similarly to the [add notes](editing.md) screen.
+Щоб відредагувати поточну нотатку слід натиснути на кнопку **Редагувати**, яка
+знаходиться в лівому нижньому кутку вікна. Завершивши редагування, Ви
+повернетесь до навчання. Вікно редагування працює схожим чином до вікна
+[додати нотатку](editing.md).
 
-At the bottom right of the review screen is a button labeled **More**.
-This button provides some other operations you can do on the current
-card or note:
+В правому нижньому кутку вікна пригадування знаходиться кнопка **Більше**. Вона
+надає доступ до ряду інших дій над поточною карткою або нотаткою:
 
-- [**Flag Card**](editing.md#using-flags): Adds a colored marker to the card, or toggles it off. Flags will appear during
-  study, and you can search for flagged cards in the Browse screen. This is useful
-  when you want to take some action on the card at a later date, such as looking
-  up a word when you get home. If you're using Anki 2.1.45+, you can also rename flags
-  from the [browser](browsing.md).
+- [**Позначити Картку**](editing.md#Використання-прапорців): Додає до картки
+  кольоровий прапорець або ж забирає його. Прапорець з'являтиметься протягом
+  навчання, а у вікні Навігатора за ним можна шукати позначені картки.
+  Використання прапорця є корисним, коли ви хочете попрацювати над карткою
+  пізніше, скажімо,   знайти слово, коли повернетесь додому. Прапорці можна
+  перейменувати у [Навігаторі](browsing.md), якщо Ви використовуєте Anki
+  2.1.45+.
 
-- **Bury Card / Note**: Hides a card or all of the note’s cards from review until the next day.
-  (If you want to unbury cards before then, you can click the “unbury”
-  button on the [deck overview](studying.md#Огляд-навчання) screen.) This is useful if
-  you cannot answer the card at the moment or you want to come back to it
-  another time. Burying can also 
-  [happen automatically](studying.md#Сестринські-картки-та-відкладання) for
-  cards of the same note.
+- **Відкласти Картку / Нотатку**: Відкладає до наступного дня пригадування
+  картки або всіх карток нотатки. (Якщо Ви хочете відновити картки швидше, слід
+  клацнути на кнопці "повернути" у вікні
+  [Огляд навчання](studying.md#Огляд-навчання)). Відкладання є корисним, якщо
+  Ви не можете дати відповідь на картку зараз або ж хочете повернутися до неї
+  пізніше. Також відкладання може
+  [відбуватися автоматично](studying.md#Сестринські-картки-та-відкладання) для
+  карток тієї ж самої нотатки.
 
-  With the old scheduler, if cards were in learning when they are buried,
-  they are moved back to the new card queue or review queue prior to being
-  buried.
+  У старому планувальнику, якщо навчальні картки відкладалась, вони поверталися
+  до черги нових карток або черги пригадувальних карток перед тим як
+  відкластися.
 
-  With the [2.1 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-  however, burying cards does not reset a card's learning steps.
+  Однак, у
+  [планувальнику версії 2.1](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+  відкладання карток не скидає кроки вивчення картки.
 
-- **Forget card**: Move current card to [the end of the new queue](browsing.md#cards).
+- **Забути картку**: Перемістити поточну картку до
+  [кінця нової черги](browsing.md#Картки).
 
-  From Anki 2.1.50+, Anki will remember the original order of a new card when it is first studied
-  with the V3 scheduler. The "Restore original position" option allows you to reset the card back
-  to its original position when you forget it.
+  Починаючи з версії 2.1.50+, Anki запам'ятовує початкове місце появи нової
+  картки якщо її вперше вивчалось за допомогою планувальника версії 3. Опція
+  "Відновити початкову позицію" дозволяє повернути картку на її початкове місце
+  появи, коли Ви її забули.
 
-  The "Reset repetition and lapse count" option, if enabled, will set the review and failure counters
-  for the card back to zero. It does not remove the review history that is shown at the bottom of the
-  card info screen.
+  Увімкнення опції "Скинути лічильники повторювань та провалів" скине картці
+  лічильники пригадувань та помилок. Ця опція не видаляє історії
+  пригадувань, яку показано внизу інформаційного вікна картки.
 
-- **Set Due Date**: Put cards in the review queue, and [make them due on a certain date.](browsing.md#cards)
+- **Вказати дату пригадування**: Розміщує картки у черзі пригадування та
+  [показує, що вони очікуються на певну дату.](browsing.md#Картки)
 
-- **Suspend Card / Note**: Hides a card or all of the note’s cards from review until they are
-  manually unsuspended (by clicking the suspend button in the browser).
-  This is useful if you want to avoid reviewing the note for some time,
-  but don’t want to delete it.
-  With the old scheduler, if cards were in learning when they are
-  suspended, they are moved back to the new card queue or review queue
-  prior to being suspended.
+- **Призупинити картку / нотатку**: Приховує пригадування картки або всіх
+  карток нотатки допоки їх не буде відновлено вручну (для цього у навігаторі
+  слід клацнути на кнопку призупинення). Ця опція є корисною, якщо Ви хочете
+  уникати пригадування нотатки протягом певного часу, однак не бажаєте її
+  видалити.
+  У старому планувальнику, якщо навчальні картки призупинялися, вони
+  поверталися до черги нових карток або черги пригадувальних карток перед тим
+  як їх призупиняли.
 
-  With the [2.1 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-  however, suspending cards does not reset a card's learning steps.
+  Однак, у
+  [планувальнику версії 2.1](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+  призупинення карток не скидає кроки вивчення картки.
 
-- **Options**: Edit the [options](deck-options.md) for the current deck.
+- **Налаштування**: Редагування [налаштувань](deck-options.md) для поточної
+  колоди.
 
-- **Card Info**: Displays [statistical information](stats.md#card-info) about the card.
+- **Інформація про картку**: Показує
+  [статистичні дані](stats.md#Інформація-про-картку) картки.
 
-- **Previous Card Info**: Displays [statistical information](stats.md#card-info) about the previous card.
+- **Інформація про попередню картку**: Показує
+  [статистичні дані](stats.md#Інформація-про-картку) попередньої картки.
 
-- [**Mark Note**](editing.md#the-marked-tag): Adds a “marked” tag to the current note, so it can be easily found in the
-  browser. This is similar to flagging individual cards, but works with a tag
-  instead, so if the note has multiple cards, all cards will appear in a search
-  for the marked tag. Most users will want to use flags instead.
+ - [**Позначити нотатку**](editing.md#Мітка-позначено): Додає до поточної
+  картки мітку "позначено", щоб її легко знайти у навігаторі. Ця поведінка
+  схожа на позначення окремих карток, однак натомість працює з міткою. Якщо
+  нотатка має декілька карток, всі вони з'являться у результатах пошуку для
+  позначеної мітки. Натомість більшість користувачів захоче скористатися
+  прапорцями.
 
-- **Create Copy**: Opens a [duplicate](browsing.md#finding-duplicates) of the current
-  note in the editor, which can be slightly modified to easily obtain variations of your cards.
-  By default, the duplicate card will be created in the same deck as the original.
+- **Створити копію**: Відкриває [дублікат](browsing.md#Пошук-дублікатів)
+  поточної нотатки у редакторі, який можна змінювати для легшого формування
+  різновиду карток. Типово, дубльована картка створиться у тій самій колоді,
+  що й оригінальна.
 
-- **Delete Note**: Deletes the note and all of its cards.
+- **Видалити нотатку**: Видаляє нотатку та всі її картки.
 
-- **Replay Audio**: If the card has audio on the front or back, play it again.
+- **Повторити аудіо**: Якщо картка має аудіо на передній чи зворотній сторонах,
+  відтворити його знову.
 
-- **Pause Audio**: Pauses the audio if it is playing.
+- **Призупинити аудіо**: Призупиняє аудіо, яке відтворюється.
 
-- **Audio -5s / +5s**: Jump backwards / forward 5 seconds in the currently playing audio.
+- **Аудіо -5s / +5s**: Перемотати поточне відтворення аудіо назад / вперед на
+  5 секунд.
 
-- **Record Own Voice**: Record from your microphone for the purposes of checking your
-  pronunciation. This recording is temporary and will go away when you
-  move to the next card. If you want to add audio to a card permanently,
-  you can do that in the edit window.
+- **Записати власний голос**: Запишіть звук з мікрофону щоб перевірити вимову.
+  Цей запис буде тимчасовим і зникне, щойно Ви перейдете до наступної картки.
+  Скористайтеся вікном редагування, щоб додати запис на постійній основі.
 
-- **Replay Own Voice**: Replay the previous recording of your voice (presumably after showing
-  the answer).
+- **Повторити власний голос**: Повторити попередньо зроблений запис власного
+  голосу (ймовірно, після показу відповіді).
 
 ## Порядок показу
 
-Studying will show cards from the selected deck and any decks it
-contains. Thus, if you select your “French” deck, the subdecks
-“French::Vocab” and “French::My Textbook::Lesson 1” will be shown as
-well.
+В процесі навчання картки будуть показуватися як з обраної колоди так і з її підколод.
+Отже, обравши колоду "Французька", Ви побачите вміст підколод "Французька::Словник" та
+"Французька::Книжка::Урок 1".
 
 The way Anki fetches cards from the decks depends on the algorithm used:
 

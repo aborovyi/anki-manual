@@ -225,7 +225,7 @@ that when you tag a card that has siblings,
 all the siblings will be tagged as well. If you need to tag a single card,
 but not its siblings, you should consider using flags instead.
 
-### Using Flags
+### Використання прапорців
 
 Flags are similar to tags, but they will appear during study in the review
 window, showing a colored flag icon on the upper right area of the screen.
@@ -239,7 +239,7 @@ You can flag / unflag cards directly while in review mode (by pressing
 <kbd>CTRL</kbd> + <kbd>1-7</kbd> on Windows or <kbd>CMD</kbd> + <kbd>1-7</kbd> on Mac)
 and from the [Browser.](browsing.md)
 
-### The "Marked" Tag
+### Мітка "позначено"
 
 Anki treats a tag called "marked" specially. There are options in the review
 screen and browse screen to add and remove the "marked" tag. The review screen
