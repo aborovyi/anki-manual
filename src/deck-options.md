@@ -333,7 +333,7 @@ shown before or after them. Because learning cards tend to be harder than
 reviews, some users prefer to see them at the end (getting the easy stuff done
 first), or at the start (allowing more time to review forgotten ones).
 
-### Review Sort Order
+### Порядок сортування пригадувань
 
 Controls how review cards are sorted while reviewing. The options are:
 

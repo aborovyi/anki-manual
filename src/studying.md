@@ -281,7 +281,7 @@ _карток_. Якщо ж у Вас, для невдалих карток бу
 
 - **Призупинити аудіо**: Призупиняє аудіо, яке відтворюється.
 
-- **Аудіо -5s / +5s**: Перемотати поточне відтворення аудіо назад / вперед на
+- **Аудіо -5 с / +5 с**: Перемотати поточне відтворення аудіо назад / вперед на
   5 секунд.
 
 - **Записати власний голос**: Запишіть звук з мікрофону щоб перевірити вимову.
@@ -293,47 +293,51 @@ _карток_. Якщо ж у Вас, для невдалих карток бу
 
 ## Порядок показу
 
-В процесі навчання картки будуть показуватися як з обраної колоди так і з її підколод.
-Отже, обравши колоду "Французька", Ви побачите вміст підколод "Французька::Словник" та
-"Французька::Книжка::Урок 1".
+В процесі навчання картки будуть показуватися як з обраної колоди так і з
+вкладених в неї колод. Отже, обравши колоду "French", Ви побачите вміст
+колод "French::Vocab" та "French::My Textbook::Lesson 1".
 
-The way Anki fetches cards from the decks depends on the algorithm used:
+Як Anki вибирає карти з колод залежить від використаного алгоритму:
 
-- With the v1 scheduler, when a deck has subdecks, the cards will appear from
-[each deck in turn](studying.md#Порядок-показу).
+- У планувальнику версії 1, якщо колода містила вкладені колоди, картки
+  обирались з [кожної колоди по порядку](studying.md#Порядок-показу).
 
-- With the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
-  when a deck has subdecks, reviews are taken from all children decks
-  at once. The review limit of the child decks is ignored - only the limit of the
-  deck you clicked on applies.
+- У
+  [планувальнику версії 2](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+  якщо колода містить вкладені колоди, картки для пригадування вибираються з
+  усіх вкладених колод одночасно. При цьому обмеження накладені на вкладені
+  колоди ігноруються - застосовується лише обмеження обраної колоди.
 
-- With the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html)
-  each child deck's limit is also enforced, and you do not need to see the cards
-  in deck order either. See the [deck options](deck-options.md#review-sort-order) section of the manual for more information.
+- У [планувальнику версії 3](https://faqs.ankiweb.net/the-2021-scheduler.html)
+  також застосовуються обмеження кожної вкладеної колоди, і Вам не доведеться
+  бачити картки у порядку появи колод. Детальніше про це розказано у параграфі
+  [Порядок сортування пригадувань](deck-options.md#Порядок-сортування-пригадувань).
 
-By default, for new cards, Anki fetches cards from the decks in
-alphabetical order. So in the above example, you would get cards first
-from “French”, then “My Textbook”, and finally “Vocab”. You can use this
-to control the order cards appear in, placing high priority cards in
-decks that appear higher in the list. When computers sort text
-alphabetically, the “-” character comes before alphabetical characters,
-and “\~” comes after them. So you could call the deck “-Vocab” to make
-them appear first, and you could call the other deck “\~My Textbook” to
-force it to appear after everything else.
 
-New cards and reviews are fetched separately, and Anki won’t wait until
-both queues are empty before moving on to the next deck, so it’s
-possible you’ll be exposed to new cards from one deck while seeing
-reviews from another deck, or vice versa. If you don’t want this, click
-directly on the deck you want to study instead of one of the parent
-decks.
+Типово, у випадку з новими картками, Anki вибирає картки в алфавітному порядку.
+Так, у поданому вище прикладі, Ви спершу отримаєте картки з колоди
+"French", тоді "My Textbook", і насамкінець "Vocab". За допомогою цього, Ви
+можете контролювати порядок появи карток, додаючи важливіші картки у колоди,
+які знаходяться вище за списком. Коли комп'ютери сортують текст за алфавітом,
+символ "-" з'являється перед літерами, а "~" - після них (*прим. перекладача*
+для кирилиці це правило не працює, оскільки символ "~" з'являється перед
+кириличними символами). Таким чином Ви можете назвати колоду "-Vocab", щоб
+картки звідти з'являлись найраніше, а іншу - "~My Textbook" щоб картки
+з'являлись після всіх інших.
 
-Since cards in learning are somewhat time-critical, they are fetched
-from all decks at once and shown in the order they are due.
+Нові картки та пригадування вибираються окремо, і Anki не чекає на очищення
+кожної черги перед тим, як перейти до наступної колоди. Тому, цілком ймовірно,
+що Ви побачите нові картки з однієї колоди, а пригадувальні - з іншої, або
+навпаки. Для уникнення такої поведінки, оберіть для навчання колоду, яку хочете
+вивчати, а не одну з батьківських колод.
 
-To control the order reviews from a given deck appear in, or change new
-cards from ordered to random order, please see the [deck options](deck-options.md). For more fine-grained ordering of new cards, you
-can change the order in the [browser](browsing.md).
+Оскільки картки підчас навчання є дещо критичними щодо часу, вони вибираються
+з усіх колод одночасно і показуються в порядку очікування.
+
+Щоб контролювати порядок у якому з'являються пригадування з колоди, або змінити
+порядок появи нових карток з впорядкованого на випадковий, перегляньте
+[налаштування колоди](deck-options.md). Краще відсортувати нові картки можна,
+змінивши порядок у [навігаторі](browsing.md).
 
 ## Сестринські картки та відкладання
 
