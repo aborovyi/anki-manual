@@ -99,9 +99,10 @@
   проміжок на один день.
 
 Коли картки показуються вперше, вони знаходяться на першому кроці. Таким чином,
-якщо першою відповіддю на картку буде "Добре", наступного разу її буде показано
-через 10 хвилин, а початковий однохвилинний крок буде пропущено. Якщо ж Ви
-натиснете на кнопку "Знову", тоді картка з'явиться знову через одну хвилину.
+якщо першою відповіддю на показану картку буде "Добре", наступного разу її буде
+показано через 10 хвилин, а початковий однохвилинний крок буде пропущено. Якщо
+ж Ви натиснете на кнопку "Знову", тоді картка з'явиться знову через одну
+хвилину.
 
 Щоб вибрати потрібну кнопку, Ви можете натискати на клавіатурі клавіші
 <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> та <kbd>4</kbd>, де <kbd>1</kbd>
@@ -367,41 +368,43 @@ Anki відкладатиме лише ті сестринські картки,
 Anki версії 2.1.49 та новіших, у той час у старіших версіях ця дія поновлює
 картку.
 
-## Keyboard Shortcuts
+## Клавіатурні скорочення
 
-Most of the common operations in Anki have keyboard shortcuts. Most of
-them are discoverable in the interface: menu items list their shortcuts
-next to them, and hovering the mouse cursor over a button will generally
-show its shortcut in a tooltip.
+Клавіатурні скорочення існують для більшості загальних операцій у Anki. Про
+багато з них можна дізнатися, переглядаючи інтерфейс: скорочення для виклику
+елементів меню вказано поруч з ними, а, наведення вказівника миші на кнопку,
+може показати скорочення у підказці.
 
-When studying, either <kbd>Space</kbd> or <kbd>Enter</kbd> will show the answer. When the
-answer is shown, you can use <kbd>Space</kbd> or <kbd>Enter</kbd> to select the Good button.
-You can use the <kbd>1</kbd>-<kbd>4</kbd> keys to select a specific ease button. Many people
-find it convenient to answer most cards with <kbd>Space</kbd> and keep one finger
-on <kbd>1</kbd> for when they forget.
+Під час навчання, відповідь показується після натиснення на клавішу
+<kbd>Пробіл</kbd> або на клавішу <kbd>Enter</kbd>. Щойно відповідь стане
+видимою, Ви можете обрати кнопку «Добре», натиснувши на ці ж самі клавіші.
+Складність відповіді можна вказати за допомогою клавіш
+<kbd>1</kbd>-<kbd>4</kbd>. Багатьом людям зручно відповідати на
+більшість карток за допомогою <kbd>Пробілу</kbd>, тримаючи палець над
+<kbd>1</kbd> на той випадок, коли вони забудуть відповідь.
 
-The "Study Deck" item in the Tools menu allows you to quickly switch to
-a deck with the keyboard. You can trigger it with the '/' key. When
-opened, it will display all of your decks and show a filter area at the
-top. As you type characters, Anki will display only decks matching the
-characters you type. You can add a space to separate multiple search
-terms, and Anki will show only decks that match all the terms. So “ja 1”
-or “on1 ja” would both match a deck called “Japanese::Lesson1”.
+Елемент «Вчити колоду» з меню «Інструменти» дозволяє швидко перемикнутися до
+потрібної колоди за допомогою клавіатури. Натисніть<kbd>/</kbd> щоб скористатися
+цим інструментом. Його вікно містить перелік всіх колод під рядком фільтру.
+Коли Ви вводите символи, Anki показує лише ті колоди, які їх містять. Щоб
+ввести декілька пошукових термінів, розділіть їх пробілом, і Anki покаже лише
+ті колоди, у яких будуть всі шукані терміни. Наприклад обидві комбіанції "ja 1"
+та "on1 ja" відповідають колоді "Japanese::Lesson1".
 
-## Falling Behind
+## Відставання
 
-If you fall behind in your reviews, Anki will prioritize cards that have
-been waiting the longest. It does this by taking the cards that have
-been waiting the longest and showing them to you in a random order up
-until your daily review limit. This ordering ensures that no cards will
-be left waiting indefinitely, but it means that if you introduce new
-cards, their reviews won’t appear until you’ve gotten through your
-backlog.
+Якщо Ви відстаєте з пригадувальними картками, Anki змінить пріоритет для тих,
+які найдовше перебувають в черзі очікування. Їх буде показано випадковим чином
+в межах щоденного обмеження на пригадування. Такий порядок забезпечить
+відсутність карток, які перебуватимуть в черзі очікування нескінченно довго,
+однак, при додаванні нових карток, вони не з'являться у пригадуваннях допоки
+Ви не закінчите з заборгованими картками.
 
-If you wish to change the order of the overdue reviews, you can do so by
-creating a [filtered deck](filtered-decks.md).
+Щоб змінити порядок прострочених пригадувань, створіть
+[відфільтровану колоду](filtered-decks.md).
 
-When you answer cards that have been waiting for a while, Anki factors
-in that delay when determining the next time a card should be shown.
-Please see the section on Anki’s spaced-repetition
-[algorithm](https://faqs.ankiweb.net/due-times-after-a-break.html) for more information.
+Коли Ви відповідаєте на прострочені картки, Anki включає цю затримку при
+визначенні наступного часу показу картки. Більше інформації подано у параграфі
+про
+[алгоритм розподіленого повторювання](https://faqs.ankiweb.net/due-times-after-a-break.html)
+в Anki.
