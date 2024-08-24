@@ -10,12 +10,13 @@ by right-clicking on the card and then selecting **Info**, or by pressing
 
 ![Card Info](media/card_info.png)
 
-Most of the displayed information should be self-explanatory. A few notes:
+A few notes:
 
 **Position**\
-Only shown when the card is new, it shows the order the card will appear
+It shows the order the card will appear
 in relative to other new cards. The position can be changed in the
-browser.
+browser. Once a card has been studied, the position is not used, unless
+the card is manually reset to new again.
 
 **Interval**\
 The delay from one review to the next. Times are abbreviated; "0s, 1m,
@@ -25,6 +26,11 @@ years respectively.
 **Ease**\
 The approximate amount the interval will grow when you answer a review
 card with the "Good" button.
+
+The bottom section shows the review history for the card. Rating denotes
+the button (1 = Again, 4 = Easy). When cards are manually rescheduled using
+the "reset" or "set due date" actions, the type will be listed as Manual
+and the rating as 0.
 
 ## Statistics
 
@@ -114,7 +120,8 @@ displayed.
 
 **Calendar**
 This graph shows past card review activity. Hovering the mouse over a specific item
-allows you to view the number of revisions made that day.
+allows you to view the number of revisions made that day. Click on a day of the
+week to make that the starting day.
 
 **Reviews**\
 This graph counts the number of card reviews you have done. The bars may

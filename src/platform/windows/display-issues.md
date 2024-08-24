@@ -33,15 +33,23 @@ The default is `software`; the other two drivers you can try are `angle` and `au
 
 Anki 2.1.50+ is available with the more recent Qt6 toolkit. The new toolkit
 defaults to having graphics acceleration enabled. If you run into display issues,
-you can try switching to software mode:
+you can try switching to software mode via cmd:
 
 ```bat
 echo software > %APPDATA%\Anki2\gldriver6
 ```
 
+Or you can do it via PowerShell:
+
+```powershell
+echo software > $env:APPDATA\Anki2\gldriver6
+```
+
 It will not print anything. You can then start Anki again.
 
 To revert to the default behaviour, change `software` to `auto`, or delete that file.
+
+In Anki 23.10+, you can also change the graphics driver from preferences screen.
 
 ## Full screen
 
@@ -49,3 +57,5 @@ Anki 2.1.50+ comes with a full screen mode, but due to various issues, it had to
 be disabled while `OpenGL` is used. Turning on software rendering as described
 above will allow the full screen option to be used, though please bear in mind
 that rendering performance may suffer.
+
+In Anki 23.10+, full screen mode is supported with the default Direct3D driver.

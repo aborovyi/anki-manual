@@ -21,11 +21,11 @@ properly with this option enabled - please see [night mode styling](templates/st
 
 From 2.1.50+ there is an option to switch to day or night mode automatically.
 
-**User interface size**
+**User interface size**\
 If you find that the interface elements are too small for you, you can
 try to increase this setting.
 
-**Reset Windows Sizes**
+**Reset Windows Sizes**\
 This will reset all windows sizes and locations to the default settings.
 
 **Video driver**\
@@ -50,19 +50,6 @@ These options allow you to remove some unnecessary elements from the screen duri
 
 ### Scheduler
 
-**V3 Scheduler**\
-Using the Anki V3 scheduler is recommended if you don't use AnkiDroid. It's documented here:\
-<https://faqs.ankiweb.net/the-2021-scheduler.html>
-
-**Show learning cards with larger steps before**\
-Only shown when the 2.1 scheduler is enabled. Normally learning cards with a 1+
-day delay are shown after normal reviews. If checked, Anki will show them before
-normal reviews instead.
-
-**Legacy timezone handling**\
-Please see here:
-<https://faqs.ankiweb.net/timezone-handling-changes.html>
-
 **Next day starts at**\
 Controls when Anki should start showing the next day’s cards. The default
 setting of 4AM ensures that if you’re studying around midnight, you won’t have
@@ -86,10 +73,6 @@ as a 30 minute study session) into smaller blocks. If you set the timebox time
 limit to a non-zero number of minutes, Anki will periodically show you how many
 cards you’ve managed to study during the prescribed time limit.
 
-**Mix new cards and reviews**:
-Only shown when the v1/v2 schedulers are enabled. This drop-down box controls when
-new cards are shown: either mixed with, before, or after all reviews.
-
 ### Review
 
 **Show play buttons on cards with audio**\
@@ -106,6 +89,9 @@ Disable this option to hide the card count at the bottom of the screen.
 **Show next review time above answer buttons**\
 Useful to know how far in the future your cards are being pushed.
 
+**Spacebar (or enter) also answers card**\
+Defines whether a press on the space bar (or the enter key) also answers cards.
+
 ## Editing
 
 ### Editing
@@ -120,7 +106,7 @@ file sizes.
 By default, formatting like bold and colors are kept when pasting,
 unless the <kbd>Shift</kbd> key is held down. This option reverses the behaviour.
 
-**Default deck**
+**Default deck**\
 Controls how note types and decks interact. The default of "When adding, default
 to current deck" means that Anki saves the last-used note type for each deck and
 selects it again then next time you choose the deck (and, in addition, will
@@ -130,18 +116,21 @@ note type (and opens the add window to the last-used note type when you choose
 Add). This may be more convenient if you always use a single note type for each
 deck.
 
+The last used deck/notetype is updated when you add a card. If you change the deck
+and close the add window without adding a card, it won't be saved.
+
 ### Browsing
 
-**Default search text**
+**Default search text**\
 Allows you to customize the starting search text in the browser (eg, to start
 with "deck:current").
 
-**Ignore accents in search (slower)**
+**Ignore accents in search (slower)**\
 When enabled, simple text searches automatically [ignore accents](./searching.md#ignoring-accentscombining-characters).
 
 ### Import/Export
 
-**Legacy import/export handling**
+**Legacy import/export handling**\
 If enabled, legacy (pre 2.1.55) import / export code will be used. It is recommended to deactivate this option.
 
 ## Syncing
@@ -150,30 +139,28 @@ This tab contains options related to syncing with AnkiWeb.
 
 ### Synchronisation
 
-**Synchronize audio and images too**
-When enabled, media will also be synced with Ankiweb.
+**Synchronize audio and images too**\
+When enabled, media will also be synced with AnkiWeb.
 
-**Automatically sync on profile open/close**
-Disable this if you don't want an automatic sync with Ankiweb when opening / closing a [profile](./profiles.md)].
+**Automatically sync on profile open/close**\
+Disable this if you don't want an automatic sync with AnkiWeb when opening / closing a [profile](./profiles.md).
 
 **Periodically sync media**
 
-**On next sync, force changes on one direction**
+**On next sync, force changes on one direction**\
 When this option is enabled, the next sync will
 ask you whether you wish to upload or download. This is useful if
 you have made some changes accidentally, and wish to overwrite them
 with an older version that is on AnkiWeb.
 
-### Ankiweb Account
+### AnkiWeb Account
 
 When logged in, clicking on Log Out will log you out.
 
-### Self-hosted sync server
+### Self-hosted Sync Server
 
 For info on the custom sync server option, see [this section](./sync-server.md).
 
 ## Backups
 
 Please see [this](backups.md#automatic-backups) section of the manual.
-
----

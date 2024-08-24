@@ -57,6 +57,17 @@ will not notice if you have edited some existing files without adding or
 removing any. To get your edits noticed, you need to add or remove a
 file as well.
 
+One-way syncs (where you're prompted to upload or download) have no influence over how media
+syncs - media changes are always merged.
+
+To prevent accidental data loss, deletions will only sync to other devices if they are made after
+media is fully in sync. If you delete files before your device is fully in sync, and the deleted
+files are already on AnkiWeb, they will be downloaded the next time you sync.
+
+If you have accidentally deleted media files, and want to restore them, open the preferences
+and log out. The next time you sync, Anki will restore any deleted files, if they are available
+on AnkiWeb still.
+
 If you’re running Anki off a [USB flash drive](files.md#running-from-a-flash-drive), you should use an NTFS
 file system, as Anki may not be able to detect media changes on a FAT32
 filesystem.
@@ -109,7 +120,7 @@ the option to choose which side you want to use.)
 Forcing a one way sync only affects card syncing - media is synced as
 normal. If you have files that you want to remove from AnkiWeb, please
 ensure your client is fully in sync first. After syncing is up to date,
-any files you remove (eg via the Check Media function) will be removed
+any files you remove (e.g via the Check Media function) will be removed
 from AnkiWeb on the following sync.
 
 ## Merging Conflicts
@@ -179,7 +190,7 @@ variable that points to the proxy server. It will look like:
 
     http://user:pass@proxy.company.com:8080
 
-If your username or password contains an @ (eg `user@workdomain.com`),
+If your username or password contains an @ (e.g `user@workdomain.com`),
 you need to change it to %40, like so:
 
     http://user%40workdomain.com:pass@proxy.company.com:8080

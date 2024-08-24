@@ -17,19 +17,19 @@ Deck options are accessed by:
 
 This page describes the options shown in Anki 2.1.45+, when you have the v2 or
 v3 scheduler enabled. On older versions, some options will not be available, or
-will appear in a different section. Please keep in mind that the V1 scheduler
-is no longer supported in Anki 2.1.50+. If you have not yet updated to V2 or V3,
+will appear in a different section. Please keep in mind that the v1 scheduler
+is no longer supported in Anki 2.1.50+. If you have not yet updated to v2 or v3,
 you will be prompted to update when you attempt to review cards in 2.1.50+.
 
 For more info on deck options, please check:
 
 - [Deck Options Explained](https://forums.ankiweb.net/t/deck-options-explained/213)
-- [Deck options in a Mental Map](https://forums.ankiweb.net/t/deck-options-in-a-mental-map/15757)
+- [Deck Options in a Mental Map](https://forums.ankiweb.net/t/deck-options-in-a-mental-map/15757)
 
 ## Presets
 
 Anki allows you to share options between different decks, to make
-updating options in many decks at once easy. To do this, options are
+it easy to update options in many decks at once. To do this, options are
 grouped into _presets_. By default, all newly created decks use
 the same preset.
 
@@ -45,9 +45,10 @@ arrow icon in the top right of the Deck Options window. The options are:
   a one-way sync.
 - **Save to all subdecks**. Like _Save_, but also assigns the selected preset to all
   subdecks of the currently selected deck.
+- **Optimize all presets**. When FSRS is enabled, this allows you to optimize the parameters of all presets at once.
 
 Deck Options are not retroactive. For example, if you change an option that
-controls the delay after failing a card, cards that you failed prior to
+controls the delay after failing a card, cards that you failed before 
 changing the option will have the old delay, not the new one.
 
 ## Subdecks
@@ -56,8 +57,6 @@ If your deck has subdecks, each deck can optionally be assigned a different pres
 When Anki shows a card, it will check which subdeck the card is in, and use the options
 for that deck. There are some exceptions:
 
-- The new cards/day and reviews/day [limits](#daily-limits) behave differently
-  depending on the scheduler version you have selected.
 - The [display order](#display-order) options in the v3 scheduler are taken from the
   deck you select to study, not the deck of the current card.
 
@@ -68,7 +67,7 @@ For example, let's say you have this collection:
         - Card B1
         - Card B2
 
-Preset 1 and 2 are identical, with two exceptions:
+Presets 1 and 2 are identical, with two exceptions:
 
 - Preset 1:
 - New Cards - Learning steps: 1m 10m
@@ -79,12 +78,10 @@ Preset 1 and 2 are identical, with two exceptions:
 
 If you choose to study Deck A:
 
-- Learning steps for all new cards will be 1m 10m (preset 1 applies)
 - All new cards will be mixed with reviews (preset 1 applies)
 
 If you choose to study Subdeck B:
 
-- Learning steps for all new cards will be 20m 2h (preset 2 applies)
 - All new cards will be shown after reviews (preset 2 applies)
 
 ## Daily Limits
@@ -95,13 +92,13 @@ Controls how many new cards are introduced each day you open the program. If you
 study fewer than the limit, or miss a day, the next day the counts will be back
 to your limit - they do not accumulate.
 
-When decks are nested (eg Parent, Parent::Child, Parent::Child::Grandchild),
+When decks are nested (e.g Parent, Parent::Child, Parent::Child::Grandchild),
 the way the limits are applied depends on the scheduler version.
 
-- V1 applies parent limits to children, regardless of which deck you click on
-- V2 behaves similarly to V1 for new cards. For reviews, only the limits of
+- v1 applies parent limits to children, regardless of which deck you click on
+- v2 behaves similarly to v1 for new cards. For reviews, only the limits of
   the deck you click on are honored.
-- V3 honors the limits of the deck you click on, and any decks inside it.
+- v3 honors the limits of the deck you click on, and any decks inside it.
   Limits from parents above the deck you clicked on are ignored.
 
 For more information, please see the [v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits) page.
@@ -136,7 +133,7 @@ limits on its parents or child decks are ignored.
 The v3 scheduler includes learning cards with a 1+ day delay in the review count,
 so those learning cards will be subject to the daily limit.
 
-### New cards ignore review limit
+### New Cards Ignore Review Limit
 
 If using [the v3 scheduler](https://faqs.ankiweb.net/the-2021-scheduler.html#daily-limits),
 please keep in mind that the new count is capped by the review count by default. If your
@@ -179,7 +176,7 @@ Each time you press `Good` during review, the card moves to the next step.
 
 For example, let's say that your learning steps are **1m 10m 1d**.
 
-- When you press `Again`, the card goes back to first step, and will be shown
+- When you press `Again`, the card goes back to the first step, and will be shown
   again approximately 1 minute later.
 - When you press `Good` on a new card, or a card answered `Again`, it will move
   to the next step, and be shown again in approximately 10 minutes.
@@ -208,8 +205,9 @@ converted to days.
 ### Graduating Interval
 
 The delay in days between answering "Good" on a learning card with no steps left,
-and seeing the card again as a review card. Please see the example in the
-previous section.
+and seeing the card again as a review card. This means that it is the first interval
+after the learning card becomes a review card. Please see the example
+in the previous section.
 
 ### Easy Interval
 
@@ -238,7 +236,7 @@ order to Ordered mode and back again to force a re-sort.
 
 When you select random order, Anki will randomize your notes, keeping
 the cards of a given note close together. The cards of a given note are
-shown in the order, in which their card types appear, so that siblings are
+shown in the order in which their card types appear, so that siblings are
 introduced consistently — otherwise you could end up in a state where
 some notes had all their cards introduced and other notes had only one
 or two. Please see the "bury related" and "display order" sections below
@@ -255,7 +253,7 @@ in 10 minutes. This behaviour can be customized with the options listed below.
 
 The same as 'learning steps', but for forgotten reviews. When you fail a card
 (press `Again`), the card enters the relearning phase, and before it becomes a
-review card again, you will have to pass all the relearning steps — or, alternatively, press
+review card again, you will have to pass all the relearning steps — or, press
 `Easy` on the card.
 
 If you leave the steps blank, the card will skip relearning, and will be assigned
@@ -300,13 +298,16 @@ Controls how Anki gathers cards from each subdeck. The options are:
   [reposition](https://docs.ankiweb.net/browsing.html#cards) cards in different
   ways.
 
-- Ascending position: gathers cards by ascending position (due #), which is typically the oldest-added first.
+- Deck, then random notes: gather cards from each deck in order, starting from the top.
+  Cards from each deck are gathered randomly.
 
-- Descending position: gathers cards by descending position (due #), which is typically the latest-added first.
+- Ascending position: gather cards by ascending position (due #), which is typically the oldest-added first.
 
-- Random notes: gathers cards of randomly selected notes. When sibling burying is disabled, this allows all cards of a note to be seen in a session (eg. both a front->back and back->front card)
+- Descending position: gather cards by descending position (due #), which is typically the latest-added first.
 
-- Random cards: gathers cards completely randomly.
+- Random notes: gather cards of randomly selected notes. When sibling burying is disabled, this allows all cards of a note to be seen in a session (eg. both a front->back and back->front card)
+
+- Random cards: gather cards completely randomly.
 
 ### New Card Sort Order
 
@@ -338,7 +339,7 @@ first), or at the start (allowing more time to review forgotten ones).
 Controls how review cards are sorted while reviewing. The options are:
 
 - Due date, then random: The default option prioritizes cards that have been waiting
-  longer, and it's the recomended option when you are up to date, or when you only have a small
+  longer, and it's the recommended option when you are up to date, or when you only have a small
   backlog. If you have taken an extended break or have fallen behind in your reviews,
   you may want to consider changing the sort order temporarily.
 - Due date, then deck. This also prioritizes cards that have been waiting
@@ -351,8 +352,17 @@ Controls how review cards are sorted while reviewing. The options are:
 - Descending intervals: This will ensure cards with larger intervals are shown first.
 - Ascending ease: This will show most difficult cards first.
 - Descending ease: This will allow you to work through the easier material first.
-- Relative overdueness: Display those cards first, that are [most overdue in relation
-  to their current interval](./filtered-decks.html#order).
+- Relative overdueness: Display cards that you're most likely to have forgotten first. This is useful if
+  you have a large backlog that may take some time to get through, and you want to
+  reduce the chances of forgetting more cards.
+
+  When using the SM-2 scheduler, overdueness is determined by comparing how
+  overdue cards are, and how long their interval is. For example, a card with a
+  current interval of 5 days that is overdue by 2 days, will display before a card
+  with a current interval of 10 days that is overdue by 3 days.
+
+  When using FSRS, overdueness is calculated based on on each card's retrievability,
+  and the desired retention in the deck preset.
 
 ## Timer
 
@@ -368,39 +378,31 @@ The options are:
   that you don’t end up with inaccurate statistics. If you consistently
   take longer than 60 seconds to answer a card (from when question is shown
   until you press an answer button), you may want to either consider raising
-  this limit, or ideally, making your cards simpler.
+  this limit, or, ideally, making your cards simpler.
 - Show answer timer: In the review screen, show a timer that counts the number
   of seconds you're taking to review each card.
+- Stop timer on answer: whether the timer should keep running when you show
+  the answer.
+
+## Auto Advance
+
+Requires Anki 23.12 or later. Auto Advance allows you to automatically reveal
+the answer and/or move to the next card. To use it, you must first set a non-zero
+time in "seconds to show question" and/or "seconds to show answer". Then, in the
+review screen, use the Auto Advance action from the `More` button to start advancing.
 
 ## Burying
 
-### Bury new siblings
-
-Whether other new cards of the same note (eg reverse cards, adjacent cloze deletions) will be delayed until the next day.
-
 When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then reviews, and finally new cards. This affects how burying works:
 
 - If you have all burying options enabled, the sibling that comes earliest in that list will be shown. For example, a review card will be shown in preference to a new card.
 - Siblings later in the list can not bury earlier card types. For example, if you disable burying of new cards, and study a new card, it will not bury any interday learning or review cards, and you may see both a review sibling and new sibling in the same session.
 
-### Bury review siblings
+The options are:
 
-Whether other review cards of the same note will be delayed until the next day.
-
-When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then reviews, and finally new cards. This affects how burying works:
-
-- If you have all burying options enabled, the sibling that comes earliest in that list will be shown. For example, a review card will be shown in preference to a new card.
-- Siblings later in the list can not bury earlier card types. For example, if you disable burying of new cards, and study a new card, it will not bury any interday learning or review cards, and you may see both a review sibling and new sibling in the same session.
-
-### Bury interday learning siblings
-
-Whether other learning cards of the same note with intervals > 1 day will be delayed until the next day.
-
-When Anki gathers cards, it first gathers intraday learning cards, then interday learning cards, then reviews, and finally new cards. This affects how burying works:
-
-- If you have all burying options enabled, the sibling that comes earliest in that list will be shown. For example, a review card will be shown in preference to a new card.
-
-- Siblings later in the list can not bury earlier card types. For example, if you disable burying of new cards, and study a new card, it will not bury any interday learning or review cards, and you may see both a review sibling and new sibling in the same session.
+- Bury new siblings: whether other new cards of the same note (e.g., reverse cards, adjacent cloze deletions) will be delayed until the next day.
+- Bury review siblings: whether other review cards of the same note will be delayed until the next day.
+- Bury interday learning siblings: whether other learning cards of the same note with intervals >= 1 day will be delayed until the next day.
 
 For more info about burying cards, please see [this section](./studying.md#siblings-and-burying) of the manual.
 
@@ -416,6 +418,174 @@ shown. Please note that it does not control what happens when you show the
 answer; for that please see [this section](templates/fields.md#special-fields).
 
 ## Advanced
+
+### FSRS
+
+The [Free Spaced Repetition Scheduler (FSRS)](https://github.com/open-spaced-repetition/fsrs4anki) is an alternative to Anki's legacy
+SuperMemo 2 (SM2) scheduler. By more accurately determining when you are likely
+to forget, it can help you remember more material in the same amount of time.
+This setting is shared by all deck presets.
+
+When you enable the setting, some new options will
+become available, and SM-2 specific settings, such as "Graduating interval",
+"Easy bonus", etc, will be hidden.
+
+**Before Enabling**
+
+- Please ensure all of your Anki clients support FSRS. Anki 23.10, AnkiMobile 23.10,
+  and AnkiWeb all support it. AnkiDroid supports it in 2.17alpha3+. If
+  one of your clients doesn't support it, things will not work correctly.
+- If you previously used the 'custom scheduling' version of FSRS, please make
+  sure you clear out the custom scheduling section before enabling FSRS.
+
+#### FSRS Options
+
+**Desired Retention**
+
+Desired retention controls how likely you are to remember cards when they are reviewed.
+The default value of 0.9 will schedule cards so you have a 90% chance of remembering
+them when they come up for review again.
+
+Here is a graph that shows how adjusting this value will affect your workload:
+
+<img src="media/FSRS_retention.png" width="600">
+
+There are two things to notice:
+
+- As desired retention approaches 1.0, the frequency that you need to review cards
+  increases drastically. For example, imagine you have a card that you have a 90%
+  chance of remembering after 100 days. If your desired retention was 0.95, you'd
+  need to review it after 47 days instead (approximately twice as frequently).
+  At 0.97, the delay would be only 27 days (approximately 3.7x as frequently).
+  At 0.99, you'd be reviewing every 9 days (more than 10x what you'd be doing with
+  the defaults).
+
+- As desired retention decreases, you'll forget a greater percentage of your
+  cards, and those cards will need to be reviewed again. Eventually, you'll
+  get to a point where the forgotten cards contribute more to your workload
+  than you gain from the longer delays, which is why you see the workload
+  on the left of the graph increasing. Also, bear in mind that forgetting
+  material frequently is demotivating.
+
+For these reasons, we suggest you be conservative when adjusting this
+number, and recommend you keep it between 0.85 and 0.95.
+
+**SM-2 retention**
+
+If your actual retention before switching to FSRS was significantly different
+from 0.9, adjusting this value will allow Anki to better estimate your memory
+state when it encounters cards that are missing review logs. Since review
+logs typically won't be missing unless you explicitly deleted them to free
+up space, most users will not need to adjust this.
+
+**FSRS parameters**
+
+FSRS parameters affect how cards are scheduled. They are not intended to be
+manually modified. Once you've accumulated 1000+ reviews, you can have Anki
+optimize the parameters for you, based on your review history.
+
+**Reschedule cards on change**
+
+This option controls whether the due dates of cards will be changed when you
+enable FSRS, or change the parameters. The default is not to reschedule
+cards: future reviews will use the new scheduling, but there will be no
+immediate change to your workload. If rescheduling is enabled, the due dates
+of cards will be changed, often resulting in a large number of cards becoming
+due, so **activating this option is not recommended** when first switching from SM2.
+
+If you wish to visualize how FSRS would change your schedule without altering
+your workload, there are two ways you can do so:
+
+- Enable FSRS without rescheduling, and compare the interval and stability
+  graphs. The interval graph will show the current intervals of cards; the stability
+  graph will show the intervals FSRS would give cards if the desired retention is 0.9.
+- Create a backup, enable FSRS with rescheduling, check the future due graph, and then
+  undo or restore from the backup.
+
+**Optimize FSRS parameters**
+
+The FSRS optimizer uses machine learning to learn your memory patterns
+and find parameters that best fit your review history. To do this, the optimizer
+requires several reviews to fine-tune the parameters.
+
+If you have less than 1,000 reviews, you can use the default parameters that
+are already entered into the "FSRS parameters" field. Even with the default
+parameters, FSRS should work well for most users.
+
+Once you've done 1000+ reviews in Anki, you can use the `Optimize` button to
+analyze your review history, and automatically generate parameters that are
+optimal for your memory and the content you're studying. Parameters are
+preset-specific, so if you have decks that vary wildly in difficulty, it
+is recommended to assign them separate presets, as the parameters for easy
+decks and hard decks will be different. There is no need to optimize your
+parameters frequently - once every few months is sufficient.
+
+By default, parameters will be calculated from the review history of all
+decks using the current preset. You can optionally adjust the search
+before calculating the parameters, if you'd like to alter which cards
+are used for optimizing the parameters.
+
+You can optimize the parameters for all of your presets at once, by clicking on the
+down arrow in the top right, then choosing "Optimize all presets".
+
+**Evaluate FSRS parameters**
+
+You can use the `Evaluate` button in the "Optimize FSRS parameters"
+section to see metrics that show how well the parameters in the
+"Model parameters" field fit your review history. Smaller numbers
+indicate a better fit to your review history.
+
+Log-loss doesn't have an intuitive interpretation. RMSE (bins) can be
+interpreted as the average difference between the predicted probability
+of recalling a card (R) and the measured (from the review history)
+probability. For example, RMSE=5% means that, on average, FSRS
+is off by 5% when predicting R.
+
+Note that log-loss and RMSE (bins) are not perfectly correlated,
+so two decks may have similar RMSE values but very different log-loss values,
+and vice-versa.
+
+**Compute optimal retention**
+
+This experimental tool assumes you're starting with 0 cards, and will
+attempt to calculate the amount of material you'll be able to retain
+in the given time frame. The estimated retention will greatly depend
+on your inputs, and if it significantly differs from 0.9, it's a sign
+that the time you've allocated each day is either too low or too high
+for the amount of cards you're trying to learn. This number can be
+useful as a reference, but it is not recommended to copy it into the
+desired retention field.
+
+#### Learning and Re-learning Steps
+
+(Re)learning steps of 1+ days are not recommended when using FSRS. The main 
+reason they were popular with the old SM-2 scheduler is because repeatedly 
+failing a card after it has graduated from the learning phase could reduce 
+its ease a lot, leading to what some people called "ease hell". This is not 
+a problem that FSRS suffers from.  By keeping your learning steps under a 
+day, you will allow FSRS to schedule cards at times it has calculated are 
+optimum for your material and memory.  Another reason not to use longer 
+learning steps is because FSRS may end up scheduling the first review for a 
+shorter time than your last learning step, leading to the `Hard` button 
+showing a longer time than `Good`.
+
+We also recommend you keep the number of learning steps to a minimum. Evidence
+shows that repeating a card multiple times in a single day after you've
+remembered it does not significantly help with memory, so your time is
+better spent on other cards or a shorter study session
+
+#### Add-On Compatibility
+
+Some add-ons can cause conflicts with FSRS. As a general rule of thumb,
+if an add-on affects a card's intervals, it shouldn't be used with FSRS.
+A list of commonly used add-ons and their FSRS compatibility can be found in [Add-on Compatibility](https://github.com/open-spaced-repetition/fsrs4anki#add-on-compatibility).
+
+#### More
+
+For more info on FSRS, please check:
+
+- [FSRS4Anki Wiki](https://github.com/open-spaced-repetition/fsrs4anki/wiki)
+- [FSRS4Anki on Github](https://github.com/open-spaced-repetition/fsrs4anki)
 
 ### Maximum Interval
 

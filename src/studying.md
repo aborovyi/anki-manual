@@ -10,20 +10,19 @@ to start studying.
 Study in Anki is limited to the currently selected deck as well as any
 subdecks it contains.
 
-On the decks screen, your decks and subdecks will be displayed in a list. [New, Learn and Due (To Review)](getting-started.md#types-of-cards)
+On the decks screen, your decks and subdecks will be displayed in a list. [New, Learn, and Due (To Review)](getting-started.md#types-of-cards)
 cards for that day will be also displayed here.
 
 ![Decks screen](media/decks_screen.png)
 
 When you click on a deck, it will become the 'current deck', and Anki
-will change to the study screen. You can return to the deck list to
-change the currently selected deck at any time by clicking on “Decks” at
+will change to the study screen. You can return to the deck list at any time by clicking on “Decks” at
 the top of the main window. (You can also use the Study
 Deck action in the menu to select a new deck from the keyboard, or you
 can press the <kbd>s</kbd> key to study the currently selected deck.)
 
 You can click the gears button to the right of a deck to rename or
-delete a deck, change its [options](deck-options.md), or [export](exporting.md) it.
+delete the deck, change its [options](deck-options.md), or [export](exporting.md) it.
 
 ## Study Overview
 
@@ -51,7 +50,7 @@ When a card is shown, only the question is shown at first. After
 thinking about the answer, either click the **Show Answer** button, or
 press the spacebar. The answer will then be shown. It’s okay if it takes
 you a little while to recall the answer, but as a general rule if you
-can’t answer within about 10 seconds, it’s probably better to give up
+can’t answer within about 10 seconds, it’s probably better to move on
 and show the answer than keep struggling to remember.
 
 When the answer is shown, you should compare the answer you thought of
@@ -64,7 +63,7 @@ just showing it to you.
 
 When learning new cards, or when relearning cards that you have
 forgotten, Anki will show you the cards one or more times to help you
-memorize them. Each time is called a 'learning step'. By default there
+memorize them. Each time is called a 'learning step'. By default, there
 are two steps: 1 minute and 10 minutes. You can change the number of
 steps and the delays between them in the [deck options](deck-options.md#new-cards).
 
@@ -73,8 +72,9 @@ There are four rating buttons when learning:
 - **Again** moves the card back to the first step.
 
 - **Hard** repeats the current step.
-  - If the card is on the first step, the delay will be the average of Again and Good.
-  - After the first step, Hard repeats the previous delay.
+  - If the card is on the first (and the only) step, the delay is 50% larger than the step. But, this delay is at most one day larger than the step.
+  - If the card is on the first step and you have configured more than one step, the delay will be the average of Again and Good, i.e., the average of the first two steps.
+  - If the card is on any subsequent step, Hard repeats the previous delay.
 
 - **Good** moves the card to the [next step](deck-options.md#learning-steps). If the card was on the final
   step, the card is converted into a review card (it 'graduates'). By
@@ -92,7 +92,7 @@ There are four rating buttons when learning:
 When cards are seen for the first time, they start at step one. This
 means answering **Good** on a card for the first time will show it one
 more time in 10 minutes, and the initial 1 minute step will be skipped.
-If you push Again, though, the card will come back in 1 minute.
+If you push **Again**, though, the card will come back in 1 minute.
 
 You can use the <kbd>1</kbd>, <kbd>2</kbd>, <kbd>3</kbd> and <kbd>4</kbd> keys on your keyboard to select a particular
 button, where <kbd>1</kbd> is **Again**. Pressing <kbd>Space</kbd> or <kbd>Enter</kbd> will select
@@ -137,7 +137,7 @@ to learn more about how the algorithm works.
 
 When only the question is shown, Anki shows three numbers like 6 + 9 + 59
 at the bottom of the screen. These represent the new cards (blue), cards in
-learning (orange), and cards to review (green). If you’d prefer not to see the numbers,
+learning (red), and cards to review (green). If you’d prefer not to see the numbers,
 you can turn them off in Anki’s [preferences.](preferences.md)
 
 ![Due Counts](media/due_counts.png)
@@ -147,7 +147,7 @@ cards in that queue, not the number of _cards_. If you have multiple
 steps configured for lapsed cards, the number will increase by more than
 one when you fail a card, since that card needs to be shown several times.
 
-From the v2 scheduler, the numbers count _cards_, so the number will always
+From the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html), the numbers count _cards_, so the number will always
 increase by one regardless of the steps remaining.
 
 When the answer is shown, Anki shows an estimate of the next time a card
@@ -191,8 +191,8 @@ card or note:
   another time. Burying can also [happen automatically](studying.md#siblings-and-burying) for
   cards of the same note.
 
-  With the old scheduler, if cards were in learning when they are buried,
-  they are moved back to the new card queue or review queue prior to being
+  With the old scheduler, if cards were in learning when they were buried,
+  they were moved back to the new card queue or review queue prior to being
   buried.
 
   With the [2.1 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
@@ -201,7 +201,7 @@ card or note:
 - **Forget card**: Move current card to [the end of the new queue](browsing.md#cards).
 
   From Anki 2.1.50+, Anki will remember the original order of a new card when it is first studied
-  with the V3 scheduler. The "Restore original position" option allows you to reset the card back
+  with the v3 scheduler. The "Restore original position" option allows you to reset the card back
   to its original position when you forget it.
 
   The "Reset repetition and lapse count" option, if enabled, will set the review and failure counters
@@ -319,7 +319,11 @@ hide cards in learning, as time is of the essence for those cards. On
 the other hand, when you study a learning card, any new/review siblings
 will be buried.
 
-Note: A card cannot be buried and suspended at the same time. Suspending a
+Note that starting with the [v2 scheduler](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html),
+Anki now distinguishes between manually and automatically buried cards so you can
+unbury one set without the other.
+
+Also note that a card cannot be buried and suspended at the same time. Suspending a
 buried card will unbury it. Burying a suspended card does not work on Anki
 2.1.49+, whereas on earlier versions, it will unsuspend the card.
 

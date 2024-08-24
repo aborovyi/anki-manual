@@ -6,18 +6,20 @@
 
 The packaged version requires a recent 64 bit Intel/AMD Linux with glibc, and common
 libraries like libwayland-client and systemd. If you are on a different
-architecture, or a barebones Linux distro, you will not be able to use the
+architecture (e.g ARM/AArch64), or a barebones Linux distro, you will not be able to use the
 packaged version, but you may be able to use the [Python wheels](https://betas.ankiweb.net/#via-pypipip)
 instead.
 
-On recent Ubuntu installations, please use the following before
+Debian and derivatives, such as Ubuntu and [Chromebooks with Linux enabled](https://support.google.com/chromebook/answer/9145439?), please use the following before
 installing:
 
 ```shell
-sudo apt install libxcb-xinerama0 libxcb-cursor0
+sudo apt install libxcb-xinerama0 libxcb-cursor0 libnss3
 ```
 
 If Anki fails to start after installing, you may be [missing other libraries](./missing-libraries.md).
+
+If you're on Ubuntu 24.04 and Anki won't start, please see [this thread](https://forums.ankiweb.net/t/issues-running-on-ubuntu-24-04/40974).
 
 Anki's build system only supports glibc, so musl-based distros are not currently supported.
 
@@ -27,12 +29,12 @@ To install Anki:
 
 1. Download Anki from <https://apps.ankiweb.net> to your Downloads folder. See the next section
    for how to choose between -qt5 and -qt6.
-2. If zstd is not already installed on your system, you'll need to install it (eg `sudo apt install zstd`).
+2. If zstd is not already installed on your system, you'll need to install it (e.g `sudo apt install zstd`).
 3. Open a terminal and run the following commands, replacing the filename as appropriate.
 
 ```shell
-tar xaf Downloads/anki-2.1.XX-linux-qt6.tar.zst
-cd anki-2.1.XX-linux-qt6
+tar xaf Downloads/anki-2XXX-linux-qt6.tar.zst
+cd anki-2XXX-linux-qt6
 sudo ./install.sh
 ```
 
@@ -81,4 +83,12 @@ you can download older Anki versions from the [releases page](https://github.com
 ## Problems
 
 If you encounter any issues when installing or starting Anki, please see the
-following links on the left.
+following pages:
+
+- [Missing Libraries](missing-libraries.md)
+- [Display Issues](display-issues.md)
+- [Blank Main Window](blank-window.md)
+- [Linux Distro Packages](distro-packages.md)
+- [Incorrect GTK Theme](gtk-theme.md)
+- [Wayland](wayland.md)
+- [Input Methods](input-methods.md)

@@ -8,7 +8,7 @@ You can watch [a video about styling cards](http://www.youtube.com/watch?v=F1j1Z
 The video shows Anki 2.0’s interface, but the concepts are largely the
 same.
 
-The styling section of the Cards screen can accessed by clicking the
+The styling section of the Cards screen can be accessed by clicking the
 "Styling" button next to the "Back Template" button. In that section,
 you can change the background color of the card, the default font, the
 text alignment, and so on.
@@ -250,6 +250,8 @@ custom template to be used only in the browser, so you can include only
 the important fields and change the order if you desire. The syntax is
 the same as in standard card templates.
 
+When using this option, if the text in the question column is repeated at the beginning of the answer column, Anki will display the text only in the question column. For example, if the question column text is "People in Ladakh speak", and the answer is "People in Ladakh speak Ladakhi", the answer column will only display "Ladakhi", omitting the rest.
+
 ## Platform-Specific CSS
 
 Anki defines some special CSS classes that allow you to define different
@@ -375,7 +377,7 @@ yellow when night mode is enabled:
 
 ## Fading and Scrolling
 
-Anki will automatically scroll to the answer by default. It looks for a
+Anki will automatically scroll to the answer by default. It looks for an
 HTML element with id=answer, and scrolls to that. You can place the id
 on a different element to adjust the scrolling position, or remove the
 id=answer to turn off scrolling.
@@ -416,9 +418,7 @@ update sections of the document using things like
 document.getElementById() rather than doing things like
 document.write().
 
-Functions like window.alert are also not available. Anki will write
-javascript errors to the terminal, so if you’re running on a Mac or
-Windows computer, you’ll need to manually catch the errors and write
-them to the document to see them. There is no debugger available, so to
-figure out problems you’ll need to break down your code until you
-discover which parts are causing problems.
+Functions like window.alert may not be available. Anki will write
+javascript errors to the terminal, so you'll need to [view the console](https://addon-docs.ankiweb.net/console-output.html#console-output) to
+see them. To debug issues with JavaScript, you can use Chrome's
+[inspector](https://addon-docs.ankiweb.net/debugging.html#webviews).

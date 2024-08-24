@@ -1,5 +1,6 @@
 [book]
 authors = ["Ankitects Pty Ltd and contributors"]
+description = "Anki's user manual. Anki is a flashcard program that makes learning easier."
 language = "en"
 multilingual = false
 src = "src"
@@ -15,13 +16,21 @@ renderer = ["html"]
 [output.html]
 git-repository-url = "https://github.com/ankitects/anki-manual/"
 cname = "docs.ankiweb.net"
-additional-css = ["css/kbd.css"]
+additional-css = ["css/misc.css", "css/kbd.css"]
 
 [output.linkcheck]
 optional = true
 warning-policy = "warn"
 follow-web-links = true
-exclude = ['microsoft.com', 'twitter.com']
+exclude = [
+  'microsoft.com',
+  'twitter.com',
+  'stackexchange.com',
+  'stackoverflow.com',
+  'https://github.com/open-spaced-repetition/fsrs4anki#add-on-compatibility',
+  'support.google.com',
+  'wikiwiki.jp',
+]
 
 [output.html.fold]
 enable = true
