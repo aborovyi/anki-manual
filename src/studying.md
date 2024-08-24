@@ -34,7 +34,7 @@
 ![Study overview](media/study_overview.png)
 
 Картки діляться на [три типи](getting-started.md#Типи-карток): Нові,
-Запам'ятати, Пригадати. Якщо у налаштуваннях колоди увімкнено опцію
+Навчальні, Пригадувальні. Якщо у налаштуваннях колоди увімкнено опцію
 [Відкласти сестринські картки](#Сестринські-картки-та-відкладання), Ви можете
 побачити кількість відкладених карток, які позначені сірим кольором:
 
@@ -341,30 +341,31 @@ _карток_. Якщо ж у Вас, для невдалих карток бу
 
 ## Сестринські картки та відкладання
 
-Recall from [the basics](getting-started.md) that Anki can create more than one
-card for each thing you input, such as a front→back card and a
-back→front card, or two different cloze deletions from the same text.
-These related cards are called 'siblings'.
+Як було сказано в [основних поняттях](getting-started.md), Anki може створювати
+більше однієї картки для кожного об'єкту вивчення, як от лицьову→зворотну
+картку та зворотну→лицьову картку чи дві різні картки з закритим текстом для
+того ж самого тексту. Такі пов'язані картки називаються "сестринськими".
 
-When you answer a card that has siblings, Anki can prevent the card’s
-siblings from being shown in the same session by automatically 'burying'
-them. Buried cards are hidden from review until the clock rolls over to
-a new day or you manually unbury them using the “Unbury” button that’s
-visible at the bottom of the [deck overview](studying.md#Огляд-навчання) screen. Anki
-will bury siblings even if the siblings are not in the same deck (for
-instance, if you use the [deck override](templates/intro.md) feature).
+Коли Ви відповідаєте на одну з сестринських карток, Anki може запобігати
+показу інших, автоматично "відкладаючи" їх, в межах однієї сесії.
+Відкладені картки усуваються з пригадувань до початку наступного дня, або
+допоки Ви вручну не повернете їх за допомогою кнопки "Повернути", яка
+знаходиться внизу екрану [огляд навчання](studying.md#Огляд-навчання). Anki
+відкладатиме сестринські картки навіть, якщо вони знаходяться у різних колодах
+(наприклад, якщо Ви увімкнули властивість [Заміни колоди](templates/intro.md)).
 
-You can enable burying from the [deck options](deck-options.md) screen -
-there are separate settings for new cards and reviews.
+Відкладання можна увімкнути та налаштувати поокремо для нових та пригадувальних
+карток на екрані [налаштування колоди](deck-options.md).
 
-Anki will only bury siblings that are new or review cards. It will not
-hide cards in learning, as time is of the essence for those cards. On
-the other hand, when you study a learning card, any new/review siblings
-will be buried.
+Anki відкладатиме лише ті сестринські картки, які є новими або пригадувальними.
+Вона не буде ховати навчальні картки, оскільки для них вчасна поява є важливою.
+Однак, коли Ви вивчаєте навчальну картку, її нові та пригадувальні сестринські 
+картки будуть відкладатися.
 
-Note: A card cannot be buried and suspended at the same time. Suspending a
-buried card will unbury it. Burying a suspended card does not work on Anki
-2.1.49+, whereas on earlier versions, it will unsuspend the card.
+Завважте: Картка не може бути відкладеною і призупиненою водночас. Призупинення
+відкладеної картки поновить її. Відкладення призупиненої картки не працює у
+Anki версії 2.1.49 та новіших, у той час у старіших версіях ця дія поновлює
+картку.
 
 ## Keyboard Shortcuts
 
