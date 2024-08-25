@@ -1,48 +1,51 @@
-# Adding/Editing
+# Додавання та редагування
 
 <!-- toc -->
 
-## Adding Cards and Notes
+## Додавання карток та нотаток
 
-Recall from the [basics](getting-started.md) that in Anki we add notes rather than
-cards, and Anki creates cards for us. Click 'Add' in the [main window](studying.md#Колоди),
-and the Add Notes window will appear.
+Як було сказано у розділі [Початок роботи](getting-started.md), ми
+додаємо нотатки, а Anki на їх основі створює картки. Для появи вікна «Додати
+нотатки», клацніть на кнопку «Додати» у [головному вікні](studying.md#Колоди).
 
 ![Add Screen](media/add_screen.png)
 
-The top left of the window shows us the current [note type](getting-started.md#Типи-нотаток). If it does
-not say "Basic," then you may have added some note types when you
-downloaded a shared deck. The text below assumes that "Basic" is
-selected.
+У лівому верхньому кутку вікна показується поточний
+[тип нотатки](getting-started.md#Типи-нотаток). Якщо там не написано «Базовий»,
+значить Ви додали інші типи нотаток коли завантажували спільну колоду. Подальші
+пояснення базуватимуться на припущенні, що обрано «Базовий» тип нотатки.
 
-The top right of the window shows us the [deck](getting-started.md#Колоди) cards will be added to. If
-you would like to add cards to a new deck, you can click on the deck name
-button and then click "Add".
+У правому верхньому кутку вікна вказано ім'я
+[колоди](getting-started.md#Колоди) до якої додаватимуться картки. Щоб додавати
+картки до нової колоди, клацніть на ім'я колоди, а тоді, у новому вікні - на
+кнопку «Додати».
 
-Below the note type, you'll see some buttons, and an area labelled
-"Front" and "Back". Front and Back are called [fields](getting-started.md#Нотатки-та-поля), and you can add,
-remove, and rename them by clicking the "Fields…​" button above.
+Внизу під типом нотатки є декілька кнопок та область з позначками
+«Передня сторона» та «Зворотна сторона». Передня та зворотна сторони
+називаються [полями](getting-started.md#Нотатки-та-поля), і Ви можете додати
+нові, видалити чи перейменувати наявні поля, клацнувши зверху на кнопці "Поля…".
 
-Below the fields is another area labelled "**tags**". Tags are labels that
-you can attach to your notes, to make organizing and finding notes
-easier. You can leave the tags blank if you wish, or add one or more of
-them. Tags are separated by a space. If the tags area says
+Під полями існує ще одна область, позначена як **мітки**. Мітки є позначками,
+які Ви можете прикріпляти до нотаток, щоб полегшити їх організацію та пошук. Ця
+область може бути порожньою, або ви можете додати необхідні мітки. Мітки
+відокремлюються один від одного за допомогою пробілу. Якщо в області міток
+вказано
 
-    vocab check_with_tutor
+    словник перевірити_з_вчителем
 
-…​then the note you add would have two tags.
+… тоді створена Вами нотатка матиме дві мітки.
 
-When you have entered text into the front and back, you can click the
-"Add" button or press <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (<kbd>Command</kbd>+<kbd>Enter</kbd> on a Mac) to add the
-note to your collection. When you do so, a card will be created as well,
-and placed into the deck you chose. If you would like to edit a card you
-added, you can click the history button to search for a recently added
-card in the [browser](browsing.md).
+Ввівши текст для передньої і зворотної сторін, Ви можете додати нотатку до
+колекції, клацнувши на кнопку «Додати» або натиснути 
+<kbd>Ctrl</kbd>+<kbd>Enter</kbd> (чи <kbd>Command</kbd>+<kbd>Enter</kbd> на
+Маці). Як наслідок, нова картка створиться та покладеться до обраної Вами
+колоди. Щоб відредагувати щойно створену картку, натисніть на кнопку "Історія"
+та знайдіть цю картку у [навігаторі](browsing.md).
 
-For more information on the buttons between the note type and the
-fields, please see the [editor](editing.md) section.
+Більше інформації щодо кнопок які стосуються типу нотатки та полів подано
+у параграфі [Можливості редагування](editing.md#Можливості-редагування)
 
-### Duplicate Check
+### Перевірка дублікатів
 
 Anki checks the first field for uniqueness, so it will warn you if you
 enter two cards with a Front field of "apple" (for example). The
@@ -267,7 +270,7 @@ occasionally need to be able to study it separately (for a test, when
 under a backlog, etc.), then filtered decks created from tags, flags,
 marks or fields are better.
 
-## Editing Features
+## Можливості редагування
 
 The editor is shown when [adding notes](editing.md), [editing a note](studying.md#Редагувати-та-Більше) during reviews, or [browsing](browsing.md).
 

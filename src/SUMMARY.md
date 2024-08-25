@@ -27,7 +27,7 @@
 - [Початок роботи](getting-started.md)
 - [Getting Help](getting-help.md)
 - [Навчання](studying.md)
-- [Adding/Editing](editing.md)
+- [Додавання та редагування](editing.md)
 - [Card Templates](templates/intro.md)
   - [Field Replacements](templates/fields.md)
   - [Card Generation](templates/generation.md)
