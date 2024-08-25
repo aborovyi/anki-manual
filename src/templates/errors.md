@@ -67,7 +67,6 @@ like the Closet add-on provides some alternatives.
 
 ### No Cloze Filter on Cloze Notetype
 
-A Cloze notetype's front and back templates should have a 
-[cloze](../editing.md#Закривання-тексту)
+A Cloze notetype's front and back templates should have a [cloze](../editing.md#Закривання-тексту)
 filter. If one is missing, you will need to add it back so that Anki can create cloze cards
 correctly.

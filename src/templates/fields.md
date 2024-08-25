@@ -65,10 +65,9 @@ each line, you would use
     {{Field 1}}<br>
     {{Field 2}}
 
-## Text to Speech
+## Text to Speech for individual fields
 
-This feature requires Anki 2.1.20, or AnkiMobile 2.0.56. AnkiDroid does
-not currently support this method.
+This feature requires Anki 2.1.20, AnkiMobile 2.0.56 or AnkiDroid 2.17.
 
 To have Anki read the Front field in a US English voice, you can place
 the following in your card template:
@@ -122,35 +121,18 @@ using the `cloze-only` filter, like so:
 
     {{tts en_US:cloze-only:Text}}
 
-The cloze-only filter is supported in Anki 2.1.29+ and AnkiMobile 2.0.65+.
+The cloze-only filter is supported in Anki 2.1.29+, AnkiMobile 2.0.65+, and AnkiDroid 2.17+.
 
-You can enable Anki's TTS feature on supported platforms while falling back to [AnkiDroid's own method](https://docs.ankidroid.org/#_workarounds). Until AnkiDroid
-supports the {{tts:FieldName}} syntax, it will render these fields as
-text, while other platforms will render a (re)play audio button. In order
-to temporarily fix this discrepancy between platforms, we can use the
-following in our templates:
+## Text to Speech for multiple fields and static text
 
-```html
-<tts service="android" voice="en_US">{{Front}}</tts>
+This feature requires Anki 2.1.50+, AnkiMobile 2.0.84+, or AnkiDroid 2.17+.
 
-<span class="ankitts">{{tts en_US:Front}}</span>
+If you want TTS to read multiple fields or static text included in the template, you can use the following:
 
-<button class="ankidroidTtsButton" onclick="
-AnkiDroidJS.ankiTtsSpeak('{{Front}}');">Play TTS</button>
 ```
+[anki:tts lang=en_US] This text should be read. Here is {{Field1}} and {{Field2}}[/anki:tts]
 
-Then in the styling section:
-
-```css
-/*Anki (desktop) TTS needs to be hidden because AnkiDroid currently renders it as text instead of a play button like desktop.*/
-.android .ankitts {
-  display: none;
-}
-
-/*The AnkiDroid tts button won't work on other platforms because it uses the JS API, therefore it should be hidden*/
-html:not(.android) .ankidroidTtsButton { 
-  display: none;
-}
+This is other text on the template. It is outside of the tags so it should not be read.
 ```
 
 ## Special Fields
@@ -188,11 +170,11 @@ adding a hint, please bear in mind that the easier you make it to answer
 a question in Anki, the less likely you are to remember that question
 when you encounter it in real life. Please have a read about the
 'minimum information principle' on
-<http://www.supermemo.com/articles/20rules.htm> before proceeding.
+<https://super-memory.com/articles/20rules.htm> before proceeding.
 
 First, you’ll need to add a field to store the hint in if you have not
-already. Please see the [fields](../editing.md#Пристосовування-полів) 
-section if you’re not sure how to do this.
+already. Please see the [fields](../editing.md#Пристосовування-полів) section if you’re not sure how
+to do this.
 
 Assuming you’ve created a field called MyField, you can tell Anki to
 include it on the card but hide it by default by adding the following to
@@ -292,7 +274,6 @@ like so:
 Here are some examples:
 
 <!-- prettier-ignore -->
-
 | Raw Text            | Rendered Text                                                                             |
 | ------------------- | ----------------------------------------------------------------------------------------- |
 | `Text[Ruby]`        | <ruby><rb>Text</rb><rt>Ruby</rt></ruby>                                                   |
@@ -313,14 +294,13 @@ only show the ruby text, while the `kanji` filter removes the ruby text
 entirely.
 
 <!-- prettier-ignore -->
-
 | Raw Text           | Field Filter           | Rendered Text                                 |
 | ------------------ | ---------------------- | --------------------------------------------- |
 | `日本語[にほんご]` | `{{furigana:MyField}}` | <ruby><rb>日本語</rb><rt>にほんご</rt></ruby> |
 | `日本語[にほんご]` | `{{kana:MyField}}`     | にほんご                                      |
 | `日本語[にほんご]` | `{{kanji:MyField}}`    | 日本語                                        |
 
-These names are again, borrowed from Japanese.
+These names are, again, borrowed from Japanese.
 The term [kana](https://en.wikipedia.org/wiki/Kana) represents the phonetic
 system used to describe how words are pronounced, whereas the term
 [kanji](https://en.wikipedia.org/wiki/Kanji) represents its Chinese characters.
@@ -335,7 +315,7 @@ do so. This has implications for including media on the template.
 If you wish to include images or sounds on your cards that are the same
 for every card (eg, a company logo at the top of each card):
 
-1. Rename the file so it starts with an underscore, eg "\_logo.jpg".
+1. Rename the file so it starts with an underscore, e.g "\_logo.jpg".
    The underscore tells Anki that the file is used by the template and
    it should be exported when sharing the deck.
 
@@ -358,7 +338,7 @@ importing/exporting, and so on. Examples that won’t work:
     [latex]{{Field 1}}[/latex]
 
 Instead, you should include the media references in the field. Please
-see the [importing section](../importing.md#importing-media) for more information.
+see the [importing section](../importing/text-files.md#importing-media) for more information.
 
 ## Перевірка відповіді
 
@@ -440,3 +420,5 @@ the text box with a comma.
 
 Type answer boxes will not appear in the ["preview" dialog](intro.md) in the browser. When you review or look at
 the preview in the card types window, they will display.
+
+Type answer boxes will not be displayed when you review your cards on [ankiweb.net](../syncing.md).

@@ -5,13 +5,12 @@
 ## Adding Cards and Notes
 
 Recall from the [basics](getting-started.md) that in Anki we add notes rather than
-cards, and Anki creates cards for us. Click 'Add' in the 
-[main window](studying.md#Колоди), and the Add Notes window will appear.
+cards, and Anki creates cards for us. Click 'Add' in the [main window](studying.md#Колоди),
+and the Add Notes window will appear.
 
 ![Add Screen](media/add_screen.png)
 
-The top left of the window shows us the current
-[note type](getting-started.md#Типи-нотаток). If it does
+The top left of the window shows us the current [note type](getting-started.md#Типи-нотаток). If it does
 not say "Basic," then you may have added some note types when you
 downloaded a shared deck. The text below assumes that "Basic" is
 selected.
@@ -59,7 +58,7 @@ which you can run periodically.
 ### Effective Learning
 
 Different people like to review in different ways, but there are some
-general concepts to keep in mind. An excellent introduction is [this article](http://www.supermemo.com/articles/20rules.htm) on the SuperMemo
+general concepts to keep in mind. An excellent introduction is [this article](https://super-memory.com/articles/20rules.htm) on the SuperMemo
 site. In particular:
 
 - **Keep it simple**: The shorter your cards, the easier they are to
@@ -209,8 +208,7 @@ Some people prefer using decks and subdecks to keep their cards organized,
 but using tags have a big advantage over decks for that: you can add several
 tags to a single note, but a single card can only belong to one deck, which
 makes tags a more powerful and flexible categorization system than
-decks in most cases. You can also organize tags in trees 
-[in the same way as you can do for decks](getting-started.md#Колоди).
+decks in most cases. You can also organize tags in trees [in the same way as you can do for decks](getting-started.md#Колоди).
 
 For example, instead of creating a "food verbs" deck, you could add those
 cards to your main language study deck, and tag the cards with "food" and
@@ -220,8 +218,7 @@ food-related vocabulary, or all verbs that are related to food.
 
 You can add tags from the Edit window and from the [Browser](browsing.md), and you can also add,
 delete, rename, or organize tags there. Please note that
-tags work at [note](getting-started.md#Нотатки-та-поля) level, which means
-that when you tag a card that has siblings,
+tags work at [note](getting-started.md#Нотатки-та-поля) level, which means that when you tag a card that has siblings,
 all the siblings will be tagged as well. If you need to tag a single card,
 but not its siblings, you should consider using flags instead.
 
@@ -239,7 +236,7 @@ You can flag / unflag cards directly while in review mode (by pressing
 <kbd>CTRL</kbd> + <kbd>1-7</kbd> on Windows or <kbd>CMD</kbd> + <kbd>1-7</kbd> on Mac)
 and from the [Browser.](browsing.md)
 
-### Мітка "позначено"
+### Мітка "Позначено"
 
 Anki treats a tag called "marked" specially. There are options in the review
 screen and browse screen to add and remove the "marked" tag. The review screen
@@ -247,7 +244,7 @@ will show a star when the current card's note has that tag. And cards are
 shown in a different color in the browse screen when their note is marked.
 
 Note: Marking is mainly left around for compatibility with older Anki
-versions; most users will want to use flags instead.
+versions; most users will want to use [flags](editing.md#Використання-прапорців) instead.
 
 ### Using Fields
 
@@ -272,12 +269,11 @@ marks or fields are better.
 
 ## Editing Features
 
-The editor is shown when [adding notes](editing.md), [editing a note](studying.md) during reviews, or [browsing](browsing.md).
+The editor is shown when [adding notes](editing.md), [editing a note](studying.md#Редагувати-та-Більше) during reviews, or [browsing](browsing.md).
 
 ![Editor icons](media/editor_icons.png)
 
-On the top left are two buttons, which open the 
-[fields](editing.md#Пристосовування-полів) and
+On the top left are two buttons, which open the [fields](editing.md#Пристосовування-полів) and
 [cards](templates/intro.md) windows.
 
 On the right are buttons that control formatting. Bold, italic and
@@ -340,7 +336,7 @@ Sometimes sections that have been removed in this fashion are said to be
 'occluded'.
 
 For more information on why you might want to use cloze deletion, see
-Rule 5 [here](http://www.supermemo.com/articles/20rules.htm).
+Rule 5 [here](https://super-memory.com/articles/20rules.htm).
 
 Anki provides a special cloze deletion type of note, to make creating
 clozes easy. To create a cloze deletion note, select the Cloze note
@@ -422,6 +418,75 @@ based on a regular note type. If you wish to customize it, please make
 sure to clone the existing Cloze type instead of another type of note.
 Things like formatting can be customized, but it is not possible to add
 extra card templates to the cloze note type.
+
+## Закривання зображень
+
+Anki 23.10+ supports Image Occlusion cards natively. An Image
+Occlusion (IO) note is a special case of cloze deletion based on images
+instead of text, and allows you to create cards that hide some parts
+of an image, testing your knowledge of that hidden information.
+
+![Image Occlusion](media/io.jpg)
+
+### Adding an image
+
+To add IO cards to your collection, open the Add screen, click on "Type"
+and choose "Image Occlusion" from the list of built-in note types.
+Then, click on "Select Image" to load an image file saved on your
+computer's hard drive, or on "Paste image from clipboard"
+if you have an image copied to the clipboard.
+
+### Adding IO cards
+
+After loading an image, the IO editor will open. Click on the
+icons on the left to add as many areas to your image as you want.
+There are three basic shapes to choose from:
+
+- Rectangle
+- Ellipse
+- Polygon
+
+You can also choose between two different IO modes for each note:
+
+- **Hide All, Guess One**: All areas are hidden and only one
+  area at a time is revealed while learning.
+- **Hide One, Guess One**: Only one area at a time is hidden
+  and will be revealed during learning. The other areas will be visible.
+
+![Image Occlusion Modes](media/io_modes.jpg)
+
+Once you're done, click on the "Add" button, at the bottom of the screen.
+Anki will add a card for each shape or group of shapes you added in the previous step,
+and you can start reviewing them normally.
+
+## Editing IO notes
+
+You can edit your IO notes by clicking on "Edit" while reviewing,
+or directly from the browser. There are several tools that you
+can use. Of note:
+
+- Select: It allows you selecting one or more shapes to move,
+  resize, delete or group them.
+- Zoom: You can freely move the image and zoom in or out using the mouse wheel.
+- Shapes (Rectangle, Ellipse or Polygon): Use them to add new shapes / cards.
+- Text: It adds text areas to your image. These text areas can be moved,
+  resized or deleted, but no card will be created when you use this tool.
+- Undo / Redo.
+- Zoom In / Out - Reset zoom.
+- Toggle Translucency: Use this tool to temporarily view the hidden areas.
+- Delete: Use this tool to delete selected shapes and text areas. Please
+  note that deleting a shape won't delete its associated card automatically;
+  you will need to use Tools>Empty Cards afterwards, the same as
+  with regular cloze deletions.
+- Duplicate.
+- Group selection: Use this tool to create a cluster of shapes, which will
+  allow you to move, resize or delete them simultaneously. Please note that
+  two or more single shapes will create only one card once grouped.
+- Ungroup selection: Select a group and then click this button to make each shape independent again.
+- Alignment: This tool can be used to align your shapes / text areas as desired.
+
+While reviewing IO Cards a "Toggle Masks" button will appear just below the image.
+This button will temporary clear all shapes of the note when using "Hide All, Guess One" mode.
 
 ## Inputting Foreign Characters and Accents
 

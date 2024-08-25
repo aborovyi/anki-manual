@@ -136,4 +136,8 @@ Linux/FreeBSD та деяких мобільних пристроях. І вон
 використанні, порівняно з SuperMemo.
 
 Система інтервальних повторювань Anki базується на старішій версії алгоритму
-SuperMemo, який називається [SM-2](faqs.md).
+SuperMemo, який називається
+[SM-2](https://faqs.ankiweb.net/what-spaced-repetition-algorithm). Нещодавно,
+як альтеративу застарілому алгоритму SM-2, було додано новий алгоритм
+Вільного планувальника інтервального пригадування,
+[ВПІП](https://docs.ankiweb.net/deck-options.html?highlight=FSRS#fsrs)

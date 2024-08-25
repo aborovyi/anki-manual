@@ -58,6 +58,22 @@ displayed by mobile clients. Because of the extra complexity LaTeX
 brings, it is only recommended for users that need more features than
 MathJax provides.
 
+### Security Warning
+
+LaTeX code can contain malicious commands that can read or write non-Anki
+data on your computer. For this reason, recent Anki versions will refuse to
+generate LaTeX images by default.
+
+If you wish to use LaTeX on your own cards, you will need to enable the 'Generate LaTeX images' option in the preferences screen.
+
+**We strongly recommend you do not enable this option if you use shared decks, or think
+you will import shared decks in the future, as you are potentially giving any shared
+deck author access to your computer**.
+
+You do not need to enable this option for shared decks. If a shared deck author has
+correctly generated all the images prior to them sharing the deck, the images should
+already be available.
+
 ### Assumed Knowledge
 
 Anki’s LaTeX support is not turn-key: it is assumed that you know how to
@@ -82,7 +98,7 @@ command:
     sudo tlmgr update --self; sudo tlmgr install dvipng
 
 The command may not be on the path, so you may need to provide the full
-path, eg /usr/local/texlive/2014basic/bin/x86_64-darwin/tlmgr.
+path, e.g /usr/local/texlive/2014basic/bin/x86_64-darwin/tlmgr.
 
 If you are not using the above LaTeX packages, you will need to use the
 [edit LaTeX](https://ankiweb.net/shared/info/937148547) add-on to specify
