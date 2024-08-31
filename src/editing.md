@@ -75,37 +75,36 @@ Anki, з міркувань ефективності, не здійснює ав
   буде швидким. Однак, якщо Ви присвятите час розумінню концепцій, які
   ховаються за абревіатурами, вивчення останніх відбуватиметься значно легше.
 
-## Adding a Note Type
+## Додавання типу нотатки
 
-While basic note types are sufficient for simple cards with only a word
-or phrase on each side, as soon as you find yourself wanting to include
-more than one piece of information on the front or back, it's better to
-split that information up into more fields.
+Хоча основних типів нотаток достатньо для створення простих карток з одним
+словом чи фразою на кожній зі сторін, проте, щойно Ви захочете додати більше
+інформації, краще розміщувати її в окремих полях.
 
-You may find yourself thinking "but I only want one card, so why can't I
-just include the audio, a picture, a hint, and the translation in the
-Front field?" If you'd prefer to do that, that's fine. But the
-disadvantage of that approach is that all the information is stuck
-together. If you wanted to sort your cards by the hint, you wouldn't be
-able to do that as it is mixed in with the other content. You also
-wouldn't be able to do things such as moving the audio from the front to the
-back, except by laboriously copying and pasting it for every note. By
-keeping content in separate fields, you make it much easier to adjust
-the layout of your cards in the future.
+У Вас може закрастися думка "якщо мені потрібна лише одна картка, то чому я не
+можу додати у поле передньої сторони аудіо, малюнок, підказку та переклад?"
+І Ви, звісно, можете це зробити. Однак, недоліком стане те, що вся інформація
+буде перемішана в одному місці. Пізніше, Ви не зможете відсортувати картку,
+скажімо, за підказкою, адже вона буде поміж іншого матеріалу. Також, Ви не
+зможете робити такі речі як перенесення аудіо з передньої сторони на зворотну
+іншим чином, окрім як копіюючи та вставляючи його на кожній картці. Зберігаючи
+різний тип матеріалу у окремих полях, можна значно легше налаштовувати вигляд
+карток.
 
-To create a new type of note, choose Tools → Manage Note Types from the
-main Anki window. Then click "Add" to add a new type of note. You will now
-see another screen that gives you a choice of note types to base the new
-type on. "Add" means to base the newly created type on one that comes
-with Anki. "Clone" means to base the newly created type on one that is
-already in your collection. For instance, if you'd created a French
-vocab type already, you might want to clone that when creating a German
-vocab type.
+Створити новий тип нотатки можна, обравши у головному вікні Anki пункт меню
+"Інструменти" → "Керувати типами нотаток". Додавання типу нотатки відбувається
+за допомогою клацання на кнопку «Додати». Опісля, у новому вікні слід обрати
+тип нотатки, на якому базуватиметься новостворений. Слово «Додати», перед
+типом нотатки, вказує, що новий тип буде створено на основі того типу нотатки,
+який постачається разом з Anki. «Дублювати» - вказує на тип нотатки, який
+зберігається у Вашій колекції. Так, якщо у Вас вже є тип нотатки для словника
+французької мови, то Ви можете дублювати його та створити тип нотатки для
+словника німецької.
 
-After choosing OK, you will be asked to name the new type. The subject
-material that you are studying is a good choice here – things like "Japanese",
-"Trivia", and so on. Once you have chosen a name, close the Note Types
-window, and you will return to the adding window.
+Після натискання на «ОК», Вам буде запропоновано ввести ім'я нового типу.
+Хорошим прикладом буде вказати назву навчального матеріалу, як от «Японська»,
+«Дрібниці» тощо. Вказавши ім'я, закрийте вікно "Типи нотаток" та поверніться
+на початкове вікно.
 
 ## Пристосовування полів
 
