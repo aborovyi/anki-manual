@@ -57,24 +57,23 @@ Anki, з міркувань ефективності, не здійснює ав
 на наявність дублікатів. Однак Навігатор має інструмент "Пошук дублікатів",
 яким Ви можете користуватися час від часу.
 
-### Effective Learning
+### Успішне навчання
 
-Different people like to review in different ways, but there are some
-general concepts to keep in mind. An excellent introduction is [this article](https://super-memory.com/articles/20rules.htm) on the SuperMemo
-site. In particular:
+Люди організовують процес пригадування по-різному, однак деякі загальні
+концепції варто знати. Їх чудово подано у
+[цій статті](https://super-memory.com/articles/20rules.htm)
+на сторінці SuperMemo. Зверніть увагу на такі поради як:
 
-- **Keep it simple**: The shorter your cards, the easier they are to
-  review. You may be tempted to include lots of information "just in
-  case," but reviews will quickly become painful.
+- **Зберігайте простоту**: Коротші картки пригадуються легше. Ви можете
+  спокуситися додаванням інформації "про всяк випадок", однак такі пригадування
+  швидко стануть нестерпними.
 
-- **Don't memorize without understanding**: If you are studying a
-  language, try to avoid large lists of words. The best way to learn
-  languages is in context, which means seeing those words used in a
-  sentence. Likewise, imagine you're studying a computer course. If
-  you attempt to memorize the mountain of acronyms, you'll find it
-  very difficult to make progress. But if you take the time to
-  understand the concepts behind the acronyms, learning the acronyms
-  will become a lot easier.
+- **Не запам'ятовуйте без розуміння**: Якщо Ви вчите мову, намагайтеся уникати
+  великих списків слів. Мова найкраще вчиться в контексті, де Ви бачите як
+  слова використовуються в реченнях. Або, уявіть, що Ви вчитесь на комп'ютерних
+  курсах. Якщо Ви спробуєте запам'ятати купу абревіатур, Ваш прогрес навряд чи
+  буде швидким. Однак, якщо Ви присвятите час розумінню концепцій, які
+  ховаються за абревіатурами, вивчення останніх відбуватиметься значно легше.
 
 ## Adding a Note Type
 
