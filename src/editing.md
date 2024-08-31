@@ -106,7 +106,7 @@ Anki, з міркувань ефективності, не здійснює ав
 «Дрібниці» тощо. Вказавши ім'я, закрийте вікно "Типи нотаток" та поверніться
 на початкове вікно.
 
-## Пристосовування полів
+## Налаштування полів
 
 To customize fields, click the "Fields…​" button when adding or editing
 a note, or while the note type is selected in the Manage Note Types
@@ -273,7 +273,7 @@ The editor is shown when [adding notes](editing.md), [editing a note](studying.m
 
 ![Editor icons](media/editor_icons.png)
 
-On the top left are two buttons, which open the [fields](editing.md#Пристосовування-полів) and
+On the top left are two buttons, which open the [fields](editing.md#Налаштування-полів) and
 [cards](templates/intro.md) windows.
 
 On the right are buttons that control formatting. Bold, italic and
