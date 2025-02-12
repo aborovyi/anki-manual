@@ -164,12 +164,12 @@ Anki, з міркувань ефективності, не здійснює ав
 зворотній сторонах карток. Як це зробити описано у розділі
 [Шаблони карток](templates/intro.md).
 
-## Changing Deck / Note Type
+## Зміна колоди або типу нотатки
 
-While adding, you can click on the top left button to change note type,
-and the top right button to change deck. The window that opens up will
-not only allow you to select a deck or note type, but also to add new
-decks or manage your note types.
+Під час додавання, Ви можете клацнути на верхню ліву кнопку "Тип", щоб змінити
+тип нотатки та верхню праву кнопку "Колода", щоб змінити колоду. У вікні, яке
+відкриється після клацання, можна не лише обрати потрібну колоду чи тип
+нотатки, а й додати нові колоди чи керувати типами нотаток.
 
 ## Organizing Content
 
