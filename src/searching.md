@@ -91,7 +91,7 @@ Things to note from the above:
   in a standard search, but can be made case insensitive by searching on a word
   boundary or regular expression (`w:`, `re:`).
 
-## Limiting to a field
+## В межах поля
 
 You can also ask Anki to match only if a particular field contains some
 text. Unlike the previous search examples, searching in fields requires an exact

@@ -108,60 +108,61 @@ Anki, з міркувань ефективності, не здійснює ав
 
 ## Налаштування полів
 
-To customize fields, click the "Fields…​" button when adding or editing
-a note, or while the note type is selected in the Manage Note Types
-window.
+Налаштування полів відбувається після натискання на кнопку "Поля…", яка
+доступна при додаванні чи редагуванні нотатки, або коли нотатку виділено у
+вікні "Керувати типами нотаток".
 
-![Fields](media/fields.png)
+![Поля](media/fields.png)
 
-You can add, remove, or rename fields by clicking the appropriate
-buttons. To change the order in which the fields appear in this dialog
-and the add notes dialog, you can use the reposition button, which asks
-for the numerical position you want the field to have. So if you want to
-change a field to be the new first field, enter "1".
+Додавання, видалення та перейменування полів відбувається за допомогою
+відповідних кнопок. Зміна порядку показу полів у цьому діалоговому вікні та у
+вікні "Додати нотатку" можлива за допомогою кнопки "Змінити розташування",
+після натискання на яку, слід вказати порядковий номер поля. Якщо Ви
+хочете зробити певне поле першим, введіть для нього число "1".
 
-Do not use 'Tags', 'Type', 'Deck', 'Card', or 'FrontSide' as field
-names, as they are [special fields](templates/fields.md#special-fields) and will not work
-properly.
+Не називайте поля 'Tags', 'Type', 'Deck', 'Card', or 'FrontSide', оскільки ці
+назви є [спеціальними полями](templates/fields.md#Спеціальні-поля) і вони не
+працюватимуть правильно.
 
-The options at the bottom of the screen allow you to edit various
-properties of the fields to be used when adding and editing the cards.
-This is _not_ where you customize what appears on your cards when
-reviewing; for that, please see [templates](templates/intro.md).
+Налаштування внизу екрану дозволяють змінювати властивості полів, які
+використовуються при додаванні або редагуванні карток. Вони _не_ впливають на
+те, як картки показуються при пригадуванні; більше інформації подано у розділі
+[Шаблони карток](templates/intro.md).
 
-- **Editing Font** allows you to customize the font and size used when
-  editing notes. This is useful if you want to make unimportant
-  information smaller, or increase the size of foreign characters which
-  are hard to read. The changes you make here do not affect how cards
-  appear when reviewing: to do that, please see the
-  [templates](templates/intro.md) section. If you have enabled the "type in the
-  answer" function, however, the text you type will use the font size
-  defined here. (For information about how to change the actual font face
-  when typing the answer, please see the [checking your answer](templates/fields.md#Перевірка-відповіді) section.)
+- **Редакторський шрифт** - дозволяє налаштувати шрифт та його розмір для
+  редагування нотаток. Цей параметр дозволяє зменшити вигляд неважливої
+  інформації чи збільшити величину тих іноземних символів, які складно читати.
+  Цей параметр не впливає на вигляд карток під час пригадування: для внесення
+  таких змін перегляньте розділ [Шаблони карток](templates/intro.md).
+  Однак, якщо Ви увімкнули функцію "Вдрукувати відповідь", то розмір шрифту
+  вдрукованого тексту буде таким, як вказано у цьому параметрі. (Щоб дізнатися
+  як змінити вигляд шрифту при вдруковуванні відповіді, зверніться до розділу
+  [Перевірка відповіді](templates/fields.md#Перевірка-відповіді).)
 
-- **Sort by this field…​** tells Anki to show this field in the Sort Field
-  column of the browser. You can use this to sort cards by that field.
-  Only one field can be the sort field at once.
+- **Сортувати по цьому полю у навігаторі** додає це поле у стовпчик
+  "Поле сортування" навігатора. Використовуйте цей параметр щоб сортувати
+  картки за значенням обраного поля. Полем сортування може бути лише одне поле
+  картки.
 
-- **Reverse text direction** is useful if you are studying languages that
-  display text from right to left (RTL), such as Arabic or Hebrew. This
-  setting currently only controls editing; to make sure the text displays
-  correctly during review, you'll need to adjust your
-  [template](templates/styling.md#text-direction).
+- **Зворотній напрямок тексту (RTL)** є корисним при вивченні мов у яких текст
+  записується справа наліво, як от арабська чи іврит. Наразі даний параметр
+  застосовується лише при редагуванні; щоб текст показувався правильно під час
+  пригадування, слід налаштувати
+  [шаблони](templates/styling.md#Напрям-тексту).
 
-- **Use HTML editor by default** is useful if you prefer to edit the fields
-  directly in HTML.
+- **Типово використовувати редактор HTML** слід увімкнути, якщо Ви надаєте
+  перевагу редагуванню полів одразу у HTML.
 
-- **Collapse by default**. Fields can be collapsed/expanded.
-  The animation can be disabled in the [preferences.](preferences.md)
+- **Типово згортати**. Поля можуть бути згорнутими/розгорнутими.
+  Відповідну анімацію можна відключити у [налаштуваннях](preferences.md).
 
-- **Exclude from unqualified searches (slower)** can be used if you want
-  the content of a certain field not to appear in unqualified [(not limited to a specific field)](searching.md#limiting-to-a-field)
-  searches.
+- **Виключити з некваліфікованого пошуку (повільніше)** можна використовувати
+  якщо Ви не хочете, щоб вміст поля з'являвся у результатах некваліфікованого
+  [(не обмеженого вказаним полем)](searching.md#В-межах-поля) пошуку.
 
-After you have added fields, you will probably want to add them to the front
-or back of your cards. For more information on that, please see the
-[templates](templates/intro.md) section.
+Після додавання полів, Ви, ймовірно, захочете показати їх на передній чи
+зворотній сторонах карток. Як це зробити описано у розділі
+[Шаблони карток](templates/intro.md).
 
 ## Changing Deck / Note Type
 
