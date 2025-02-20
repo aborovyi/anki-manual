@@ -9,7 +9,7 @@ of searching for specific cards/notes. This method can also be used to adjust th
 
 When you type some text into the search box, Anki finds matching notes
 and displays their cards. Anki searches in all fields of the notes, but
-does not search for tags (see [later in this section](#tags-decks-cards-and-notes) to search for tags). Some examples:
+does not search for tags (see [later in this section](#Мітки-колоди-картки-та-нотатки) to search for tags). Some examples:
 
 `dog`\
 searches for "dog" - will match words like "doggy" and "underdog" too.
@@ -120,7 +120,7 @@ finds notes that have a Front field, empty or not.
 `fr*:text`\
 finds notes in a field starting with "fr". Requires Anki 2.1.24+, AnkiMobile 2.1.60+, or AnkiDroid 2.17+.
 
-## Tags, decks, cards and notes
+## Мітки, колоди, картки та нотатки
 
 `tag:animal`\
 finds notes with the tag "animal", or subtags like "animal::mammal".

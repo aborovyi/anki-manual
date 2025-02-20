@@ -196,33 +196,34 @@ Anki, з міркувань ефективності, не здійснює ав
   великі дерева з колод, з тисячами елементів можуть справді зіпсувати показ
   перелік колод у версіях Anki до 2.1.50.
 
-### Using Tags
+### Використання міток
 
-Instead of creating lots of little decks, it's a better idea to use tags
-and/or fields to classify your content. Tags are a useful way to boost
-search results, find specific content, and keep your collection
-organized.
-There are many ways of using tags and flags effectively, and
-thinking in advance about how you want to use them will help you decide
-what will work best for you.
+Для класифікації інформації краще створювати мітки, аніж багато маленьких
+колод. Мітки допомагають покращити результати пошуку, знайти специфічну
+інформацію та підтримують порядок у колекції. Ефективно використовувати мітки
+та прапорці можна по-різному, а попереднє продумування їх подальшого
+використання дозволить вирішити якнайкраще застосування саме для Вас.
 
-Some people prefer using decks and subdecks to keep their cards organized,
-but using tags have a big advantage over decks for that: you can add several
-tags to a single note, but a single card can only belong to one deck, which
-makes tags a more powerful and flexible categorization system than
-decks in most cases. You can also organize tags in trees [in the same way as you can do for decks](getting-started.md#Колоди).
+Хтось організовує картки у колоди та підколоди, однак використання міток має
+велику перевагу: до нотатки можна додати декілька міток, однак нотатку можна
+додати лише до однієї колоди. Таким чином, у більшості випадків, мітки є
+потужнішою і гнучкішою системою категоризації порівняно з колодами. Мітки можна
+організовувати у дерева
+[за тим же принципом, що й колоди](getting-started.md#Колоди).
 
-For example, instead of creating a "food verbs" deck, you could add those
-cards to your main language study deck, and tag the cards with "food" and
-"verb". Since each card can have multiple tags, you can do things like
-[search](searching.md#tags-decks-cards-and-notes) for all verbs, or all
-food-related vocabulary, or all verbs that are related to food.
+Наприклад, замість того, щоб створювати колоду «Дієслова, що стосуються їжі»,
+картки можна додати до основної колоди, присвяченої вивченню мови, з мітками
+«їжа» та «дієслово». Оскільки кожна картка може мати декілька міток, Ви можете
+[знайти](searching.md#Мітки-колоди-картки-та-нотатки) всі дієслова, всі слова
+пов'язані з їжею або ж всі дієслова, які стосуються їжі.
 
-You can add tags from the Edit window and from the [Browser](browsing.md), and you can also add,
-delete, rename, or organize tags there. Please note that
-tags work at [note](getting-started.md#Нотатки-та-поля) level, which means that when you tag a card that has siblings,
-all the siblings will be tagged as well. If you need to tag a single card,
-but not its siblings, you should consider using flags instead.
+Мітки можна додавати у вікні "Редагування картки" або
+[Навігаторі](browsing.md), у якому можна додавати, видаляти, перейменовувати чи
+впорядковувати мітки. Завважте, що мітки працюють на рівні
+[нотатки](getting-started.md#Нотатки-та-поля), тобто встановлення мітки для
+картки, яка має сестринські картки, встановить цю мітку і для сестринських
+карток. Щоб встановити мітку лише для однієї картки, а не її сестринських
+карток, скористайтеся прапорцями.
 
 ### Використання прапорців
 
