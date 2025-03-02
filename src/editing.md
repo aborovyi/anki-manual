@@ -227,17 +227,17 @@ Anki, з міркувань ефективності, не здійснює ав
 
 ### Використання прапорців
 
-Flags are similar to tags, but they will appear during study in the review
-window, showing a colored flag icon on the upper right area of the screen.
-You can also search for flagged cards in the Browse screen, rename flags
-from the browser and create filtered decks from flagged cards, but unlike tags,
-a single card can have only one flag at a time. Another important difference
-is that flags work at [card](getting-started.md#Картки) level, so flagging a card that has siblings
-won't have any effect on the card's siblings.
+Прапорці схожі на мітки, але вони з'являються у правому верхньому кутку вікна
+пригадування, під час навчання. Їх можна використовувати для пошуку карток у
+вікні Навігатора, перейменовувати у Навігаторі чи створювати, з позначених
+ними карток, фільтровані колоди. Однак, на противагу міткам, для картки можна
+встановити одночасно лише один прапорець. Іншою важливою особливістю прапорців
+є те, що вони працюють на рівні [картки](getting-started.md#Картки), а тому
+встановлення прапорця для картки, не впливає на сестринські картки.
 
-You can flag / unflag cards directly while in review mode (by pressing
-<kbd>CTRL</kbd> + <kbd>1-7</kbd> on Windows or <kbd>CMD</kbd> + <kbd>1-7</kbd> on Mac)
-and from the [Browser.](browsing.md)
+Встановлювати та знімати прапорці можна у режимі пригадування (натиснувши
+<kbd>CTRL</kbd> + <kbd>1-7</kbd> у Windows та Linux або
+<kbd>CMD</kbd> + <kbd>1-7</kbd> у Маці) та у [Навігаторі](browsing.md).
 
 ### Мітка "Позначено"
 
