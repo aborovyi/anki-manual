@@ -6,7 +6,7 @@
 - [Platform Notes](platform/intro.md)
   - [Windows](platform/windows/intro.md)
     - [Install & Upgrade](platform/windows/installing.md)
-    - [Installation Issues](platform/windows/installation-issues.md)
+    - [Проблеми при встановленні](platform/windows/installation-issues.md)
     - [Startup Issues](platform/windows/startup-issues.md)
     - [Display Issues](platform/windows/display-issues.md)
     - [Copy and Paste Issues](platform/windows/copy-and-paste.md)
