@@ -239,15 +239,18 @@ Anki, з міркувань ефективності, не здійснює ав
 <kbd>CTRL</kbd> + <kbd>1-7</kbd> у Windows та Linux або
 <kbd>CMD</kbd> + <kbd>1-7</kbd> у Маці) та у [Навігаторі](browsing.md).
 
-### Мітка "Позначено"
+### Мітка "marked"
 
-Anki treats a tag called "marked" specially. There are options in the review
-screen and browse screen to add and remove the "marked" tag. The review screen
-will show a star when the current card's note has that tag. And cards are
-shown in a different color in the browse screen when their note is marked.
+Anki поводиться з міткою "marked" по-особливому. Додати або забрати її
+можна за допомогою параметрів у вікні пригадування та у навігаторі.
+Якщо нотатка поточної картки має цю мітку, то у вікні пригадування з'явиться
+зірочка. Картки для нотатки з цією позначкою матимуть інший колір у
+Навігаторі.
 
-Note: Marking is mainly left around for compatibility with older Anki
-versions; most users will want to use [flags](editing.md#Використання-прапорців) instead.
+Зверніть увагу: Позначення з міткою "marked" залишено для сумісності зі
+старішими версіями Anki; більшості користувачам краще використовувати
+[прапорці](editing.md#Використання-прапорців).
+
 
 ### Using Fields
 
