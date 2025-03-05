@@ -252,13 +252,12 @@ Anki поводиться з міткою "marked" по-особливому. Д
 [прапорці](editing.md#Використання-прапорців).
 
 
-### Using Fields
+### Використання полів
 
-For those who like to stay very organized, you can add fields to your
-notes to classify your content, such as "book", "page", and so on. Anki
-supports searching in specific fields, which means you can do a search
-for `"book:my book" page:63` and immediately find what you're looking
-for.
+Щоб залишатися високоорганізованими, до нотаток можна додавати поля, і, таким
+чином, класифікувати матеріал, наприклад, "книжка", "сторінка" тощо. Anki
+підтримує пошук у окремих полях, тобто Ви можете ввести
+`"книжка: моя книжка" "сторінка:63"` і одразу ж знайти шуканий матеріал.
 
 ### Custom Study and Filtered Decks
 
