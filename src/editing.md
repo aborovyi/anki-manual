@@ -1,279 +1,285 @@
-# Adding/Editing
+# Додавання та редагування
 
 <!-- toc -->
 
-## Adding Cards and Notes
+## Додавання карток та нотаток
 
-Recall from the [basics](getting-started.md) that in Anki we add notes rather than
-cards, and Anki creates cards for us. Click 'Add' in the [main window](studying.md#Колоди),
-and the Add Notes window will appear.
+Як було сказано у розділі [Початок роботи](getting-started.md), ми
+додаємо нотатки, а Anki на їх основі створює картки. Для появи вікна «Додати
+нотатки», клацніть на кнопку «Додати» у [головному вікні](studying.md#Колоди).
 
 ![Add Screen](media/add_screen.png)
 
-The top left of the window shows us the current [note type](getting-started.md#Типи-нотаток). If it does
-not say "Basic," then you may have added some note types when you
-downloaded a shared deck. The text below assumes that "Basic" is
-selected.
+У лівому верхньому кутку вікна показується поточний
+[тип нотатки](getting-started.md#Типи-нотаток). Якщо там не написано «Базовий»,
+значить Ви додали інші типи нотаток коли завантажували спільну колоду. Подальші
+пояснення базуватимуться на припущенні, що обрано «Базовий» тип нотатки.
 
-The top right of the window shows us the [deck](getting-started.md#Колоди) cards will be added to. If
-you would like to add cards to a new deck, you can click on the deck name
-button and then click "Add".
+У правому верхньому кутку вікна вказано ім'я
+[колоди](getting-started.md#Колоди) до якої додаватимуться картки. Щоб додавати
+картки до нової колоди, клацніть на ім'я колоди, а тоді, у новому вікні - на
+кнопку «Додати».
 
-Below the note type, you'll see some buttons, and an area labelled
-"Front" and "Back". Front and Back are called [fields](getting-started.md#Нотатки-та-поля), and you can add,
-remove, and rename them by clicking the "Fields…​" button above.
+Внизу під типом нотатки є декілька кнопок та область з позначками
+«Передня сторона» та «Зворотна сторона». Передня та зворотна сторони
+називаються [полями](getting-started.md#Нотатки-та-поля), і Ви можете додати
+нові, видалити чи перейменувати наявні поля, клацнувши зверху на кнопці "Поля…".
 
-Below the fields is another area labelled "**tags**". Tags are labels that
-you can attach to your notes, to make organizing and finding notes
-easier. You can leave the tags blank if you wish, or add one or more of
-them. Tags are separated by a space. If the tags area says
+Під полями існує ще одна область, позначена як **мітки**. Мітки є позначками,
+які Ви можете прикріпляти до нотаток, щоб полегшити їх організацію та пошук. Ця
+область може бути порожньою, або ви можете додати необхідні мітки. Мітки
+відокремлюються одна від одної за допомогою пробілів. Якщо в області міток
+вказано
 
-    vocab check_with_tutor
+    словник перевірити_з_вчителем
 
-…​then the note you add would have two tags.
+… тоді створена Вами нотатка матиме дві мітки.
 
-When you have entered text into the front and back, you can click the
-"Add" button or press <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (<kbd>Command</kbd>+<kbd>Enter</kbd> on a Mac) to add the
-note to your collection. When you do so, a card will be created as well,
-and placed into the deck you chose. If you would like to edit a card you
-added, you can click the history button to search for a recently added
-card in the [browser](browsing.md).
+Ввівши текст для передньої і зворотної сторін, Ви можете додати нотатку до
+колекції, клацнувши на кнопку «Додати» або натиснути
+<kbd>Ctrl</kbd>+<kbd>Enter</kbd> (чи <kbd>Command</kbd>+<kbd>Enter</kbd> на
+Маці). Як наслідок, нова картка створиться та покладеться до обраної Вами
+колоди. Щоб відредагувати щойно створену картку, натисніть на кнопку "Історія"
+та знайдіть цю картку у [навігаторі](browsing.md).
 
-For more information on the buttons between the note type and the
-fields, please see the [editor](editing.md) section.
+Більше інформації щодо кнопок які стосуються типу нотатки та полів подано
+у параграфі [Можливості редагування](editing.md#Можливості-редагування)
 
-### Duplicate Check
+### Перевірка дублікатів
 
-Anki checks the first field for uniqueness, so it will warn you if you
-enter two cards with a Front field of "apple" (for example). The
-uniqueness check is limited to the current note type, so if you're
-studying multiple languages, two cards with the same Front would not be
-listed as duplicates as long as you had a different note type for each
-language.
+Anki перевіряє перше поле на унікальність, а тому попередить, якщо Ви введете
+дві картки з передньою стороною, наприклад, "яблуко". Перевірка на унікальність
+обмежується поточним типом нотатки, тому, коли Ви вивчатимете декілька мов,
+дві картки з однаковою передньою стороною не будуть вважатися дублікатами
+допоки вони належать різним типам нотатки у кожній з мов.
 
-Anki does not check for duplicates in other fields automatically for
-efficiency reasons, but the browser has a "Find Duplicates" function,
-which you can run periodically.
+Anki, з міркувань ефективності, не здійснює автоматичної перевірки інших полів
+на наявність дублікатів. Однак Навігатор має інструмент "Пошук дублікатів",
+яким Ви можете користуватися час від часу.
 
-### Effective Learning
+### Успішне навчання
 
-Different people like to review in different ways, but there are some
-general concepts to keep in mind. An excellent introduction is [this article](https://super-memory.com/articles/20rules.htm) on the SuperMemo
-site. In particular:
+Люди організовують процес пригадування по-різному, однак деякі загальні
+концепції варто знати. Їх чудово подано у
+[цій статті](https://super-memory.com/articles/20rules.htm)
+на сторінці SuperMemo. Зверніть увагу на такі поради як:
 
-- **Keep it simple**: The shorter your cards, the easier they are to
-  review. You may be tempted to include lots of information "just in
-  case," but reviews will quickly become painful.
+- **Зберігайте простоту**: Коротші картки пригадуються легше. Ви можете
+  спокуситися додаванням інформації "про всяк випадок", однак такі пригадування
+  швидко стануть нестерпними.
 
-- **Don't memorize without understanding**: If you are studying a
-  language, try to avoid large lists of words. The best way to learn
-  languages is in context, which means seeing those words used in a
-  sentence. Likewise, imagine you're studying a computer course. If
-  you attempt to memorize the mountain of acronyms, you'll find it
-  very difficult to make progress. But if you take the time to
-  understand the concepts behind the acronyms, learning the acronyms
-  will become a lot easier.
+- **Не запам'ятовуйте без розуміння**: Якщо Ви вчите мову, намагайтеся уникати
+  великих списків слів. Мова найкраще вчиться в контексті, де Ви бачите як
+  слова використовуються в реченнях. Або, уявіть, що Ви вчитесь на комп'ютерних
+  курсах. Якщо Ви спробуєте запам'ятати купу абревіатур, Ваш прогрес навряд чи
+  буде швидким. Однак, якщо Ви присвятите час розумінню концепцій, які
+  ховаються за абревіатурами, вивчення останніх відбуватиметься значно легше.
 
-## Adding a Note Type
+## Додавання типу нотатки
 
-While basic note types are sufficient for simple cards with only a word
-or phrase on each side, as soon as you find yourself wanting to include
-more than one piece of information on the front or back, it's better to
-split that information up into more fields.
+Хоча основних типів нотаток достатньо для створення простих карток з одним
+словом чи фразою на кожній зі сторін, проте, щойно Ви захочете додати більше
+інформації, краще розміщувати її в окремих полях.
 
-You may find yourself thinking "but I only want one card, so why can't I
-just include the audio, a picture, a hint, and the translation in the
-Front field?" If you'd prefer to do that, that's fine. But the
-disadvantage of that approach is that all the information is stuck
-together. If you wanted to sort your cards by the hint, you wouldn't be
-able to do that as it is mixed in with the other content. You also
-wouldn't be able to do things such as moving the audio from the front to the
-back, except by laboriously copying and pasting it for every note. By
-keeping content in separate fields, you make it much easier to adjust
-the layout of your cards in the future.
+У Вас може закрастися думка "якщо мені потрібна лише одна картка, то чому я не
+можу додати у поле передньої сторони аудіо, малюнок, підказку та переклад?"
+І Ви, звісно, можете це зробити. Однак, недоліком стане те, що вся інформація
+буде перемішана в одному місці. Пізніше, Ви не зможете відсортувати картку,
+скажімо, за підказкою, адже вона буде поміж іншого матеріалу. Також, Ви не
+зможете робити такі речі як перенесення аудіо з передньої сторони на зворотну
+іншим чином, окрім як копіюючи та вставляючи його на кожній картці. Зберігаючи
+різний тип матеріалу у окремих полях, можна значно легше налаштовувати вигляд
+карток.
 
-To create a new type of note, choose Tools → Manage Note Types from the
-main Anki window. Then click "Add" to add a new type of note. You will now
-see another screen that gives you a choice of note types to base the new
-type on. "Add" means to base the newly created type on one that comes
-with Anki. "Clone" means to base the newly created type on one that is
-already in your collection. For instance, if you'd created a French
-vocab type already, you might want to clone that when creating a German
-vocab type.
+Створити новий тип нотатки можна, обравши у головному вікні Anki пункт меню
+"Інструменти" → "Керувати типами нотаток". Додавання типу нотатки відбувається
+за допомогою клацання на кнопку «Додати». Опісля, у новому вікні слід обрати
+тип нотатки, на якому базуватиметься новостворений. Слово «Додати», перед
+типом нотатки, вказує, що новий тип буде створено на основі того типу нотатки,
+який постачається разом з Anki. «Дублювати» - вказує на тип нотатки, який
+зберігається у Вашій колекції. Так, якщо у Вас вже є тип нотатки для словника
+французької мови, то Ви можете дублювати його та створити тип нотатки для
+словника німецької.
 
-After choosing OK, you will be asked to name the new type. The subject
-material that you are studying is a good choice here – things like "Japanese",
-"Trivia", and so on. Once you have chosen a name, close the Note Types
-window, and you will return to the adding window.
+Після натискання на «ОК», Вам буде запропоновано ввести ім'я нового типу.
+Хорошим прикладом буде вказати назву навчального матеріалу, як от «Японська»,
+«Дрібниці» тощо. Вказавши ім'я, закрийте вікно "Типи нотаток" та поверніться
+на початкове вікно.
 
-## Пристосовування полів
+## Налаштування полів
 
-To customize fields, click the "Fields…​" button when adding or editing
-a note, or while the note type is selected in the Manage Note Types
-window.
+Налаштування полів відбувається після натискання на кнопку "Поля…", яка
+доступна при додаванні чи редагуванні нотатки, або коли нотатку виділено у
+вікні "Керувати типами нотаток".
 
-![Fields](media/fields.png)
+![Поля](media/fields.png)
 
-You can add, remove, or rename fields by clicking the appropriate
-buttons. To change the order in which the fields appear in this dialog
-and the add notes dialog, you can use the reposition button, which asks
-for the numerical position you want the field to have. So if you want to
-change a field to be the new first field, enter "1".
+Додавання, видалення та перейменування полів відбувається за допомогою
+відповідних кнопок. Зміна порядку показу полів у цьому діалоговому вікні та у
+вікні "Додати нотатку" можлива за допомогою кнопки "Змінити розташування",
+після натискання на яку, слід вказати порядковий номер поля. Якщо Ви
+хочете зробити певне поле першим, введіть для нього число "1".
 
-Do not use 'Tags', 'Type', 'Deck', 'Card', or 'FrontSide' as field
-names, as they are [special fields](templates/fields.md#special-fields) and will not work
-properly.
+Не називайте поля 'Tags', 'Type', 'Deck', 'Card', or 'FrontSide', оскільки ці
+назви є [спеціальними полями](templates/fields.md#Спеціальні-поля) і вони не
+працюватимуть правильно.
 
-The options at the bottom of the screen allow you to edit various
-properties of the fields to be used when adding and editing the cards.
-This is _not_ where you customize what appears on your cards when
-reviewing; for that, please see [templates](templates/intro.md).
+Налаштування внизу екрану дозволяють змінювати властивості полів, які
+використовуються при додаванні або редагуванні карток. Вони _не_ впливають на
+те, як картки показуються при пригадуванні; більше інформації подано у розділі
+[Шаблони карток](templates/intro.md).
 
-- **Editing Font** allows you to customize the font and size used when
-  editing notes. This is useful if you want to make unimportant
-  information smaller, or increase the size of foreign characters which
-  are hard to read. The changes you make here do not affect how cards
-  appear when reviewing: to do that, please see the
-  [templates](templates/intro.md) section. If you have enabled the "type in the
-  answer" function, however, the text you type will use the font size
-  defined here. (For information about how to change the actual font face
-  when typing the answer, please see the [checking your answer](templates/fields.md#Перевірка-відповіді) section.)
+- **Редакторський шрифт** - дозволяє налаштувати шрифт та його розмір для
+  редагування нотаток. Цей параметр дозволяє зменшити вигляд неважливої
+  інформації чи збільшити величину тих іноземних символів, які складно читати.
+  Цей параметр не впливає на вигляд карток під час пригадування: для внесення
+  таких змін перегляньте розділ [Шаблони карток](templates/intro.md).
+  Однак, якщо Ви увімкнули функцію "Вдрукувати відповідь", то розмір шрифту
+  вдрукованого тексту буде таким, як вказано у цьому параметрі. (Щоб дізнатися
+  як змінити вигляд шрифту при вдруковуванні відповіді, зверніться до розділу
+  [Перевірка відповіді](templates/fields.md#Перевірка-відповіді).)
 
-- **Sort by this field…​** tells Anki to show this field in the Sort Field
-  column of the browser. You can use this to sort cards by that field.
-  Only one field can be the sort field at once.
+- **Сортувати по цьому полю у навігаторі** додає це поле у стовпчик
+  "Поле сортування" навігатора. Використовуйте цей параметр щоб сортувати
+  картки за значенням обраного поля. Полем сортування може бути лише одне поле
+  картки.
 
-- **Reverse text direction** is useful if you are studying languages that
-  display text from right to left (RTL), such as Arabic or Hebrew. This
-  setting currently only controls editing; to make sure the text displays
-  correctly during review, you'll need to adjust your
-  [template](templates/styling.md#text-direction).
+- **Зворотній напрямок тексту (RTL)** є корисним при вивченні мов у яких текст
+  записується справа наліво, як от арабська чи іврит. Наразі даний параметр
+  застосовується лише при редагуванні; щоб текст показувався правильно під час
+  пригадування, слід налаштувати
+  [шаблони](templates/styling.md#Напрям-тексту).
 
-- **Use HTML editor by default** is useful if you prefer to edit the fields
-  directly in HTML.
+- **Типово використовувати редактор HTML** слід увімкнути, якщо Ви надаєте
+  перевагу редагуванню полів одразу у HTML.
 
-- **Collapse by default**. Fields can be collapsed/expanded.
-  The animation can be disabled in the [preferences.](preferences.md)
+- **Типово згортати**. Поля можуть бути згорнутими/розгорнутими.
+  Відповідну анімацію можна відключити у [налаштуваннях](preferences.md).
 
-- **Exclude from unqualified searches (slower)** can be used if you want
-  the content of a certain field not to appear in unqualified [(not limited to a specific field)](searching.md#limiting-to-a-field)
-  searches.
+- **Виключити з некваліфікованого пошуку (повільніше)** можна використовувати
+  якщо Ви не хочете, щоб вміст поля з'являвся у результатах некваліфікованого
+  [(не обмеженого вказаним полем)](searching.md#В-межах-поля) пошуку.
 
-After you have added fields, you will probably want to add them to the front
-or back of your cards. For more information on that, please see the
-[templates](templates/intro.md) section.
+Після додавання полів, Ви, ймовірно, захочете показати їх на передній чи
+зворотній сторонах карток. Як це зробити описано у розділі
+[Шаблони карток](templates/intro.md).
 
-## Changing Deck / Note Type
+## Зміна колоди або типу нотатки
 
-While adding, you can click on the top left button to change note type,
-and the top right button to change deck. The window that opens up will
-not only allow you to select a deck or note type, but also to add new
-decks or manage your note types.
+Під час додавання, Ви можете клацнути на верхню ліву кнопку "Тип", щоб змінити
+тип нотатки та верхню праву кнопку "Колода", щоб змінити колоду. У вікні, яке
+відкриється після клацання, можна не лише обрати потрібну колоду чи тип
+нотатки, а й додати нові колоди чи керувати типами нотаток.
 
-## Organizing Content
+## Впорядкування матеріалів
 
 ### Правильне використання колод
 
-[Decks](getting-started.md#Колоди) are designed to divide your content up into
-broad categories that you wish to study separately, such as English, Geography,
-and so on. You may be tempted to create lots of little decks to keep your
-content organized, such as "my geography book chapter 1", or "food verbs", but
-this is not recommended, for the following reasons:
+[Колоди](getting-started.md#Колоди) спроєктовано для об'єднання матеріалів у
+об'ємні категорії, які слід вивчати нарізно, як от англійська мова, географія
+тощо. Ви можете спокуситися на створення багатьох маленьких колод, як от
+«Моя книжка з географії, розділ 1» чи «Дієслова, що стосуються їжі», щоб
+тримати свою інформацію впорядкованою, однак ми не радимо це роботи адже:
 
-- Lots of little decks may mean you end up seeing cards in a
-  recognizable order. On older scheduler versions, new cards can only
-  be introduced in deck order. And if you were planning to click on each deck
-  in turn (which is slow), you will end up seeing all the "chapter 1" or
-  "food verb" reviews together. This makes it easier to answer the
-  cards, as you can guess them from the context, which leads to weaker
-  memories. When you need to recall the word or phrase outside Anki,
-  you won't always have the luxury of being shown related content first!
+- За наявності багатьох маленьких колод Ви будете бачити картки в
+  упізнаваному порядку. У старіших версіях планувальника нові картки з'являлися
+  за порядком колод. І якщо Ви планували клацати на кожну колоду по черзі (що
+  є досить повільним), все закінчилося б тим, що усі пригадування з «розділу 1»
+  та «Дієслів, що стосуються їжі» опинилися б поруч. В такому випадку на картки
+  легше відповідати, оскільки їх можна вгадувати за контекстом, проте це
+  призведе до поганого запам'ятовування. Коли треба буде пригадати слово чи
+  фразу поза Anki, у Вас не завжди буде перевага у вигляді попереднього показу
+  пов'язаної інформації.
 
-- While less of a problem than it was in earlier Anki versions,
-  adding hundreds of decks may cause slowdowns, and very large deck
-  trees with thousands of items can actually break the display of
-  the deck list in Anki versions before 2.1.50.
+- Хоч ця проблема є меншою порівняно з тим, якою вона була у попередніх версіях
+  Anki, додавання сотень колод може стати причиною уповільнення роботи, а дуже
+  великі дерева з колод, з тисячами елементів можуть справді зіпсувати показ
+  перелік колод у версіях Anki до 2.1.50.
 
-### Using Tags
+### Використання міток
 
-Instead of creating lots of little decks, it's a better idea to use tags
-and/or fields to classify your content. Tags are a useful way to boost
-search results, find specific content, and keep your collection
-organized.
-There are many ways of using tags and flags effectively, and
-thinking in advance about how you want to use them will help you decide
-what will work best for you.
+Для класифікації інформації краще створювати мітки, аніж багато маленьких
+колод. Мітки допомагають покращити результати пошуку, знайти специфічну
+інформацію та підтримують порядок у колекції. Ефективно використовувати мітки
+та прапорці можна по-різному, а попереднє продумування їх подальшого
+використання дозволить вирішити якнайкраще застосування саме для Вас.
 
-Some people prefer using decks and subdecks to keep their cards organized,
-but using tags have a big advantage over decks for that: you can add several
-tags to a single note, but a single card can only belong to one deck, which
-makes tags a more powerful and flexible categorization system than
-decks in most cases. You can also organize tags in trees [in the same way as you can do for decks](getting-started.md#Колоди).
+Хтось організовує картки у колоди та підколоди, однак використання міток має
+велику перевагу: до нотатки можна додати декілька міток, однак нотатку можна
+додати лише до однієї колоди. Таким чином, у більшості випадків, мітки є
+потужнішою і гнучкішою системою категоризації порівняно з колодами. Мітки можна
+організовувати у дерева
+[за тим же принципом, що й колоди](getting-started.md#Колоди).
 
-For example, instead of creating a "food verbs" deck, you could add those
-cards to your main language study deck, and tag the cards with "food" and
-"verb". Since each card can have multiple tags, you can do things like
-[search](searching.md#tags-decks-cards-and-notes) for all verbs, or all
-food-related vocabulary, or all verbs that are related to food.
+Наприклад, замість того, щоб створювати колоду «Дієслова, що стосуються їжі»,
+картки можна додати до основної колоди, присвяченої вивченню мови, з мітками
+«їжа» та «дієслово». Оскільки кожна картка може мати декілька міток, Ви можете
+[знайти](searching.md#Мітки-колоди-картки-та-нотатки) всі дієслова, всі слова
+пов'язані з їжею або ж всі дієслова, які стосуються їжі.
 
-You can add tags from the Edit window and from the [Browser](browsing.md), and you can also add,
-delete, rename, or organize tags there. Please note that
-tags work at [note](getting-started.md#Нотатки-та-поля) level, which means that when you tag a card that has siblings,
-all the siblings will be tagged as well. If you need to tag a single card,
-but not its siblings, you should consider using flags instead.
+Мітки можна додавати у вікні "Редагування картки" або
+[Навігаторі](browsing.md), у якому можна додавати, видаляти, перейменовувати чи
+впорядковувати мітки. Завважте, що мітки працюють на рівні
+[нотатки](getting-started.md#Нотатки-та-поля), тобто встановлення мітки для
+картки, яка має сестринські картки, встановить цю мітку і для сестринських
+карток. Щоб встановити мітку лише для однієї картки, а не її сестринських
+карток, скористайтеся прапорцями.
 
 ### Використання прапорців
 
-Flags are similar to tags, but they will appear during study in the review
-window, showing a colored flag icon on the upper right area of the screen.
-You can also search for flagged cards in the Browse screen, rename flags
-from the browser and create filtered decks from flagged cards, but unlike tags,
-a single card can have only one flag at a time. Another important difference
-is that flags work at [card](getting-started.md#Картки) level, so flagging a card that has siblings
-won't have any effect on the card's siblings.
+Прапорці схожі на мітки, але вони з'являються у правому верхньому кутку вікна
+пригадування, під час навчання. Їх можна використовувати для пошуку карток у
+вікні Навігатора, перейменовувати у Навігаторі чи створювати, з позначених
+ними карток, фільтровані колоди. Однак, на противагу міткам, для картки можна
+встановити одночасно лише один прапорець. Іншою важливою особливістю прапорців
+є те, що вони працюють на рівні [картки](getting-started.md#Картки), а тому
+встановлення прапорця для картки, не впливає на сестринські картки.
 
-You can flag / unflag cards directly while in review mode (by pressing
-<kbd>CTRL</kbd> + <kbd>1-7</kbd> on Windows or <kbd>CMD</kbd> + <kbd>1-7</kbd> on Mac)
-and from the [Browser.](browsing.md)
+Встановлювати та знімати прапорці можна у режимі пригадування (натиснувши
+<kbd>CTRL</kbd> + <kbd>1-7</kbd> у Windows та Linux або
+<kbd>CMD</kbd> + <kbd>1-7</kbd> у Маці) та у [Навігаторі](browsing.md).
 
-### Мітка "Позначено"
+### Мітка "marked"
 
-Anki treats a tag called "marked" specially. There are options in the review
-screen and browse screen to add and remove the "marked" tag. The review screen
-will show a star when the current card's note has that tag. And cards are
-shown in a different color in the browse screen when their note is marked.
+Anki поводиться з міткою "marked" по-особливому. Додати або забрати її
+можна за допомогою параметрів у вікні пригадування та у навігаторі.
+Якщо нотатка поточної картки має цю мітку, то у вікні пригадування з'явиться
+зірочка. Картки для нотатки з цією позначкою матимуть інший колір у
+Навігаторі.
 
-Note: Marking is mainly left around for compatibility with older Anki
-versions; most users will want to use [flags](editing.md#Використання-прапорців) instead.
+Зверніть увагу: Позначення з міткою "marked" залишено для сумісності зі
+старішими версіями Anki; більшості користувачам краще використовувати
+[прапорці](editing.md#Використання-прапорців).
 
-### Using Fields
 
-For those who like to stay very organized, you can add fields to your
-notes to classify your content, such as "book", "page", and so on. Anki
-supports searching in specific fields, which means you can do a search
-for `"book:my book" page:63` and immediately find what you're looking
-for.
+### Використання полів
 
-### Custom Study and Filtered Decks
+Щоб залишатися високоорганізованими, до нотаток можна додавати поля, і, таким
+чином, класифікувати матеріал, наприклад, "книжка", "сторінка" тощо. Anki
+підтримує пошук у окремих полях, тобто Ви можете ввести
+`"книжка: моя книжка" "сторінка:63"` і одразу ж знайти шуканий матеріал.
 
-Using [custom study and filtered deck](filtered-decks.md) you can create
-temporary decks out of search
-terms. This allows you to review your content mixed together in a single
-deck most of the time (for optimum memory), but also create temporary
-decks when you need to focus on particular material, such as before a
-test. The general rule is that if you always want to be able to study
-some content separately, it should be in a normal deck; if you only
-occasionally need to be able to study it separately (for a test, when
-under a backlog, etc.), then filtered decks created from tags, flags,
-marks or fields are better.
+### Спеціальне навчання та колоди з відфільтрованим матеріалом
 
-## Editing Features
+Використовуючи
+[спеціальне навчання та колоди з відфільтрованим матеріалом](filtered-decks.md),
+можна створювати тимчасові колоди з результатами пошукових запитів. Таким
+чином, задля оптимізації пам'яті, більшість часу Ви будете пригадувати
+різноманітний матеріал у одній колоді, проте, зможете створювати тимчасові
+колоди, щоб зосередитись на його певній частині, скажімо, перед іспитом.
+Загальне правило звучить так: якщо Ви завжди хочете мати змогу вивчати певний
+матеріал незалежно, його слід зберігати в окремій колоді. Якщо ж незалежне
+вивчення матеріалу відбувається рідко (як от перед іспитом, під час перездачі
+тощо), тоді краще використовувати колоди з матеріалом, відфільтрованим за
+мітками, прапорцями, позначками чи полями.
+
+## Можливості редагування
 
 The editor is shown when [adding notes](editing.md), [editing a note](studying.md#Редагувати-та-Більше) during reviews, or [browsing](browsing.md).
 
 ![Editor icons](media/editor_icons.png)
 
-On the top left are two buttons, which open the [fields](editing.md#Пристосовування-полів) and
+On the top left are two buttons, which open the [fields](editing.md#Налаштування-полів) and
 [cards](templates/intro.md) windows.
 
 On the right are buttons that control formatting. Bold, italic and

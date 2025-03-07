@@ -135,7 +135,7 @@ If you want TTS to read multiple fields or static text included in the template,
 This is other text on the template. It is outside of the tags so it should not be read.
 ```
 
-## Special Fields
+## Спеціальні поля
 
 There are some special fields you can include in your templates:
 
@@ -173,7 +173,7 @@ when you encounter it in real life. Please have a read about the
 <https://super-memory.com/articles/20rules.htm> before proceeding.
 
 First, you’ll need to add a field to store the hint in if you have not
-already. Please see the [fields](../editing.md#Пристосовування-полів) section if you’re not sure how
+already. Please see the [fields](../editing.md#Налаштування-полів) section if you’re not sure how
 to do this.
 
 Assuming you’ve created a field called MyField, you can tell Anki to

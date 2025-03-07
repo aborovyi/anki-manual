@@ -9,7 +9,7 @@ of searching for specific cards/notes. This method can also be used to adjust th
 
 When you type some text into the search box, Anki finds matching notes
 and displays their cards. Anki searches in all fields of the notes, but
-does not search for tags (see [later in this section](#tags-decks-cards-and-notes) to search for tags). Some examples:
+does not search for tags (see [later in this section](#Мітки-колоди-картки-та-нотатки) to search for tags). Some examples:
 
 `dog`\
 searches for "dog" - will match words like "doggy" and "underdog" too.
@@ -80,7 +80,7 @@ Things to note from the above:
   parentheses, it matches either "dog cat" or "dog mouse", whereas
   without them it would match either "dog and cat" or "mouse".
 
-- Anki is only able to search within formatting in the [sort field](editing.md#Пристосовування-полів) you’ve configured. For example, if you add
+- Anki is only able to search within formatting in the [sort field](editing.md#Налаштування-полів) you’ve configured. For example, if you add
   "**exa**mple" to one of your fields, with the "exa" part in bold, this will not be matched when
   searching for "example" unless that field is the sort field. If a
   word is not formatted, or the formatting does not change in the
@@ -91,7 +91,7 @@ Things to note from the above:
   in a standard search, but can be made case insensitive by searching on a word
   boundary or regular expression (`w:`, `re:`).
 
-## Limiting to a field
+## В межах поля
 
 You can also ask Anki to match only if a particular field contains some
 text. Unlike the previous search examples, searching in fields requires an exact
@@ -120,7 +120,7 @@ finds notes that have a Front field, empty or not.
 `fr*:text`\
 finds notes in a field starting with "fr". Requires Anki 2.1.24+, AnkiMobile 2.1.60+, or AnkiDroid 2.17+.
 
-## Tags, decks, cards and notes
+## Мітки, колоди, картки та нотатки
 
 `tag:animal`\
 finds notes with the tag "animal", or subtags like "animal::mammal".

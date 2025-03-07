@@ -210,7 +210,7 @@ make them smaller and colored, you could use the following:
 }
 ```
 
-## Text Direction
+## Напрям тексту
 
 If you use a language that is written right-to-left, such as Arabic or Hebrew,
 you can add the CSS `direction` property to the .card section for correct display during review:
@@ -227,7 +227,7 @@ of only certain fields by wrapping their references in some HTML:
     <div dir="rtl">{{Front}}</div>
 
 To change the direction of fields in the editor, please see
-the [editing](../editing.md#Пристосовування-полів) section.
+the [editing](../editing.md#Налаштування-полів) section.
 
 ## Other HTML
 
