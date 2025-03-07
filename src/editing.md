@@ -259,18 +259,19 @@ Anki поводиться з міткою "marked" по-особливому. Д
 підтримує пошук у окремих полях, тобто Ви можете ввести
 `"книжка: моя книжка" "сторінка:63"` і одразу ж знайти шуканий матеріал.
 
-### Custom Study and Filtered Decks
+### Спеціальне навчання та колоди з відфільтрованим матеріалом
 
-Using [custom study and filtered deck](filtered-decks.md) you can create
-temporary decks out of search
-terms. This allows you to review your content mixed together in a single
-deck most of the time (for optimum memory), but also create temporary
-decks when you need to focus on particular material, such as before a
-test. The general rule is that if you always want to be able to study
-some content separately, it should be in a normal deck; if you only
-occasionally need to be able to study it separately (for a test, when
-under a backlog, etc.), then filtered decks created from tags, flags,
-marks or fields are better.
+Використовуючи
+[спеціальне навчання та колоди з відфільтрованим матеріалом](filtered-decks.md),
+можна створювати тимчасові колоди з результатами пошукових запитів. Таким
+чином, задля оптимізації пам'яті, більшість часу Ви будете пригадувати
+різноманітний матеріал у одній колоді, проте, зможете створювати тимчасові
+колоди, щоб зосередитись на його певній частині, скажімо, перед іспитом.
+Загальне правило звучить так: якщо Ви завжди хочете мати змогу вивчати певний
+матеріал незалежно, його слід зберігати в окремій колоді. Якщо ж незалежне
+вивчення матеріалу відбувається рідко (як от перед іспитом, під час перездачі
+тощо), тоді краще використовувати колоди з матеріалом, відфільтрованим за
+мітками, прапорцями, позначками чи полями.
 
 ## Можливості редагування
 
